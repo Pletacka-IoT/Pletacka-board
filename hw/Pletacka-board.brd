@@ -1965,6 +1965,14 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="21,19,b84ab8b6b945454a"/>
+<approved hash="21,19,0fd1f3d3f32df150"/>
+<approved hash="21,19,3f373f373d353d35"/>
+<approved hash="21,19,62dd60df61df63dd"/>
+<approved hash="21,19,5db45d485cb5a0b4"/>
+<approved hash="21,19,8cd38e2f8fd173d3"/>
+</errors>
 </board>
 </drawing>
 <compatibility>

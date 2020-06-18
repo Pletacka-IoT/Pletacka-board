@@ -1,0 +1,92 @@
+			Historie knihoven #PaJa_xx - www.paja-trb.unas.cz
+		       ----------------------------
+
+PaJa_30           - 1. 6.2011 -  196 souèástek na DPS, 298 souèástek do SCHématu,
+PaJa_displeje	  - 1. 6.2011 -   16 souèástek na DPS,  16 souèástek do SCHématu,
+PaJa_konektory	  - 1. 6.2011 -   91 souèástek na DPS,  92 souèástek do SCHématu,
+PaJa_prepinace	  - 1. 6.2011 -   31 souèástek na DPS,  31 souèástek do SCHématu,
+		    pøechod na verzi 5.06, rozdìlení na menší a pøehlednìjší knihovny,
+		    úprava vrstev 21 a 51 (v místech pøekrývání s pady)	
+-----------------------------------------------------------------------
+PaJa_22           - 1. 5.2010 - 300 souèástek na DPS, 400 souèástek do SCHématu
+-----------------------------------------------------------------------
+PaJa_21           - 1. 5.2009 - 265 souèástek na DPS, 350 souèástek do SCHématu
+PaJa_C-el2        - 1. 5.2009 - 150 hodnot el. kondenzátorù + SMD, základní pouzdra
+
+PaJa_C-tantal SMD - 1. 5.2009 - 50 hodnot SMD tantalových kondenzátorù, základní pouzdra
+-----------------------------------------------------------------------
+PaJa_20  -  1. 4.2008 - 260 souèástek na DPS, 340 souèástek do SCHématu
+-----------------------------------------------------------------------
+PaJa_19  -  1. 7.2007 - 240 souèástek na DPS, 305 souèástek do SCHématu
+-----------------------------------------------------------------------
+PaJa_18  -  1. 6.2006 - 235 souèástek na DPS, 295 souèástek do SCHématu
+PaJa_17  -  3. 2.2006 - 230 souèástek na DPS, 290 souèástek do SCHématu,
+			oprava napájení u IO, pøechod na verzi 4.13
+-----------------------------------------------------------------------
+PaJa_16  -  4.12.2005 - 225 souèástek na DPS, 280 souèástek do SCHématu,
+PaJa_15  -  7. 8.2005 - 220 souèástek na DPS, 270 souèástek do SCHématu,
+PaJa_14  -  1. 6.2005 - 215 souèástek na DPS, 265 souèástek do SCHématu,
+			oprava nìkolika souèástek
+PaJa_13  -  1. 2.2005 - 210 souèástek na DPS, 245 souèástek do SCHématu,
+			zpøehlednení SCH-souèástek, zobrazování hodnot
+-----------------------------------------------------------------------
+PaJa_11  - 20.12.2004 - 200 souèástek na DPS, 245 souèástek do SCHématu,
+			pøidány SMD souèástky, zpøehlednení SCH-souèástek
+PaJa_10  -  1. 8.2004 - 195 souèástek na DPS, 235 souèástek do SCHématu,
+			pøidány popisky souèástek, pøechod na verzi 4.11
+
+PaJa_92  -  1. 5.2004 - 190 souèástek na DPS, 230 souèástek do SCHématu, 
+			opraveny chyby pøi naèítání v Eagle 4.11, poslední 
+			knihovna vytvoøená v Eagle 3.55
+PaJa_91  -  1. 3.2004 - 180 souèástek na DPS, 215 souèástek do SCHématu
+PaJa_C-folie -25.1.04 - 80 hodnot fóliových kondenzátorù,
+PaJa_9   -  1. 1.2004 - 170 souèástek na DPS, 205 souèástek do SCHématu
+-----------------------------------------------------------------------
+PaJa_89  - 21.11.2003 - 160 souèástek na DPS, 170 souèástek do SCHématu
+PaJa_R   -  3.12.2003 - 240 souèástek do SCHématu, odpory 0.6W, 2W, 5W, 10W, 20W,
+			Hodnoty odporù jsou podle øady E12 a katalogu GM 2002
+PaJa_C-el- 14.11.2003 - 140 hodnot souèástek do SCHématu,
+			pøiøazení správné velikosti kondenzátoru
+PaJa_88  - 18.10.2003 - 130 souèástek na DPS, 155 souèástek do SCHématu
+PaJa_87  - 20. 5.2003 - 120 souèástek na DPS, 130 souèástek do SCHématu 
+PaJa_86  -  2. 5.2003 - ???
+PaJa_85  - 18. 4.2003 - 105 souèástek na DPS, 120 souèástek do SCHématu
+PaJa_84  - 15. 3.2003 - 100 souèástek na DPS, 110 souèástek do SCHématu
+PaJa_83  - 26. 1.2003 - 100 souèástek na DPS, 100 souèástek do SCHématu
+PaJa_82  - 12. 1.2003 - 95 souèástek na DPS, 100 souèástek do SCHématu
+PaJa_8   -  1. 1.2003 - 100 souèástek na DPS, 70 souèástek do SCHématu,
+			Z_INFO_Z - informace o knihovnì,... 
+			zaèínají se objevovat SCHématické znaèky	
+-----------------------------------------------------------------------
+PaJa_7   -  2. 6.2002 - 105 souèástek na DPS, nové vrstvy : 100 PaJa, 101 Doplnky, 102 Kola
+PaJa_6   - 28. 5.2002 - 102 souèástek na DPS
+PaJa1_55 - 19. 5.2002 - 95 souèástek na DPS, zaèíná se objevovat "znak kvality" PaJa
+PaJa1_5  -  7. 5.2002 - 95 souèástek na DPS, zaèínají se objevovat kola okolo dír v 
+			pájecích bodech
+PaJa1_4  - 21. 1.2002 - 82 souèástek na DPS, menší redukce
+PaJa1_3  - 10. 1.2002 - 90 souèástek na DPS
+-----------------------------------------------------------------------
+PaJa1_22 - asi 12.2001- 85 souèástek na DPS
+PaJa1_2  - asi 11.2001- 70 souèástek na DPS, špatný rastr, asi 2 mìsíce od vzniku
+
+--------------------------------------------------------------------------------
+Z_INFO_Z - informace o této knihovnì (verze, datum vytvoøení, kontakt na mì,...)
+--------------------------------------------------------------------------------
+
+V dobì, kdy jsem zaèal psát tuto historii knihoven, byla aktuální knihovna PaJa_89. 
+Proto mám jen omezené informace o vývoji starších verzí.
+Knihovnu jsem zaèal vytváøet na zaèátku druhého roèníku oboru Mechanik Elektronik na
+SPŠT a SOUT Tøebíè, kde jsme v Odborném výcviku zaèali navrhovat v Eagle.
+Knihovna si získala postupnì oblibu po celé tøídì, používala ji vìtšina spolužákù a dodnes 
+se moje knihovny na škole v hojné míøe používají.
+Knihovny dìlám hlavnì pro svou potøebu, proto se tam objevují souèástky, které mì 
+pøi návrhu plošòákù prošli rukama a další postupnì pøidìlávám.
+Pokud se vám knihovny líbí nebo nìco potøebujete, tak mì napište na paja-trb@seznam.cz
+Novou verzi knihovny si mùžete stáhnout na mých stránkách www.paja-trb.unas.cz
+
+Dìkuji za vaši pøízeò a doufám, že se setkáme i u dalších verzí knihoven. 
+
+Pavel Janík
+
+Kontakt : www.paja-trb.unas.cz
+	  paja-trb@seznam.cz

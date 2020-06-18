@@ -1,0 +1,132 @@
+.FILETYPE CELL_LIBRARY
+.VERSION "02.50"
+.DATE "Thursday, June 18, 2020 09:57 PM"
+
+.UNITS MM
+
+.PACKAGE_CELL "SOP254P1016X400-8N"
+ ..PACKAGE_GROUP IC_SOIC
+ ..MOUNT_TYPE SURFACE
+ ..NUMBER_LAYERS 12
+ ..PIN "1"
+  ...XY (-4.55,3.81)
+  ...PADSTACK "r210_145"
+  ...ROTATION 0
+  ...PIN_OPTIONS NONE
+ ..PIN "2"
+  ...XY (-4.55,1.27)
+  ...PADSTACK "r210_145"
+  ...ROTATION 0
+  ...PIN_OPTIONS NONE
+ ..PIN "3"
+  ...XY (-4.55,-1.27)
+  ...PADSTACK "r210_145"
+  ...ROTATION 0
+  ...PIN_OPTIONS NONE
+ ..PIN "4"
+  ...XY (-4.55,-3.81)
+  ...PADSTACK "r210_145"
+  ...ROTATION 0
+  ...PIN_OPTIONS NONE
+ ..PIN "5"
+  ...XY (4.55,-3.81)
+  ...PADSTACK "r210_145"
+  ...ROTATION 0
+  ...PIN_OPTIONS NONE
+ ..PIN "6"
+  ...XY (4.55,-1.27)
+  ...PADSTACK "r210_145"
+  ...ROTATION 0
+  ...PIN_OPTIONS NONE
+ ..PIN "7"
+  ...XY (4.55,1.27)
+  ...PADSTACK "r210_145"
+  ...ROTATION 0
+  ...PIN_OPTIONS NONE
+ ..PIN "8"
+  ...XY (4.55,3.81)
+  ...PADSTACK "r210_145"
+  ...ROTATION 0
+  ...PIN_OPTIONS NONE
+ ..TEXT "Ref Des"
+  ...TEXT_TYPE REF_DES
+  ...DISPLAY_ATTR
+   ....XY (0,0)
+   ....TEXT_LYR SILKSCREEN_MNT_LYR
+   ....DISPLAY_CONDITION ANY_MOUNT
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....HEIGHT 1.27
+   ....WIDTH 0.127
+   ....STROKE_WIDTH 0.127
+   ....ROTATION 0
+   ....FONT "VeriBest Gerber 0"
+   ....TEXT_OPTIONS NONE
+ ..TEXT "Part No"
+  ...TEXT_TYPE PARTNO
+  ...DISPLAY_ATTR
+   ....XY (0,0)
+   ....TEXT_LYR ASSEMBLY_MNT_LYR
+   ....DISPLAY_CONDITION ANY_MOUNT
+   ....HORZ_JUST LEFT
+   ....VERT_JUST TOP
+   ....HEIGHT 1.27
+   ....WIDTH 0.127
+   ....STROKE_WIDTH 0.127
+   ....ROTATION 0
+   ....FONT "VeriBest Gerber 0"
+   ....TEXT_OPTIONS NONE
+ ..PLACEMENT_OUTLINE
+  ...HEIGHT 4
+  ...UNDERSIDE_SPACE 0
+  ...DISPLAY_WIDTH 0
+  ...OPTIONS NONE
+  ...SIDE MNT_SIDE
+  ...DISPLAY_CONDITION ANY_MOUNT
+  ...POLYLINE_PATH
+   ....WIDTH 0.05
+   ....XY (-5.85, 5.34)
+          (5.85, 5.34)
+          (5.85, -5.34)
+          (-5.85, -5.34)
+          (-5.85, 5.34)
+ ..ASSEMBLY_OUTLINE
+  ...DISPLAY_WIDTH 0.1
+  ...OPTIONS NONE
+  ...SIDE MNT_SIDE
+  ...DISPLAY_CONDITION ANY_MOUNT
+  ...POLYLINE_PATH
+   ....WIDTH 0.1
+   ....XY (-3.25, 4.84)
+          (3.25, 4.84)
+          (3.25, -4.84)
+          (-3.25, -4.84)
+          (-3.25, 4.84)
+ ..ASSEMBLY_OUTLINE
+  ...DISPLAY_WIDTH 0.1
+  ...OPTIONS NONE
+  ...SIDE MNT_SIDE
+  ...DISPLAY_CONDITION ANY_MOUNT
+  ...POLYLINE_PATH
+   ....WIDTH 0.1
+   ....XY (-3.25, 2.3)
+          (-0.71, 4.84)
+ ..SILKSCREEN_OUTLINE
+  ...OPTIONS NONE
+  ...SIDE MNT_SIDE
+  ...DISPLAY_CONDITION ANY_MOUNT
+  ...POLYLINE_PATH
+   ....WIDTH 0.2
+   ....XY (-3.15, 4.84)
+          (3.15, 4.84)
+          (3.15, -4.84)
+          (-3.15, -4.84)
+          (-3.15, 4.84)
+ ..SILKSCREEN_OUTLINE
+  ...OPTIONS NONE
+  ...SIDE MNT_SIDE
+  ...DISPLAY_CONDITION ANY_MOUNT
+  ...POLYLINE_PATH
+   ....WIDTH 0.2
+   ....XY (-5.6, 4.885)
+          (-3.5, 4.885)

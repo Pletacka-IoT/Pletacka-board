@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '6N137S_TA1'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Lite-On", "6N137S-TA1" (!) = "", "SOP254P1016X400-8N", "Small Outline Packages", "6N137S-TA1", "https://www.arrow.com/en/products/6n137s-ta1/lite-on-technology", "859-6N137STA1", "https://www.mouser.co.uk/ProductDetail/Lite-On/6N137S-TA1?qs=PByDJ0nQNwrChwHSrgNi1w%3D%3D", "High Speed Optocouplers High Speed 10MBd LogicGate Output", "http://www.mouser.com/ds/2/239/S_110_6N137 20140411-596065.pdf", "4 mm"
+END_PART
+
+END.

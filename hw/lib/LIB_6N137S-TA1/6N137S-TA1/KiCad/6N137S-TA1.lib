@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 6N137S-TA1
+#/617337/274215/2.46/8/4/Integrated Circuit
+DEF 6N137S-TA1 IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "6N137S-TA1" 1050 200 50 H V L CNN
+F2 "SOP254P1016X400-8N" 1050 100 50 H I L CNN
+F3 "http://www.mouser.com/ds/2/239/S_110_6N137 20140411-596065.pdf" 1050 0 50 H I L CNN
+F4 "High Speed Optocouplers High Speed 10MBd LogicGate Output" 1050 -100 50 H I L CNN "Description"
+F5 "4" 1050 -200 50 H I L CNN "Height"
+F6 "Lite-On" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "6N137S-TA1" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "6N137S-TA1" 1050 -500 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/6n137s-ta1/lite-on-technology" 1050 -600 50 H I L CNN "Arrow Price/Stock"
+F10 "859-6N137STA1" 1050 -700 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.co.uk/ProductDetail/Lite-On/6N137S-TA1?qs=PByDJ0nQNwrChwHSrgNi1w%3D%3D" 1050 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+X NC_1 1 0 0 200 R 50 50 0 0 P
+X ANODE 2 0 -100 200 R 50 50 0 0 P
+X CATHODE 3 0 -200 200 R 50 50 0 0 P
+X NC_2 4 0 -300 200 R 50 50 0 0 P
+X VCC 8 1200 0 200 L 50 50 0 0 P
+X VE 7 1200 -100 200 L 50 50 0 0 P
+X VO 6 1200 -200 200 L 50 50 0 0 P
+X GND 5 1200 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

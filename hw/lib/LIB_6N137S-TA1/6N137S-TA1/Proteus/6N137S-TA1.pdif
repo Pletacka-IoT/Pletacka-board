@@ -1,0 +1,146 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "6N137S-TA1"
+   (description "High Speed Optocouplers High Speed 10MBd LogicGate Output")
+   (family "ANA")
+   (package "SOP254P1016X400-8N")
+   (attribute "Datasheet Link" "http://www.mouser.com/ds/2/239/S_110_6N137 20140411-596065.pdf")
+   (attribute "Geometry.Height" "4mm")
+   (attribute "Manufacturer_Name" "Lite-On")
+   (attribute "Manufacturer_Part_Number" "6N137S-TA1")
+   (attribute "Arrow Part Number" "6N137S-TA1")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/6n137s-ta1/lite-on-technology")
+   (attribute "Mouser Part Number" "859-6N137STA1")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lite-On/6N137S-TA1?qs=PByDJ0nQNwrChwHSrgNi1w%3D%3D")
+   (gate
+    (symbol "6N137S-TA1")
+    (pin "NC_1" 1 PS)
+    (pin "ANODE" 2 PS)
+    (pin "CATHODE" 3 PS)
+    (pin "NC_2" 4 PS)
+    (pin "VCC" 8 PS)
+    (pin "VE" 7 PS)
+    (pin "VO" 6 PS)
+    (pin "GND" 5 PS)
+   )
+  )
+  (symbol "6N137S-TA1"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1000 100) (pt 1000 -400) (pt 200 -400) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOP254P1016X400-8N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -5.85 5.34)
+      (pt 5.85 5.34)
+      (pt 5.85 -5.34)
+      (pt -5.85 -5.34)
+      (pt -5.85 5.34))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.25 4.84)
+      (pt 3.25 4.84)
+      (pt 3.25 -4.84)
+      (pt -3.25 -4.84)
+      (pt -3.25 4.84))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -3.25 2.3)
+      (pt -0.71 4.84))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3.15 4.84)
+      (pt 3.15 4.84)
+      (pt 3.15 -4.84)
+      (pt -3.15 -4.84)
+      (pt -3.15 4.84))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -5.6 4.885)
+      (pt -3.5 4.885))))
+   (leg 1 (pt -4.55 3.81) (padstack 0))
+   (leg 2 (pt -4.55 1.27) (padstack 0))
+   (leg 3 (pt -4.55 -1.27) (padstack 0))
+   (leg 4 (pt -4.55 -3.81) (padstack 0))
+   (leg 5 (pt 4.55 -3.81) (padstack 0))
+   (leg 6 (pt 4.55 -1.27) (padstack 0))
+   (leg 7 (pt 4.55 1.27) (padstack 0))
+   (leg 8 (pt 4.55 3.81) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.45 2.1 0 0 0))
+   )
+   (model "6N137S-TA1.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

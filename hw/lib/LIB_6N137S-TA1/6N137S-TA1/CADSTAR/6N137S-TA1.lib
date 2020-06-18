@@ -1,0 +1,18 @@
+.6N137S-TA1 :1 ;High Speed Optocouplers High Speed 10MBd LogicGate Output
+SOP254P1016X400-8N
+*STM IC
+*NGS
+*PLB 1="NC_1" 2="ANODE" 3="CATHODE" 4="NC_2" 5="GND" 6="VO" 7="VE" 8="VCC"
+*MXP 8
+*DFN 6N137S-TA1
+~!Manufacturer_Name (Lite-On)
+~!Manufacturer_Part_Number (6N137S-TA1)
+~!Arrow Part Number (6N137S-TA1)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/6n137s-ta1/lite-on-technology)
+~!Mouser Part Number (859-6N137STA1)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Lite-On/6N137S-TA1?qs=PByDJ0nQNwrChwHSrgNi1w%3D%3D)
+~!Link Datasheet (http://www.mouser.com/ds/2/239/S_110_6N137 20140411-596065.pdf)
+~!Height (4mm)
+~!3D_Model (6N137S-TA1)
+"6N137S-TA1"
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

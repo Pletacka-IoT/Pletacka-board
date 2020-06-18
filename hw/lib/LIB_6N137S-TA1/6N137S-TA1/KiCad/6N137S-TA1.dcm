@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP 6N137S-TA1
-D High Speed Optocouplers High Speed 10MBd LogicGate Output
-K
-F http://www.mouser.com/ds/2/239/S_110_6N137 20140411-596065.pdf
-$ENDCMP
-#
-#End Doc Library

@@ -1,9 +1,0 @@
-Manufacturer=Lite-On
-PartNumber=6N137S-TA1
-PartCategory=Integrated Circuit
-PackageCategory=Small Outline Packages
-PinCount=8
-Version=1.1
-Released=2018-01-10 17:32:12
-Downloaded=2020-06-18 21:57:04
-3D=Y

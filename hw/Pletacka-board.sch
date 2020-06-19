@@ -6392,7 +6392,7 @@ Source: www.kingbright.com</description>
 <parts>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="U$1" library="ESP32-T-Display" deviceset="ESP-32-T-DISPLAY" device=""/>
-<part name="CON1" library="#Svorkovnice" deviceset="AK500/2" device=""/>
+<part name="OPTO1" library="#Svorkovnice" deviceset="AK500/2" device=""/>
 <part name="RDM1" library="RDM6300" deviceset="RDM6300" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -6815,10 +6815,10 @@ Source: www.kingbright.com</description>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="CON1" gate="-1" x="27.94" y="142.24" smashed="yes">
+<instance part="OPTO1" gate="-1" x="27.94" y="142.24" smashed="yes">
 <attribute name="NAME" x="26.67" y="143.129" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CON1" gate="-2" x="27.94" y="137.16" smashed="yes">
+<instance part="OPTO1" gate="-2" x="27.94" y="137.16" smashed="yes">
 <attribute name="NAME" x="26.67" y="138.049" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="24.13" y="133.477" size="1.778" layer="96"/>
 </instance>
@@ -6965,7 +6965,7 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="CON1" gate="-2" pin="KL"/>
+<pinref part="OPTO1" gate="-2" pin="KL"/>
 <pinref part="OK1" gate="A" pin="C"/>
 <wire x1="33.02" y1="137.16" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
 </segment>
@@ -6979,7 +6979,7 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="CON1" gate="-1" pin="KL"/>
+<pinref part="OPTO1" gate="-1" pin="KL"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="142.24" x2="35.56" y2="142.24" width="0.1524" layer="91"/>
 </segment>

@@ -7673,51 +7673,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="83.82" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TMP_SDA" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="21"/>
-<wire x1="48.26" y1="106.68" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
-<label x="43.18" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="TMP_SCL" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="22"/>
-<wire x1="48.26" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
-<label x="43.18" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="17"/>
-<wire x1="48.26" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="15"/>
-<wire x1="48.26" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="TMP_OS" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="33"/>
-<wire x1="83.82" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
-<label x="88.9" y="96.52" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="RFID" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="32"/>
-<wire x1="83.82" y1="99.06" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="OPTO4" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="39"/>
@@ -7840,9 +7795,9 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <label x="162.56" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="13"/>
-<wire x1="48.26" y1="93.98" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
-<label x="43.18" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="21"/>
+<wire x1="48.26" y1="106.68" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
+<label x="43.18" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BUTTON2" class="0">
@@ -7855,6 +7810,51 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pinref part="U$1" gate="G$1" pin="12"/>
 <wire x1="48.26" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
 <label x="43.18" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TMP_SDA" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="22"/>
+<wire x1="48.26" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
+<label x="43.18" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TMP_SCL" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="17"/>
+<wire x1="48.26" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
+<label x="43.18" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TMP_OS" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
+<label x="43.18" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="15"/>
+<wire x1="48.26" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="13"/>
+<wire x1="48.26" y1="93.98" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="32"/>
+<wire x1="83.82" y1="99.06" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="33"/>
+<wire x1="83.82" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -8472,6 +8472,24 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,2,180.34,73.66,U1,VCC,+3V3,,,"/>
+<approved hash="106,1,83.82,99.06,N$3,,,,,"/>
+<approved hash="106,1,83.82,96.52,N$4,,,,,"/>
+<approved hash="106,1,48.26,96.52,N$26,,,,,"/>
+<approved hash="106,1,48.26,93.98,N$27,,,,,"/>
+<approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
+<approved hash="113,2,130.071,89.431,FRAME2,,,,,"/>
+<approved hash="113,2,27.035,149.86,CON1,,,,,"/>
+<approved hash="113,2,27.035,111.76,CON2,,,,,"/>
+<approved hash="113,2,27.035,71.12,CON3,,,,,"/>
+<approved hash="113,2,27.035,25.4,CON4,,,,,"/>
+<approved hash="113,3,130.071,89.431,FRAME3,,,,,"/>
+<approved hash="113,3,49.895,96.52,CON5,,,,,"/>
+<approved hash="113,1,209.55,150.182,LED1,,,,,"/>
+<approved hash="113,1,209.55,140.022,LED2,,,,,"/>
+<approved hash="113,1,209.55,129.862,LED3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
-<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
-<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
-<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
-<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
-<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
-<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
-<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
-<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
-<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
-<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
-<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
-<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,22 +53,22 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="55" name="tPotisk" color="7" fill="1" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="58" name="bNC" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="55" name="tPotisk" color="7" fill="1" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="58" name="bNC" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -346,9 +346,9 @@ By &lt;a href="https://kubaandrysek.cz"&gt;Jakub Andrýsek &lt;/a&gt;</descripti
 <connect gate="G$1" pin="37" pad="37"/>
 <connect gate="G$1" pin="38" pad="38"/>
 <connect gate="G$1" pin="39" pad="39"/>
-<connect gate="G$1" pin="3V3" pad="3V3"/>
+<connect gate="G$1" pin="3V3" pad="3V3 3V3-2"/>
 <connect gate="G$1" pin="5V5" pad="5V"/>
-<connect gate="G$1" pin="GND" pad="G-1"/>
+<connect gate="G$1" pin="GND" pad="G-1 G-2 G-3 G-4 G-5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -432,61 +432,24 @@ By &lt;a href="https://kubaandrysek.cz"&gt;Jakub Andrýsek &lt;/a&gt;</descripti
 <library name="LM75BDP">
 <description>Download from: &lt;a href="https://www.snapeda.com/parts/LM75BDP/NXP%20Semiconductors/view-part/?ref=search&amp;t=LM75BDP"&gt;SnapEDA&lt;/a&gt;</description>
 <packages>
-<package name="SOP65P490X110-8N">
-<wire x1="-1.5494" y1="0.762" x2="-1.5494" y2="1.1938" width="0" layer="51"/>
-<wire x1="-1.5494" y1="1.1938" x2="-2.54" y2="1.1938" width="0" layer="51"/>
-<wire x1="-2.54" y1="1.1938" x2="-2.54" y2="0.762" width="0" layer="51"/>
-<wire x1="-2.54" y1="0.762" x2="-1.5494" y2="0.762" width="0" layer="51"/>
-<wire x1="-1.5494" y1="0.1016" x2="-1.5494" y2="0.5588" width="0" layer="51"/>
-<wire x1="-1.5494" y1="0.5588" x2="-2.54" y2="0.5588" width="0" layer="51"/>
-<wire x1="-2.54" y1="0.5588" x2="-2.54" y2="0.1016" width="0" layer="51"/>
-<wire x1="-2.54" y1="0.1016" x2="-1.5494" y2="0.1016" width="0" layer="51"/>
-<wire x1="-1.5494" y1="-0.5588" x2="-1.5494" y2="-0.1016" width="0" layer="51"/>
-<wire x1="-1.5494" y1="-0.1016" x2="-2.54" y2="-0.1016" width="0" layer="51"/>
-<wire x1="-2.54" y1="-0.1016" x2="-2.54" y2="-0.5588" width="0" layer="51"/>
-<wire x1="-2.54" y1="-0.5588" x2="-1.5494" y2="-0.5588" width="0" layer="51"/>
-<wire x1="-1.5494" y1="-1.1938" x2="-1.5494" y2="-0.762" width="0" layer="51"/>
-<wire x1="-1.5494" y1="-0.762" x2="-2.54" y2="-0.762" width="0" layer="51"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="-1.1938" width="0" layer="51"/>
-<wire x1="-2.54" y1="-1.1938" x2="-1.5494" y2="-1.1938" width="0" layer="51"/>
-<wire x1="1.5494" y1="-0.762" x2="1.5494" y2="-1.1938" width="0" layer="51"/>
-<wire x1="1.5494" y1="-1.1938" x2="2.54" y2="-1.1938" width="0" layer="51"/>
-<wire x1="2.54" y1="-1.1938" x2="2.54" y2="-0.762" width="0" layer="51"/>
-<wire x1="2.54" y1="-0.762" x2="1.5494" y2="-0.762" width="0" layer="51"/>
-<wire x1="1.5494" y1="-0.1016" x2="1.5494" y2="-0.5588" width="0" layer="51"/>
-<wire x1="1.5494" y1="-0.5588" x2="2.54" y2="-0.5588" width="0" layer="51"/>
-<wire x1="2.54" y1="-0.5588" x2="2.54" y2="-0.1016" width="0" layer="51"/>
-<wire x1="2.54" y1="-0.1016" x2="1.5494" y2="-0.1016" width="0" layer="51"/>
-<wire x1="1.5494" y1="0.5588" x2="1.5494" y2="0.1016" width="0" layer="51"/>
-<wire x1="1.5494" y1="0.1016" x2="2.54" y2="0.1016" width="0" layer="51"/>
-<wire x1="2.54" y1="0.1016" x2="2.54" y2="0.5588" width="0" layer="51"/>
-<wire x1="2.54" y1="0.5588" x2="1.5494" y2="0.5588" width="0" layer="51"/>
-<wire x1="1.5494" y1="1.1938" x2="1.5494" y2="0.762" width="0" layer="51"/>
-<wire x1="1.5494" y1="0.762" x2="2.54" y2="0.762" width="0" layer="51"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="1.1938" width="0" layer="51"/>
-<wire x1="2.54" y1="1.1938" x2="1.5494" y2="1.1938" width="0" layer="51"/>
-<wire x1="-1.5494" y1="-1.5494" x2="1.5494" y2="-1.5494" width="0" layer="51"/>
-<wire x1="1.5494" y1="-1.5494" x2="1.5494" y2="1.5494" width="0" layer="51"/>
-<wire x1="1.5494" y1="1.5494" x2="0.3048" y2="1.5494" width="0" layer="51"/>
-<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0" layer="51"/>
-<wire x1="-0.3048" y1="1.5494" x2="-1.5494" y2="1.5494" width="0" layer="51"/>
-<wire x1="-1.5494" y1="1.5494" x2="-1.5494" y2="-1.5494" width="0" layer="51"/>
-<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0" layer="51" curve="-180"/>
-<wire x1="-1.4224" y1="-1.5494" x2="1.4224" y2="-1.5494" width="0.1524" layer="21"/>
-<wire x1="1.4224" y1="1.5494" x2="0.3048" y2="1.5494" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="21"/>
-<wire x1="-0.3048" y1="1.5494" x2="-1.4224" y2="1.5494" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="21" curve="-180"/>
+<package name="SOT505-1">
 <text x="-3.455" y="2.540440625" size="2.083159375" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.45816875" y="-4.44985" size="2.08506875" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-<smd name="1" x="-2.2098" y="0.9652" dx="1.4224" dy="0.508" layer="1"/>
-<smd name="2" x="-2.2098" y="0.3302" dx="1.4224" dy="0.508" layer="1"/>
-<smd name="3" x="-2.2098" y="-0.3302" dx="1.4224" dy="0.508" layer="1"/>
-<smd name="4" x="-2.2098" y="-0.9652" dx="1.4224" dy="0.508" layer="1"/>
-<smd name="5" x="2.2098" y="-0.9652" dx="1.4224" dy="0.508" layer="1"/>
-<smd name="6" x="2.2098" y="-0.3302" dx="1.4224" dy="0.508" layer="1"/>
-<smd name="7" x="2.2098" y="0.3302" dx="1.4224" dy="0.508" layer="1"/>
-<smd name="8" x="2.2098" y="0.9652" dx="1.4224" dy="0.508" layer="1"/>
+<smd name="1" x="-2.175" y="1.077" dx="1.15" dy="0.6" layer="1"/>
+<wire x1="-1.8" y1="1.8" x2="-0.4" y2="1.8" width="0" layer="51"/>
+<wire x1="-0.4" y1="1.8" x2="0.4" y2="1.8" width="0" layer="51"/>
+<wire x1="0.4" y1="1.8" x2="1.8" y2="1.8" width="0" layer="51"/>
+<wire x1="1.8" y1="1.8" x2="1.8" y2="-1.8" width="0" layer="51"/>
+<wire x1="1.8" y1="-1.8" x2="-1.8" y2="-1.8" width="0" layer="51"/>
+<wire x1="-1.8" y1="-1.8" x2="-1.8" y2="1.8" width="0" layer="51"/>
+<wire x1="0.4" y1="1.8" x2="-0.4" y2="1.8" width="0" layer="51" curve="-180"/>
+<smd name="2" x="-2.175" y="0.325" dx="1.15" dy="0.45" layer="1"/>
+<smd name="3" x="-2.175" y="-0.325" dx="1.15" dy="0.45" layer="1"/>
+<smd name="4" x="-2.175" y="-1.077" dx="1.15" dy="0.6" layer="1"/>
+<smd name="5" x="2.175" y="1.077" dx="1.15" dy="0.6" layer="1"/>
+<smd name="6" x="2.175" y="0.325" dx="1.15" dy="0.45" layer="1"/>
+<smd name="7" x="2.175" y="-0.325" dx="1.15" dy="0.45" layer="1"/>
+<smd name="8" x="2.175" y="-1.077" dx="1.15" dy="0.6" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -508,32 +471,24 @@ By &lt;a href="https://kubaandrysek.cz"&gt;Jakub Andrýsek &lt;/a&gt;</descripti
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LM75BDP" prefix="U">
-<description>Digital temperature sensor and thermal watchdog</description>
+<deviceset name="LM75BDP-NEW">
 <gates>
-<gate name="A" symbol="LM75BDP" x="0" y="0"/>
+<gate name="G$1" symbol="LM75BDP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOP65P490X110-8N">
+<device name="" package="SOT505-1">
 <connects>
-<connect gate="A" pin="A0" pad="7"/>
-<connect gate="A" pin="A1" pad="6"/>
-<connect gate="A" pin="A2" pad="5"/>
-<connect gate="A" pin="GND" pad="4"/>
-<connect gate="A" pin="OS" pad="3"/>
-<connect gate="A" pin="SCL" pad="2"/>
-<connect gate="A" pin="SDA" pad="1"/>
-<connect gate="A" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="A0" pad="7"/>
+<connect gate="G$1" pin="A1" pad="6"/>
+<connect gate="G$1" pin="A2" pad="5"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="OS" pad="3"/>
+<connect gate="G$1" pin="SCL" pad="2"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Unavailable"/>
-<attribute name="DESCRIPTION" value=" Temperature Sensor Digital, Local -55°C ~ 125°C 11 b 8-TSSOP "/>
-<attribute name="MF" value="NXP Semiconductors"/>
-<attribute name="MP" value="LM75BDP"/>
-<attribute name="PACKAGE" value="TSSOP-8 NXP Semiconductors"/>
-<attribute name="PRICE" value="None"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6698,68 +6653,6 @@ Univerzalni knihovna soucastek do Eagle &lt;I&gt;(od verze 4.13)&lt;/I&gt;&lt;BR
 </deviceset>
 </devicesets>
 </library>
-<library name="B5819W">
-<packages>
-<package name="SOD-123">
-<wire x1="-1.1" y1="0.7" x2="1.1" y2="0.7" width="0.254" layer="51"/>
-<wire x1="1.1" y1="0.7" x2="1.1" y2="-0.7" width="0.254" layer="51"/>
-<wire x1="1.1" y1="-0.7" x2="-1.1" y2="-0.7" width="0.254" layer="51"/>
-<wire x1="-1.1" y1="-0.7" x2="-1.1" y2="0.7" width="0.254" layer="51"/>
-<text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
-<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
-<rectangle x1="-1.05" y1="-0.65" x2="-0.15" y2="0.7" layer="51"/>
-<wire x1="-0.635" y1="0.635" x2="-0.635" y2="-0.635" width="0.3048" layer="25"/>
-<smd name="C" x="-1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
-<smd name="A" x="1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="DIODE-SCHOTTKY">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.778" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.524" width="0.254" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
-<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="B5819W" prefix="D">
-<description>Diodo Schottky	40V 1A Basic part &lt;a href="https://snapeda.com/parts/B5819W/Taiwan%20Semiconductor/view-part/?ref=eda"&gt;Buy Part&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOD-123">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Warning"/>
-<attribute name="DESCRIPTION" value=" B5819W "/>
-<attribute name="MF" value="Taiwan Semiconductor"/>
-<attribute name="MP" value="B5819W"/>
-<attribute name="PACKAGE" value="SOD-123 Taiwan Semiconductor"/>
-<attribute name="PRICE" value="None"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="led">
 <packages>
 <package name="LED3MM" urn="urn:adsk.eagle:footprint:15654/1">
@@ -7608,6 +7501,243 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="diode">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOD128">
+<smd name="C" x="-2.25" y="0" dx="1.4" dy="2.1" layer="1" roundness="20"/>
+<smd name="A" x="2.25" y="0" dx="1.4" dy="2.1" layer="1" roundness="20"/>
+<wire x1="-2" y1="1.35" x2="-1" y2="1.35" width="0.127" layer="51"/>
+<wire x1="-1" y1="1.35" x2="2" y2="1.35" width="0.127" layer="51"/>
+<wire x1="2" y1="1.35" x2="2" y2="-1.35" width="0.127" layer="51"/>
+<wire x1="2" y1="-1.35" x2="-1" y2="-1.35" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1.35" x2="-2" y2="-1.35" width="0.127" layer="51"/>
+<wire x1="-2" y1="-1.35" x2="-2" y2="1.35" width="0.127" layer="51"/>
+<wire x1="-1" y1="1.35" x2="-1" y2="-1.35" width="0.127" layer="51"/>
+<rectangle x1="-2.5" y1="-0.95" x2="-2" y2="0.95" layer="21"/>
+<rectangle x1="2" y1="-0.95" x2="2.5" y2="0.95" layer="21"/>
+<text x="-1.905" y="1.905" size="1" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+</package>
+<package name="SOD1608(0603)">
+<smd name="C" x="-0.625" y="0" dx="1.05" dy="0.8" layer="1" roundness="20"/>
+<smd name="A" x="0.425" y="0" dx="0.65" dy="0.8" layer="1" roundness="20"/>
+<wire x1="-1.025" y1="0.425" x2="-0.5" y2="0.425" width="0.1" layer="21"/>
+<wire x1="-0.5" y1="0.425" x2="0.625" y2="0.425" width="0.1" layer="21"/>
+<wire x1="0.625" y1="0.425" x2="0.625" y2="-0.425" width="0.1" layer="21"/>
+<wire x1="0.625" y1="-0.425" x2="-0.5" y2="-0.425" width="0.1" layer="21"/>
+<wire x1="-0.5" y1="-0.425" x2="-1.025" y2="-0.425" width="0.1" layer="21"/>
+<wire x1="-1.025" y1="-0.425" x2="-1.025" y2="0.425" width="0.1" layer="21"/>
+<wire x1="-0.5" y1="0.425" x2="-0.5" y2="-0.425" width="0.1" layer="21"/>
+</package>
+<package name="SMA">
+<description>&lt;b&gt;SMA&lt;/b&gt; CASE 403D-02&lt;p&gt;
+Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
+<wire x1="-2.15" y1="1.25" x2="2.15" y2="1.25" width="0.2" layer="21"/>
+<wire x1="2.15" y1="-1.25" x2="-2.15" y2="-1.25" width="0.2" layer="21"/>
+<wire x1="2.15" y1="1.25" x2="2.15" y2="-1.25" width="0.2" layer="51"/>
+<wire x1="-2.15" y1="-1.25" x2="-2.15" y2="1.25" width="0.2" layer="51"/>
+<smd name="C" x="-2.015" y="0" dx="2.08" dy="1.62" layer="1" roundness="31" rot="R180"/>
+<smd name="A" x="2.015" y="0" dx="2.08" dy="1.62" layer="1" roundness="31"/>
+<text x="-2.75" y="2" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.75" y="-3.5" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="1.1" y1="-0.8" x2="2.6" y2="0.8" layer="51"/>
+<rectangle x1="-2.6" y1="-0.8" x2="-1.1" y2="0.8" layer="51"/>
+<rectangle x1="-1.5" y1="-1.35" x2="-0.75" y2="1.35" layer="51"/>
+<wire x1="3.255" y1="1.55" x2="-3.255" y2="1.55" width="0.05" layer="39"/>
+<wire x1="-3.255" y1="1.55" x2="-3.255" y2="-1.55" width="0.05" layer="39"/>
+<wire x1="-3.255" y1="-1.55" x2="3.255" y2="-1.55" width="0.05" layer="39"/>
+<wire x1="3.255" y1="-1.55" x2="3.255" y2="1.55" width="0.05" layer="39"/>
+</package>
+<package name="SMC">
+<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
+<wire x1="-3.5606" y1="3.105" x2="3.5606" y2="3.105" width="0.1016" layer="21"/>
+<wire x1="-3.5606" y1="-3.105" x2="3.5606" y2="-3.105" width="0.1016" layer="21"/>
+<wire x1="-3.5606" y1="-3.105" x2="-3.5606" y2="3.105" width="0.1016" layer="51"/>
+<wire x1="3.5606" y1="-3.105" x2="3.5606" y2="3.105" width="0.1016" layer="51"/>
+<wire x1="0.543" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.83" y1="0" x2="0.543" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.543" y1="-1" x2="0.543" y2="1" width="0.2032" layer="21"/>
+<smd name="C" x="-3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
+<smd name="A" x="3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
+<text x="-3.459" y="3.359" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.459" y="-4.629" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-4.094" y1="-1.0922" x2="-3.5606" y2="1.0922" layer="51"/>
+<rectangle x1="3.5606" y1="-1.0922" x2="4.094" y2="1.0922" layer="51"/>
+<rectangle x1="-2.1" y1="-3.1" x2="-0.85" y2="3.1" layer="21"/>
+</package>
+<package name="SMB">
+<smd name="C" x="2.895" y="0" dx="2.3" dy="1.52" layer="1" rot="R90"/>
+<smd name="A" x="-2.895" y="0" dx="2.3" dy="1.52" layer="1" rot="R90"/>
+</package>
+<package name="SOD123">
+<description>&lt;b&gt;Diode&lt;/b&gt;</description>
+<wire x1="-1.3" y1="0.8" x2="1.3" y2="0.8" width="0.2" layer="51"/>
+<wire x1="1.3" y1="0.8" x2="1.3" y2="-0.8" width="0.2" layer="51"/>
+<wire x1="1.3" y1="-0.8" x2="-1.3" y2="-0.8" width="0.2" layer="51"/>
+<wire x1="-1.3" y1="-0.8" x2="-1.3" y2="0.8" width="0.2" layer="51"/>
+<smd name="C" x="-1.61" y="0" dx="1.15" dy="0.8" layer="1" roundness="50" rot="R180"/>
+<smd name="A" x="1.61" y="0" dx="1.15" dy="0.8" layer="1" roundness="50"/>
+<text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.925" y1="-0.325" x2="-1.4" y2="0.325" layer="51"/>
+<rectangle x1="1.4" y1="-0.325" x2="1.925" y2="0.325" layer="51"/>
+<rectangle x1="-0.9" y1="-0.85" x2="-0.2" y2="0.85" layer="51"/>
+<wire x1="2.385" y1="1.05" x2="-2.385" y2="1.05" width="0.05" layer="39"/>
+<wire x1="-2.385" y1="1.05" x2="-2.385" y2="-1.05" width="0.05" layer="39"/>
+<wire x1="-2.385" y1="-1.05" x2="2.385" y2="-1.05" width="0.05" layer="39"/>
+<wire x1="2.385" y1="-1.05" x2="2.385" y2="1.05" width="0.05" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="1.27" y1="1.27" x2="0.762" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.778" y2="-1.27" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SHOTTKY" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD128">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SOD1608" package="SOD1608(0603)">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMA" package="SMA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMC" package="SMC">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMB" package="SMB">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SOD123" package="SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="B5819W">
+<packages>
+<package name="SOD-123">
+<wire x1="-1.1" y1="0.7" x2="1.1" y2="0.7" width="0.254" layer="51"/>
+<wire x1="1.1" y1="0.7" x2="1.1" y2="-0.7" width="0.254" layer="51"/>
+<wire x1="1.1" y1="-0.7" x2="-1.1" y2="-0.7" width="0.254" layer="51"/>
+<wire x1="-1.1" y1="-0.7" x2="-1.1" y2="0.7" width="0.254" layer="51"/>
+<text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
+<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
+<rectangle x1="-1.05" y1="-0.65" x2="-0.15" y2="0.7" layer="51"/>
+<wire x1="-0.635" y1="0.635" x2="-0.635" y2="-0.635" width="0.3048" layer="25"/>
+<smd name="C" x="-1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
+<smd name="A" x="1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DIODE-SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.778" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.524" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="B5819W" prefix="D">
+<description>Diodo Schottky	40V 1A Basic part &lt;a href="https://snapeda.com/parts/B5819W/Taiwan%20Semiconductor/view-part/?ref=eda"&gt;Buy Part&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD-123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Warning"/>
+<attribute name="DESCRIPTION" value=" B5819W "/>
+<attribute name="MF" value="Taiwan Semiconductor"/>
+<attribute name="MP" value="B5819W"/>
+<attribute name="PACKAGE" value="SOD-123 Taiwan Semiconductor"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7624,7 +7754,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="U1" library="LM75BDP" deviceset="LM75BDP" device="">
+<part name="U1" library="LM75BDP" deviceset="LM75BDP-NEW" device="">
 <attribute name="LCSC_ID" value="C33099"/>
 </part>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -7647,8 +7777,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </part>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="CON1" library="#Svorkovnice" deviceset="AK500/2" device=""/>
-<part name="R6" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="1k">
-<attribute name="LSCS_ID" value="C21190"/>
+<part name="R6" library="rcl_upravena" deviceset="R-EU_" device="R1206" value="2k/0.25W">
+<attribute name="LSCS_ID" value="C17944"/>
 </part>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R7" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="10k">
@@ -7656,8 +7786,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </part>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="CON2" library="#Svorkovnice" deviceset="AK500/2" device=""/>
-<part name="R8" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="1k">
-<attribute name="LSCS_ID" value="C21190"/>
+<part name="R8" library="rcl_upravena" deviceset="R-EU_" device="R1206" value="2k/0.25W">
+<attribute name="LSCS_ID" value="C17944"/>
 </part>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R9" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="10k">
@@ -7665,8 +7795,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </part>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="CON3" library="#Svorkovnice" deviceset="AK500/2" device=""/>
-<part name="R10" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="1k">
-<attribute name="LSCS_ID" value="C21190"/>
+<part name="R10" library="rcl_upravena" deviceset="R-EU_" device="R1206" value="2k/0.25W">
+<attribute name="LSCS_ID" value="C17944"/>
 </part>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R11" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="10k">
@@ -7674,8 +7804,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </part>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="CON4" library="#Svorkovnice" deviceset="AK500/2" device=""/>
-<part name="R12" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="1k">
-<attribute name="LSCS_ID" value="C21190"/>
+<part name="R12" library="rcl_upravena" deviceset="R-EU_" device="R1206" value="2k/0.25W">
+<attribute name="LSCS_ID" value="C17944"/>
 </part>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R13" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="10k">
@@ -7696,8 +7826,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </part>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="CON5" library="#Svorkovnice" deviceset="AK500/2" device=""/>
-<part name="C1" library="rcl_upravena" deviceset="C-EU" device="C0603" value="10u">
-<attribute name="LSCS_ID" value="C19702"/>
+<part name="C1" library="rcl_upravena" deviceset="C-EU" device="C1206" value="10u/50V">
+<attribute name="LSCS_ID" value="C13585"/>
 </part>
 <part name="U6" library="TPS54231D" deviceset="TPS54231D" device="">
 <attribute name="LCSC_ID" value="C28023"/>
@@ -7765,14 +7895,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <part name="C12" library="rcl_upravena" deviceset="C-EU" device="C0603" value="8.2n">
 <attribute name="LCSC_ID" value="C27920"/>
 </part>
-<part name="D1" library="B5819W" deviceset="B5819W" device="">
-<attribute name="LSCS_ID" value="C8598"/>
+<part name="C4" library="rcl_upravena" deviceset="C-EU" device="C0603" value="100n">
+<attribute name="LCSC_ID" value="C14663"/>
 </part>
-<part name="C4" library="rcl_upravena" deviceset="C-EU" device="C0603" value="1u">
-<attribute name="LCSC_ID" value="C15849"/>
-</part>
-<part name="C5" library="rcl_upravena" deviceset="C-EU" device="C0603" value="1u">
-<attribute name="LCSC_ID" value="C15849"/>
+<part name="C5" library="rcl_upravena" deviceset="C-EU" device="C0603" value="100n">
+<attribute name="LCSC_ID" value="C14663"/>
 </part>
 <part name="LED1" library="led" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2">
 <attribute name="LCSC_ID" value="C2286"/>
@@ -7792,6 +7919,23 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
+<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
+<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="D3" library="diode" deviceset="SHOTTKY" device="-SMA" value="SS34">
+<attribute name="LCSC_ID" value="C8678"/>
+</part>
+<part name="D6" library="B5819W" deviceset="B5819W" device="">
+<attribute name="LSCS_ID" value="C8598"/>
+</part>
+<part name="D1" library="B5819W" deviceset="B5819W" device="">
+<attribute name="LSCS_ID" value="C8598"/>
+</part>
+<part name="D2" library="B5819W" deviceset="B5819W" device="">
+<attribute name="LSCS_ID" value="C8598"/>
+</part>
+<part name="D4" library="B5819W" deviceset="B5819W" device="">
+<attribute name="LSCS_ID" value="C8598"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -7899,6 +8043,13 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <attribute name="NAME" x="110.49" y="26.035" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.49" y="10.16" size="1.778" layer="96"/>
 </instance>
+<instance part="JP3" gate="A" x="147.32" y="17.78" smashed="yes">
+<attribute name="NAME" x="140.97" y="26.035" size="1.778" layer="95"/>
+<attribute name="VALUE" x="140.97" y="10.16" size="1.778" layer="96"/>
+</instance>
+<instance part="GND11" gate="1" x="134.62" y="22.86" smashed="yes" rot="R270">
+<attribute name="VALUE" x="132.08" y="25.4" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7957,6 +8108,24 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="114.3" y1="43.18" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="JP1" gate="A" pin="1"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="A" pin="4"/>
+<wire x1="144.78" y1="15.24" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="15.24" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="3"/>
+<wire x1="139.7" y1="17.78" x2="144.78" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="2"/>
+<wire x1="144.78" y1="20.32" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="20.32" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
+<junction x="139.7" y="17.78"/>
+<pinref part="JP3" gate="A" pin="1"/>
+<wire x1="144.78" y1="22.86" x2="139.7" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="22.86" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
+<junction x="139.7" y="20.32"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="137.16" y1="22.86" x2="139.7" y2="22.86" width="0.1524" layer="91"/>
+<junction x="139.7" y="22.86"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -8196,10 +8365,10 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <sheet>
 <description>Sensors</description>
 <plain>
-<text x="33.02" y="137.16" size="2.54" layer="94">Opto - 1</text>
-<text x="33.02" y="96.52" size="2.54" layer="94">Opto - 2</text>
-<text x="33.02" y="55.88" size="2.54" layer="94">Opto - 3</text>
-<text x="38.1" y="10.16" size="2.54" layer="94">Opto - 4</text>
+<text x="27.94" y="137.16" size="2.54" layer="94">Opto - 1</text>
+<text x="27.94" y="96.52" size="2.54" layer="94">Opto - 2</text>
+<text x="27.94" y="55.88" size="2.54" layer="94">Opto - 3</text>
+<text x="33.02" y="10.16" size="2.54" layer="94">Opto - 4</text>
 <text x="187.96" y="35.56" size="2.54" layer="94">Temp sensor</text>
 <text x="157.48" y="60.96" size="1.27" layer="97">Addr: 0b1001000 (72)</text>
 </plain>
@@ -8209,7 +8378,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="U1" gate="A" x="198.12" y="66.04" smashed="yes">
+<instance part="U1" gate="G$1" x="198.12" y="66.04" smashed="yes">
 <attribute name="NAME" x="192.852159375" y="81.5381" size="2.08678125" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="193.74995" y="43.6562" size="2.083390625" layer="96" ratio="10" rot="SR0"/>
 <attribute name="LCSC_ID" x="198.12" y="66.04" size="1.778" layer="96" display="off"/>
@@ -8220,17 +8389,17 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <instance part="GND3" gate="1" x="172.72" y="53.34" smashed="yes" rot="R270">
 <attribute name="VALUE" x="170.18" y="55.88" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="CON1" gate="-1" x="27.94" y="149.86" smashed="yes">
-<attribute name="NAME" x="26.67" y="150.749" size="1.778" layer="95" rot="R180"/>
+<instance part="CON1" gate="-1" x="20.32" y="149.86" smashed="yes">
+<attribute name="NAME" x="19.05" y="150.749" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CON1" gate="-2" x="27.94" y="144.78" smashed="yes">
-<attribute name="NAME" x="26.67" y="145.669" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="24.13" y="141.097" size="1.778" layer="96"/>
+<instance part="CON1" gate="-2" x="20.32" y="144.78" smashed="yes">
+<attribute name="NAME" x="19.05" y="145.669" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="16.51" y="141.097" size="1.778" layer="96"/>
 </instance>
-<instance part="R6" gate="G$1" x="38.1" y="149.86" smashed="yes">
-<attribute name="NAME" x="34.29" y="151.3586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="34.29" y="146.558" size="1.778" layer="96"/>
-<attribute name="LSCS_ID" x="38.1" y="149.86" size="1.778" layer="96" display="off"/>
+<instance part="R6" gate="G$1" x="33.02" y="149.86" smashed="yes">
+<attribute name="NAME" x="29.21" y="151.3586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="29.21" y="146.558" size="1.778" layer="96"/>
+<attribute name="LSCS_ID" x="33.02" y="149.86" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND6" gate="1" x="76.2" y="139.7" smashed="yes">
 <attribute name="VALUE" x="73.66" y="137.16" size="1.778" layer="96"/>
@@ -8243,17 +8412,17 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <instance part="+3V3" gate="G$1" x="76.2" y="165.1" smashed="yes">
 <attribute name="VALUE" x="73.66" y="160.02" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="CON2" gate="-1" x="27.94" y="111.76" smashed="yes">
-<attribute name="NAME" x="26.67" y="112.649" size="1.778" layer="95" rot="R180"/>
+<instance part="CON2" gate="-1" x="20.32" y="111.76" smashed="yes">
+<attribute name="NAME" x="19.05" y="112.649" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CON2" gate="-2" x="27.94" y="106.68" smashed="yes">
-<attribute name="NAME" x="26.67" y="107.569" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="24.13" y="102.997" size="1.778" layer="96"/>
+<instance part="CON2" gate="-2" x="20.32" y="106.68" smashed="yes">
+<attribute name="NAME" x="19.05" y="107.569" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="16.51" y="102.997" size="1.778" layer="96"/>
 </instance>
-<instance part="R8" gate="G$1" x="38.1" y="111.76" smashed="yes">
-<attribute name="NAME" x="34.29" y="113.2586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="34.29" y="108.458" size="1.778" layer="96"/>
-<attribute name="LSCS_ID" x="38.1" y="111.76" size="1.778" layer="96" display="off"/>
+<instance part="R8" gate="G$1" x="33.02" y="111.76" smashed="yes">
+<attribute name="NAME" x="29.21" y="113.2586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="29.21" y="108.458" size="1.778" layer="96"/>
+<attribute name="LSCS_ID" x="33.02" y="111.76" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND7" gate="1" x="76.2" y="101.6" smashed="yes">
 <attribute name="VALUE" x="73.66" y="99.06" size="1.778" layer="96"/>
@@ -8266,17 +8435,17 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <instance part="+3V4" gate="G$1" x="76.2" y="127" smashed="yes">
 <attribute name="VALUE" x="73.66" y="121.92" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="CON3" gate="-1" x="27.94" y="71.12" smashed="yes">
-<attribute name="NAME" x="26.67" y="72.009" size="1.778" layer="95" rot="R180"/>
+<instance part="CON3" gate="-1" x="20.32" y="71.12" smashed="yes">
+<attribute name="NAME" x="19.05" y="72.009" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CON3" gate="-2" x="27.94" y="66.04" smashed="yes">
-<attribute name="NAME" x="26.67" y="66.929" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="24.13" y="62.357" size="1.778" layer="96"/>
+<instance part="CON3" gate="-2" x="20.32" y="66.04" smashed="yes">
+<attribute name="NAME" x="19.05" y="66.929" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="16.51" y="62.357" size="1.778" layer="96"/>
 </instance>
-<instance part="R10" gate="G$1" x="38.1" y="71.12" smashed="yes">
-<attribute name="NAME" x="34.29" y="72.6186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="34.29" y="67.818" size="1.778" layer="96"/>
-<attribute name="LSCS_ID" x="38.1" y="71.12" size="1.778" layer="96" display="off"/>
+<instance part="R10" gate="G$1" x="33.02" y="71.12" smashed="yes">
+<attribute name="NAME" x="29.21" y="72.6186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="29.21" y="67.818" size="1.778" layer="96"/>
+<attribute name="LSCS_ID" x="33.02" y="71.12" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND8" gate="1" x="76.2" y="60.96" smashed="yes">
 <attribute name="VALUE" x="73.66" y="58.42" size="1.778" layer="96"/>
@@ -8289,17 +8458,17 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <instance part="+3V5" gate="G$1" x="76.2" y="86.36" smashed="yes">
 <attribute name="VALUE" x="73.66" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="CON4" gate="-1" x="27.94" y="25.4" smashed="yes">
-<attribute name="NAME" x="26.67" y="26.289" size="1.778" layer="95" rot="R180"/>
+<instance part="CON4" gate="-1" x="20.32" y="25.4" smashed="yes">
+<attribute name="NAME" x="19.05" y="26.289" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CON4" gate="-2" x="27.94" y="20.32" smashed="yes">
-<attribute name="NAME" x="26.67" y="21.209" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="24.13" y="16.637" size="1.778" layer="96"/>
+<instance part="CON4" gate="-2" x="20.32" y="20.32" smashed="yes">
+<attribute name="NAME" x="19.05" y="21.209" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="16.51" y="16.637" size="1.778" layer="96"/>
 </instance>
-<instance part="R12" gate="G$1" x="38.1" y="25.4" smashed="yes">
-<attribute name="NAME" x="34.29" y="26.8986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="34.29" y="22.098" size="1.778" layer="96"/>
-<attribute name="LSCS_ID" x="38.1" y="25.4" size="1.778" layer="96" display="off"/>
+<instance part="R12" gate="G$1" x="33.02" y="25.4" smashed="yes">
+<attribute name="NAME" x="29.21" y="26.8986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="29.21" y="22.098" size="1.778" layer="96"/>
+<attribute name="LSCS_ID" x="33.02" y="25.4" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND9" gate="1" x="76.2" y="15.24" smashed="yes">
 <attribute name="VALUE" x="73.66" y="12.7" size="1.778" layer="96"/>
@@ -8332,24 +8501,44 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <attribute name="VALUE" x="50.77441875" y="13.756059375" size="2.087890625" layer="96" ratio="10" rot="SR0"/>
 <attribute name="LCSC_ID" x="58.42" y="22.86" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="D6" gate="G$1" x="43.18" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="42.6974" y="149.86" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="45.4914" y="149.86" size="1.778" layer="96" rot="R90"/>
+<attribute name="LSCS_ID" x="43.18" y="147.32" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="D1" gate="G$1" x="43.18" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="42.6974" y="111.76" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="45.4914" y="111.76" size="1.778" layer="96" rot="R90"/>
+<attribute name="LSCS_ID" x="43.18" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="D2" gate="G$1" x="43.18" y="68.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="42.6974" y="71.12" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="45.4914" y="71.12" size="1.778" layer="96" rot="R90"/>
+<attribute name="LSCS_ID" x="43.18" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="D4" gate="G$1" x="43.18" y="22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="42.6974" y="25.4" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="45.4914" y="25.4" size="1.778" layer="96" rot="R90"/>
+<attribute name="LSCS_ID" x="43.18" y="22.86" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="180.34" y1="53.34" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="U1" gate="A" pin="A0"/>
+<pinref part="U1" gate="G$1" pin="A0"/>
 <wire x1="177.8" y1="53.34" x2="175.26" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="63.5" x2="177.8" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="A1"/>
+<pinref part="U1" gate="G$1" pin="A1"/>
 <wire x1="177.8" y1="60.96" x2="180.34" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="60.96" x2="177.8" y2="58.42" width="0.1524" layer="91"/>
 <junction x="177.8" y="60.96"/>
-<pinref part="U1" gate="A" pin="A2"/>
+<pinref part="U1" gate="G$1" pin="A2"/>
 <wire x1="177.8" y1="58.42" x2="180.34" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="58.42" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
 <junction x="177.8" y="58.42"/>
@@ -8382,21 +8571,21 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </net>
 <net name="TMP_SDA" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="SDA"/>
+<pinref part="U1" gate="G$1" pin="SDA"/>
 <wire x1="215.9" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
 <label x="220.98" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TMP_SCL" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="SCL"/>
+<pinref part="U1" gate="G$1" pin="SCL"/>
 <wire x1="180.34" y1="68.58" x2="175.26" y2="68.58" width="0.1524" layer="91"/>
 <label x="175.26" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="VCC"/>
+<pinref part="U1" gate="G$1" pin="VCC"/>
 <wire x1="180.34" y1="73.66" x2="175.26" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 </segment>
@@ -8421,20 +8610,27 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <segment>
 <pinref part="CON1" gate="-1" pin="KL"/>
 <pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="149.86" x2="27.94" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="CON1" gate="-2" pin="KL"/>
-<wire x1="33.02" y1="144.78" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="K"/>
+<wire x1="25.4" y1="144.78" x2="43.18" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="A"/>
+<wire x1="43.18" y1="144.78" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
+<junction x="43.18" y="144.78"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="149.86" x2="45.72" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="149.86" x2="43.18" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="A"/>
+<pinref part="D6" gate="G$1" pin="C"/>
+<wire x1="43.18" y1="149.86" x2="45.72" y2="149.86" width="0.1524" layer="91"/>
+<junction x="43.18" y="149.86"/>
 </segment>
 </net>
 <net name="OPTO1" class="0">
@@ -8452,20 +8648,27 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <segment>
 <pinref part="CON2" gate="-1" pin="KL"/>
 <pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="111.76" x2="27.94" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="CON2" gate="-2" pin="KL"/>
-<wire x1="33.02" y1="106.68" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="K"/>
+<wire x1="25.4" y1="106.68" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="43.18" y1="106.68" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
+<junction x="43.18" y="106.68"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="111.76" x2="45.72" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="111.76" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="43.18" y1="111.76" x2="45.72" y2="111.76" width="0.1524" layer="91"/>
+<junction x="43.18" y="111.76"/>
 </segment>
 </net>
 <net name="OPTO2" class="0">
@@ -8483,20 +8686,27 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <segment>
 <pinref part="CON3" gate="-1" pin="KL"/>
 <pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="CON3" gate="-2" pin="KL"/>
-<wire x1="33.02" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="K"/>
+<wire x1="25.4" y1="66.04" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="43.18" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
+<junction x="43.18" y="66.04"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="71.12" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="A"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="43.18" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
+<junction x="43.18" y="71.12"/>
 </segment>
 </net>
 <net name="OPTO3" class="0">
@@ -8514,20 +8724,27 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <segment>
 <pinref part="CON4" gate="-1" pin="KL"/>
 <pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="CON4" gate="-2" pin="KL"/>
-<wire x1="33.02" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="K"/>
+<wire x1="25.4" y1="20.32" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="43.18" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
+<junction x="43.18" y="20.32"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="25.4" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="25.4" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="A"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="43.18" y1="25.4" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
+<junction x="43.18" y="25.4"/>
 </segment>
 </net>
 <net name="OPTO4" class="0">
@@ -8543,7 +8760,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 </net>
 <net name="TMP_OS" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="OS"/>
+<pinref part="U1" gate="G$1" pin="OS"/>
 <wire x1="215.9" y1="71.12" x2="220.98" y2="71.12" width="0.1524" layer="91"/>
 <label x="220.98" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -8637,12 +8854,12 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <attribute name="VALUE" x="113.284" y="58.801" size="1.778" layer="96"/>
 <attribute name="LCSC_ID" x="111.76" y="63.5" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="D1" gate="G$1" x="190.5" y="96.52" smashed="yes" rot="R270">
-<attribute name="NAME" x="190.9826" y="93.98" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="188.1886" y="93.98" size="1.778" layer="96" rot="R270"/>
-<attribute name="LSCS_ID" x="190.5" y="96.52" size="1.778" layer="96" rot="R270" display="off"/>
-</instance>
 <instance part="U$2" gate="G$1" x="208.28" y="83.82" smashed="yes"/>
+<instance part="D3" gate="G$1" x="190.5" y="96.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="192.405" y="98.806" size="1.27" layer="95" rot="R270"/>
+<attribute name="VALUE" x="188.341" y="98.806" size="1.27" layer="96" rot="MR270"/>
+<attribute name="LCSC_ID" x="190.5" y="96.52" size="1.27" layer="96" rot="R270" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8703,7 +8920,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <wire x1="190.5" y1="106.68" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="106.68" x2="190.5" y2="99.06" width="0.1524" layer="91"/>
 <junction x="190.5" y="106.68"/>
-<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -8786,12 +9003,12 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pinref part="U6" gate="G$1" pin="PH"/>
 <wire x1="132.08" y1="86.36" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="86.36" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="190.5" y1="93.98" x2="190.5" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="P$1"/>
 <wire x1="190.5" y1="83.82" x2="198.12" y2="83.82" width="0.1524" layer="91"/>
 <junction x="190.5" y="83.82"/>
 <label x="165.1" y="83.82" size="1.778" layer="95"/>
+<pinref part="D3" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="SS" class="0">

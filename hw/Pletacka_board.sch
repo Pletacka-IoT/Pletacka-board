@@ -7870,23 +7870,23 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <part name="C10" library="rcl_upravena" deviceset="C-EU" device="C0603" value="22u">
 <attribute name="LCSC_ID" value="C59461"/>
 </part>
-<part name="R22" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="1.8k">
+<part name="R22" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="6k8">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="LCSC_ID" value="C4177"/>
+<attribute name="LCSC_ID" value="C23212"/>
 </part>
-<part name="R23" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="10k">
+<part name="R23" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="36k">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="LCSC_ID" value="C25804"/>
+<attribute name="LCSC_ID" value="C23147"/>
 </part>
 <part name="C11" library="rcl_upravena" deviceset="C-EU" device="C0603" value="100n">
 <attribute name="LCSC_ID" value="C14663"/>

@@ -2169,13 +2169,13 @@ JarekParal (2020-03-14)
 <attribute name="NAME" x="60.325" y="30.48" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="60.325" y="33.02" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R22" library="rcl_upravena" package="R0603" value="1.8k" x="71.12" y="16.51" smashed="yes" rot="R270">
-<attribute name="LCSC_ID" value="C4177" x="71.12" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R22" library="rcl_upravena" package="R0603" value="6k8" x="71.12" y="16.51" smashed="yes" rot="R270">
+<attribute name="LCSC_ID" value="C23212" x="71.12" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="71.755" y="17.145" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="69.215" y="17.145" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R23" library="rcl_upravena" package="R0603" value="10k" x="71.755" y="13.97" smashed="yes">
-<attribute name="LCSC_ID" value="C25804" x="71.755" y="13.97" size="1.778" layer="27" display="off"/>
+<element name="R23" library="rcl_upravena" package="R0603" value="36k" x="71.755" y="13.97" smashed="yes">
+<attribute name="LCSC_ID" value="C23147" x="71.755" y="13.97" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="71.12" y="14.605" size="1.27" layer="25"/>
 <attribute name="VALUE" x="71.12" y="12.065" size="1.27" layer="27"/>
 </element>

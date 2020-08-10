@@ -7867,8 +7867,8 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 </part>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C10" library="rcl_upravena" deviceset="C-EU" device="C0603" value="22u">
-<attribute name="LCSC_ID" value="C59461"/>
+<part name="C10" library="rcl_upravena" deviceset="C-EU" device="C0805" value="22u">
+<attribute name="LCSC_ID" value="C45783"/>
 </part>
 <part name="R22" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="6k8">
 <spice>

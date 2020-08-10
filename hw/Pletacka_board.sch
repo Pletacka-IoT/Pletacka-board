@@ -8209,18 +8209,6 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <pinref part="LED3" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="LED_POWER" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="149.86" x2="185.42" y2="149.86" width="0.1524" layer="91"/>
-<label x="185.42" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="25"/>
-<wire x1="83.82" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
-<label x="88.9" y="93.98" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="LED_WIFI" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -8366,6 +8354,18 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <pinref part="JP2" gate="A" pin="2"/>
 <wire x1="114.3" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
 <label x="106.68" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LED_ON" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="149.86" x2="185.42" y2="149.86" width="0.1524" layer="91"/>
+<label x="185.42" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="25"/>
+<wire x1="83.82" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
+<label x="88.9" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

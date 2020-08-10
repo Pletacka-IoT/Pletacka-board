@@ -2572,14 +2572,6 @@ JarekParal (2020-03-14)
 <contactref element="LED3" pad="A"/>
 <wire x1="3.29" y1="20.955" x2="6.265" y2="20.955" width="0.2" layer="1"/>
 </signal>
-<signal name="LED_POWER">
-<contactref element="R1" pad="1"/>
-<contactref element="U$1" pad="25"/>
-<wire x1="36.195" y1="25.4" x2="34.23" y2="23.435" width="0.2" layer="1"/>
-<wire x1="34.23" y1="23.435" x2="15.955025" y2="23.435" width="0.2" layer="1"/>
-<wire x1="9.665025" y1="17.145" x2="7.705" y2="17.145" width="0.2" layer="1"/>
-<wire x1="15.955025" y1="23.435" x2="9.665025" y2="17.145" width="0.2" layer="1"/>
-</signal>
 <signal name="LED_WIFI">
 <contactref element="R2" pad="1"/>
 <contactref element="U$1" pad="26"/>
@@ -2864,6 +2856,14 @@ JarekParal (2020-03-14)
 <wire x1="52.705" y1="44.45" x2="65.405" y2="44.45" width="0.2" layer="16"/>
 <wire x1="38.735" y1="25.4" x2="38.735" y2="30.48" width="0.2" layer="16"/>
 <wire x1="38.735" y1="30.48" x2="52.705" y2="44.45" width="0.2" layer="16"/>
+</signal>
+<signal name="LED_ON">
+<contactref element="R1" pad="1"/>
+<contactref element="U$1" pad="25"/>
+<wire x1="36.195" y1="25.4" x2="34.23" y2="23.435" width="0.2" layer="1"/>
+<wire x1="34.23" y1="23.435" x2="14.685025" y2="23.435" width="0.2" layer="1"/>
+<wire x1="7.705" y1="17.145" x2="8.395025" y2="17.145" width="0.2" layer="1"/>
+<wire x1="14.685025" y1="23.435" x2="8.395025" y2="17.145" width="0.2" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

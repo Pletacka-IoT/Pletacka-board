@@ -3,7 +3,7 @@
 <eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="25" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -2051,7 +2051,7 @@ JarekParal (2020-03-14)
 <attribute name="VALUE" x="30.48" y="1.27" size="1.778" layer="27" ratio="10"/>
 </element>
 <element name="R8" library="rcl_upravena" package="R1206" value="2k/0.25W" x="32.385" y="14.605" smashed="yes">
-<attribute name="LSCS_ID" value="C17944" x="32.385" y="14.605" size="1.778" layer="27" display="off"/>
+<attribute name="LCSC_ID" value="C17944" x="32.385" y="14.605" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="31.75" y="15.24" size="1.27" layer="25"/>
 <attribute name="VALUE" x="31.75" y="12.7" size="1.27" layer="27"/>
 </element>
@@ -2065,7 +2065,7 @@ JarekParal (2020-03-14)
 <attribute name="VALUE" x="20.32" y="1.27" size="1.778" layer="27" ratio="10"/>
 </element>
 <element name="R10" library="rcl_upravena" package="R1206" value="2k/0.25W" x="22.225" y="14.605" smashed="yes">
-<attribute name="LSCS_ID" value="C17944" x="22.225" y="14.605" size="1.778" layer="27" display="off"/>
+<attribute name="LCSC_ID" value="C17944" x="22.225" y="14.605" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="21.59" y="15.24" size="1.27" layer="25"/>
 <attribute name="VALUE" x="21.59" y="12.7" size="1.27" layer="27"/>
 </element>
@@ -2079,7 +2079,7 @@ JarekParal (2020-03-14)
 <attribute name="VALUE" x="10.16" y="1.27" size="1.778" layer="27" ratio="10"/>
 </element>
 <element name="R12" library="rcl_upravena" package="R1206" value="2k/0.25W" x="12.065" y="14.605" smashed="yes">
-<attribute name="LSCS_ID" value="C17944" x="12.065" y="14.605" size="1.778" layer="27" display="off"/>
+<attribute name="LCSC_ID" value="C17944" x="12.065" y="14.605" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="11.43" y="15.24" size="1.27" layer="25"/>
 <attribute name="VALUE" x="11.43" y="12.7" size="1.27" layer="27"/>
 </element>
@@ -2137,7 +2137,7 @@ JarekParal (2020-03-14)
 <attribute name="VALUE" x="50.8" y="1.27" size="1.778" layer="27" ratio="10"/>
 </element>
 <element name="C1" library="rcl_upravena" package="C1206" value="10u/50V" x="53.594" y="21.082" smashed="yes">
-<attribute name="LSCS_ID" value="C13585" x="53.594" y="21.082" size="1.778" layer="27" display="off"/>
+<attribute name="LCSC_ID" value="C13585" x="53.594" y="21.082" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="52.959" y="21.717" size="1.27" layer="25"/>
 <attribute name="VALUE" x="52.959" y="19.177" size="1.27" layer="27"/>
 </element>
@@ -2265,7 +2265,7 @@ JarekParal (2020-03-14)
 <element name="D6" library="B5819W" package="SOD-123" value="B5819W" x="46.99" y="12.319" smashed="yes">
 <attribute name="AVAILABILITY" value="Warning" x="46.99" y="12.319" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" B5819W " x="46.99" y="12.319" size="1.778" layer="27" display="off"/>
-<attribute name="LSCS_ID" value="C8598" x="46.99" y="12.319" size="1.778" layer="27" display="off"/>
+<attribute name="LCSC_ID" value="C8598" x="46.99" y="12.319" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Taiwan Semiconductor" x="46.99" y="12.319" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="B5819W" x="46.99" y="12.319" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="45.89" y="13.319" size="1.27" layer="25"/>

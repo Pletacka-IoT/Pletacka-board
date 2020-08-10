@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="17" fill="1" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="18" fill="1" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="19" fill="1" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="25" fill="1" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="26" fill="1" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="27" fill="1" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="28" fill="1" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="29" fill="1" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="30" fill="1" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="20" fill="1" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="21" fill="1" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="22" fill="1" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,22 +53,22 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="55" name="tPotisk" color="7" fill="1" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="58" name="bNC" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="61" name="stand" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="55" name="tPotisk" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bNC" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -7778,42 +7778,42 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="CON1" library="#Svorkovnice" deviceset="AK500/2" device=""/>
 <part name="R6" library="rcl_upravena" deviceset="R-EU_" device="R1206" value="2k/0.25W">
-<attribute name="LSCS_ID" value="C17944"/>
+<attribute name="LCSC_ID" value="C17944"/>
 </part>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R7" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="10k">
-<attribute name="LSCS_ID" value="C25804"/>
+<attribute name="LCSC_ID" value="C25804"/>
 </part>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="CON2" library="#Svorkovnice" deviceset="AK500/2" device=""/>
 <part name="R8" library="rcl_upravena" deviceset="R-EU_" device="R1206" value="2k/0.25W">
-<attribute name="LSCS_ID" value="C17944"/>
+<attribute name="LCSC_ID" value="C17944"/>
 </part>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R9" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="10k">
-<attribute name="LSCS_ID" value="C25804"/>
+<attribute name="LCSC_ID" value="C25804"/>
 </part>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="CON3" library="#Svorkovnice" deviceset="AK500/2" device=""/>
 <part name="R10" library="rcl_upravena" deviceset="R-EU_" device="R1206" value="2k/0.25W">
-<attribute name="LSCS_ID" value="C17944"/>
+<attribute name="LCSC_ID" value="C17944"/>
 </part>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R11" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="10k">
-<attribute name="LSCS_ID" value="C25804"/>
+<attribute name="LCSC_ID" value="C25804"/>
 </part>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="CON4" library="#Svorkovnice" deviceset="AK500/2" device=""/>
 <part name="R12" library="rcl_upravena" deviceset="R-EU_" device="R1206" value="2k/0.25W">
-<attribute name="LSCS_ID" value="C17944"/>
+<attribute name="LCSC_ID" value="C17944"/>
 </part>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R13" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="10k">
-<attribute name="LSCS_ID" value="C25804"/>
+<attribute name="LCSC_ID" value="C25804"/>
 </part>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U2" library="EL357N_A__TA_-G" deviceset="EL357N(A)(TA)-G" device="">
-<attribute name="LSCS_ID" value="C6649"/>
+<attribute name="LCSC_ID" value="C6649"/>
 </part>
 <part name="U3" library="EL357N_A__TA_-G" deviceset="EL357N(A)(TA)-G" device="">
 <attribute name="LCSC_ID" value="C6649"/>
@@ -7827,7 +7827,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="CON5" library="#Svorkovnice" deviceset="AK500/2" device=""/>
 <part name="C1" library="rcl_upravena" deviceset="C-EU" device="C1206" value="10u/50V">
-<attribute name="LSCS_ID" value="C13585"/>
+<attribute name="LCSC_ID" value="C13585"/>
 </part>
 <part name="U6" library="TPS54231D" deviceset="TPS54231D" device="">
 <attribute name="LCSC_ID" value="C28023"/>
@@ -7848,7 +7848,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="LSCS_ID" value="C22818"/>
+<attribute name="LCSC_ID" value="C22818"/>
 </part>
 <part name="C2" library="rcl_upravena" deviceset="C-EU" device="C0603" value="10p">
 <attribute name="LCSC_ID" value="C1634"/>
@@ -7910,10 +7910,16 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <part name="LED3" library="led" deviceset="LED" device="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2">
 <attribute name="LCSC_ID" value="C2286"/>
 </part>
-<part name="U$2" library="SWRB1204S-680MT" deviceset="SWRB1204S" device=""/>
+<part name="U$2" library="SWRB1204S-680MT" deviceset="SWRB1204S" device="">
+<attribute name="LCSC_ID" value="C169399"/>
+</part>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="S1" library="switch-omron" deviceset="10-XX" device="_SMD" value="CHOOSE_ME"/>
-<part name="S2" library="switch-omron" deviceset="10-XX" device="_SMD" value="CHOOSE_ME"/>
+<part name="S1" library="switch-omron" deviceset="10-XX" device="_SMD" value="CHOOSE_ME">
+<attribute name="LCSC_ID" value="C318888"/>
+</part>
+<part name="S2" library="switch-omron" deviceset="10-XX" device="_SMD" value="CHOOSE_ME">
+<attribute name="LCSC_ID" value="C318888"/>
+</part>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -7925,16 +7931,16 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <attribute name="LCSC_ID" value="C8678"/>
 </part>
 <part name="D6" library="B5819W" deviceset="B5819W" device="">
-<attribute name="LSCS_ID" value="C8598"/>
+<attribute name="LCSC_ID" value="C8598"/>
 </part>
 <part name="D1" library="B5819W" deviceset="B5819W" device="">
-<attribute name="LSCS_ID" value="C8598"/>
+<attribute name="LCSC_ID" value="C8598"/>
 </part>
 <part name="D2" library="B5819W" deviceset="B5819W" device="">
-<attribute name="LSCS_ID" value="C8598"/>
+<attribute name="LCSC_ID" value="C8598"/>
 </part>
 <part name="D4" library="B5819W" deviceset="B5819W" device="">
-<attribute name="LSCS_ID" value="C8598"/>
+<attribute name="LCSC_ID" value="C8598"/>
 </part>
 </parts>
 <sheets>
@@ -8022,9 +8028,11 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 </instance>
 <instance part="S1" gate="1" x="208.28" y="91.44" smashed="yes" rot="MR270">
 <attribute name="NAME" x="208.28" y="96.52" size="1.27" layer="95" rot="R180" align="top-center"/>
+<attribute name="LCSC_ID" x="208.28" y="91.44" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
 <instance part="S2" gate="1" x="208.28" y="60.96" smashed="yes" rot="MR270">
 <attribute name="NAME" x="208.28" y="66.04" size="1.27" layer="95" rot="R180" align="top-center"/>
+<attribute name="LCSC_ID" x="208.28" y="60.96" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
 <instance part="GND2" gate="1" x="96.52" y="43.18" smashed="yes" rot="R270">
 <attribute name="VALUE" x="93.98" y="45.72" size="1.778" layer="96" rot="R270"/>
@@ -8399,7 +8407,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="R6" gate="G$1" x="33.02" y="149.86" smashed="yes">
 <attribute name="NAME" x="29.21" y="151.3586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.21" y="146.558" size="1.778" layer="96"/>
-<attribute name="LSCS_ID" x="33.02" y="149.86" size="1.778" layer="96" display="off"/>
+<attribute name="LCSC_ID" x="33.02" y="149.86" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND6" gate="1" x="76.2" y="139.7" smashed="yes">
 <attribute name="VALUE" x="73.66" y="137.16" size="1.778" layer="96"/>
@@ -8407,7 +8415,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="R7" gate="G$1" x="76.2" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="74.7014" y="153.67" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="79.502" y="153.67" size="1.778" layer="96" rot="R90"/>
-<attribute name="LSCS_ID" x="76.2" y="157.48" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="LCSC_ID" x="76.2" y="157.48" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="+3V3" gate="G$1" x="76.2" y="165.1" smashed="yes">
 <attribute name="VALUE" x="73.66" y="160.02" size="1.778" layer="96" rot="R90"/>
@@ -8422,7 +8430,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="R8" gate="G$1" x="33.02" y="111.76" smashed="yes">
 <attribute name="NAME" x="29.21" y="113.2586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.21" y="108.458" size="1.778" layer="96"/>
-<attribute name="LSCS_ID" x="33.02" y="111.76" size="1.778" layer="96" display="off"/>
+<attribute name="LCSC_ID" x="33.02" y="111.76" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND7" gate="1" x="76.2" y="101.6" smashed="yes">
 <attribute name="VALUE" x="73.66" y="99.06" size="1.778" layer="96"/>
@@ -8430,7 +8438,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="R9" gate="G$1" x="76.2" y="119.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="74.7014" y="115.57" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="79.502" y="115.57" size="1.778" layer="96" rot="R90"/>
-<attribute name="LSCS_ID" x="76.2" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="LCSC_ID" x="76.2" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="+3V4" gate="G$1" x="76.2" y="127" smashed="yes">
 <attribute name="VALUE" x="73.66" y="121.92" size="1.778" layer="96" rot="R90"/>
@@ -8445,7 +8453,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="R10" gate="G$1" x="33.02" y="71.12" smashed="yes">
 <attribute name="NAME" x="29.21" y="72.6186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.21" y="67.818" size="1.778" layer="96"/>
-<attribute name="LSCS_ID" x="33.02" y="71.12" size="1.778" layer="96" display="off"/>
+<attribute name="LCSC_ID" x="33.02" y="71.12" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND8" gate="1" x="76.2" y="60.96" smashed="yes">
 <attribute name="VALUE" x="73.66" y="58.42" size="1.778" layer="96"/>
@@ -8453,7 +8461,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="R11" gate="G$1" x="76.2" y="78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="74.7014" y="74.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="79.502" y="74.93" size="1.778" layer="96" rot="R90"/>
-<attribute name="LSCS_ID" x="76.2" y="78.74" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="LCSC_ID" x="76.2" y="78.74" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="+3V5" gate="G$1" x="76.2" y="86.36" smashed="yes">
 <attribute name="VALUE" x="73.66" y="81.28" size="1.778" layer="96" rot="R90"/>
@@ -8468,7 +8476,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="R12" gate="G$1" x="33.02" y="25.4" smashed="yes">
 <attribute name="NAME" x="29.21" y="26.8986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.21" y="22.098" size="1.778" layer="96"/>
-<attribute name="LSCS_ID" x="33.02" y="25.4" size="1.778" layer="96" display="off"/>
+<attribute name="LCSC_ID" x="33.02" y="25.4" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND9" gate="1" x="76.2" y="15.24" smashed="yes">
 <attribute name="VALUE" x="73.66" y="12.7" size="1.778" layer="96"/>
@@ -8476,7 +8484,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="R13" gate="G$1" x="76.2" y="33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="74.7014" y="29.21" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="79.502" y="29.21" size="1.778" layer="96" rot="R90"/>
-<attribute name="LSCS_ID" x="76.2" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="LCSC_ID" x="76.2" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="+3V6" gate="G$1" x="76.2" y="40.64" smashed="yes">
 <attribute name="VALUE" x="73.66" y="35.56" size="1.778" layer="96" rot="R90"/>
@@ -8484,7 +8492,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="U2" gate="G$1" x="58.42" y="147.32" smashed="yes">
 <attribute name="NAME" x="50.7743" y="153.413590625" size="2.08636875" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="50.77441875" y="138.216059375" size="2.087890625" layer="96" ratio="10" rot="SR0"/>
-<attribute name="LSCS_ID" x="58.42" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="LCSC_ID" x="58.42" y="147.32" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U3" gate="G$1" x="58.42" y="109.22" smashed="yes">
 <attribute name="NAME" x="50.7743" y="115.313590625" size="2.08636875" layer="95" ratio="10" rot="SR0"/>
@@ -8504,22 +8512,22 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="D6" gate="G$1" x="43.18" y="147.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.6974" y="149.86" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="45.4914" y="149.86" size="1.778" layer="96" rot="R90"/>
-<attribute name="LSCS_ID" x="43.18" y="147.32" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="LCSC_ID" x="43.18" y="147.32" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="D1" gate="G$1" x="43.18" y="109.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.6974" y="111.76" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="45.4914" y="111.76" size="1.778" layer="96" rot="R90"/>
-<attribute name="LSCS_ID" x="43.18" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="LCSC_ID" x="43.18" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="D2" gate="G$1" x="43.18" y="68.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.6974" y="71.12" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="45.4914" y="71.12" size="1.778" layer="96" rot="R90"/>
-<attribute name="LSCS_ID" x="43.18" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="LCSC_ID" x="43.18" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="D4" gate="G$1" x="43.18" y="22.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.6974" y="25.4" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="45.4914" y="25.4" size="1.778" layer="96" rot="R90"/>
-<attribute name="LSCS_ID" x="43.18" y="22.86" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="LCSC_ID" x="43.18" y="22.86" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -8788,7 +8796,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="C1" gate="G$1" x="60.96" y="93.98" smashed="yes">
 <attribute name="NAME" x="62.484" y="94.361" size="1.778" layer="95"/>
 <attribute name="VALUE" x="62.484" y="89.281" size="1.778" layer="96"/>
-<attribute name="LSCS_ID" x="60.96" y="93.98" size="1.778" layer="96" display="off"/>
+<attribute name="LCSC_ID" x="60.96" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U6" gate="G$1" x="149.86" y="88.9" smashed="yes">
 <attribute name="NAME" x="137.16" y="110.22" size="2.0828" layer="95" ratio="10" rot="SR0"/>
@@ -8803,7 +8811,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="R15" gate="G$1" x="73.66" y="78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="72.1614" y="74.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="76.962" y="74.93" size="1.778" layer="96" rot="R90"/>
-<attribute name="LSCS_ID" x="73.66" y="78.74" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="LCSC_ID" x="73.66" y="78.74" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C2" gate="G$1" x="86.36" y="63.5" smashed="yes">
 <attribute name="NAME" x="87.884" y="63.881" size="1.778" layer="95"/>
@@ -8854,7 +8862,9 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <attribute name="VALUE" x="113.284" y="58.801" size="1.778" layer="96"/>
 <attribute name="LCSC_ID" x="111.76" y="63.5" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$2" gate="G$1" x="208.28" y="83.82" smashed="yes"/>
+<instance part="U$2" gate="G$1" x="208.28" y="83.82" smashed="yes">
+<attribute name="LCSC_ID" x="208.28" y="83.82" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="D3" gate="G$1" x="190.5" y="96.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="192.405" y="98.806" size="1.27" layer="95" rot="R270"/>
 <attribute name="VALUE" x="188.341" y="98.806" size="1.27" layer="96" rot="MR270"/>

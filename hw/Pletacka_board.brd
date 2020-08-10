@@ -2137,10 +2137,10 @@ JarekParal (2020-03-14)
 <attribute name="NAME" x="50.8" y="11.43" size="1.778" layer="25" ratio="10"/>
 <attribute name="VALUE" x="50.8" y="1.27" size="1.778" layer="27" ratio="10"/>
 </element>
-<element name="C1" library="rcl_upravena" package="C1206" value="10u/50V" x="53.594" y="21.082" smashed="yes">
-<attribute name="LCSC_ID" value="C13585" x="53.594" y="21.082" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="52.959" y="21.717" size="1.27" layer="25"/>
-<attribute name="VALUE" x="52.959" y="19.177" size="1.27" layer="27"/>
+<element name="C1" library="rcl_upravena" package="C1206" value="10u/50V" x="54.102" y="18.669" smashed="yes" rot="R90">
+<attribute name="LCSC_ID" value="C13585" x="54.102" y="18.669" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="53.467" y="18.034" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="56.007" y="18.034" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="U6" library="TPS54231D" package="SOIC127P599X175-8N" value="TPS54231D" x="59.055" y="16.51" smashed="yes">
 <attribute name="AVAILABILITY" value="Good" x="38.735" y="33.02" size="1.778" layer="27" display="off"/>
@@ -2181,10 +2181,10 @@ JarekParal (2020-03-14)
 <attribute name="NAME" x="67.31" y="15.24" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="67.31" y="17.78" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C10" library="rcl_upravena" package="C0805" value="22u" x="59.69" y="31.115" smashed="yes" rot="R180">
-<attribute name="LCSC_ID" value="C45783" x="59.69" y="31.115" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="60.325" y="30.48" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="60.325" y="33.02" size="1.27" layer="27" rot="R180"/>
+<element name="C10" library="rcl_upravena" package="C0805" value="22u" x="59.69" y="29.845" smashed="yes" rot="R270">
+<attribute name="LCSC_ID" value="C45783" x="59.69" y="29.845" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="60.325" y="30.48" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="57.785" y="30.48" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R22" library="rcl_upravena" package="R0603" value="6k8" x="71.12" y="16.51" smashed="yes" rot="R270">
 <attribute name="LCSC_ID" value="C23212" x="71.12" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2358,7 +2358,6 @@ JarekParal (2020-03-14)
 <vertex x="74.93" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<wire x1="59.055" y1="31.03" x2="58.82" y2="31.115" width="0.1524" layer="1"/>
 <via x="59.055" y="17.145" extent="1-16" drill="0.65"/>
 <via x="59.055" y="15.24" extent="1-16" drill="0.65"/>
 <via x="59.055" y="13.335" extent="1-16" drill="0.65"/>
@@ -2368,8 +2367,6 @@ JarekParal (2020-03-14)
 <vertex x="74.93" y="0"/>
 <vertex x="74.93" y="55"/>
 </polygon>
-<wire x1="59.055" y1="13.335" x2="59.055" y2="7.6454" width="0.6096" layer="1"/>
-<wire x1="59.055" y1="7.6454" x2="58.3946" y2="6.985" width="0.6096" layer="1"/>
 <wire x1="1.79" y1="19.05" x2="1.79" y2="17.145" width="0.2" layer="1"/>
 <wire x1="1.79" y1="20.955" x2="1.79" y2="19.05" width="0.2" layer="1"/>
 <wire x1="2.08" y1="26.065" x2="8.08" y2="26.065" width="0.2" layer="1"/>
@@ -2416,6 +2413,8 @@ JarekParal (2020-03-14)
 <contactref element="D3" pad="A"/>
 <via x="61.595" y="13.335" extent="1-16" drill="0.65"/>
 <via x="56.515" y="13.335" extent="1-16" drill="0.65"/>
+<wire x1="58.3946" y1="6.985" x2="59.055" y2="7.6454" width="0.8128" layer="1"/>
+<wire x1="59.055" y1="7.6454" x2="59.055" y2="13.335" width="0.8128" layer="1"/>
 <wire x1="53.975" y1="48.26" x2="63.5" y2="52.705" width="0" layer="19" extent="1-1"/>
 <wire x1="51.435" y1="48.26" x2="53.975" y2="48.26" width="0" layer="19" extent="1-1"/>
 <wire x1="63.5" y1="40.64" x2="63.5" y2="52.705" width="0" layer="19" extent="1-1"/>
@@ -2425,12 +2424,12 @@ JarekParal (2020-03-14)
 <wire x1="61.51" y1="38.1" x2="63.5" y2="40.64" width="0" layer="19" extent="1-1"/>
 <wire x1="64.945" y1="34.32" x2="61.51" y2="37.755" width="0" layer="19" extent="1-1"/>
 <wire x1="70.945" y1="34.32" x2="65.405" y2="34.32" width="0" layer="19" extent="1-1"/>
-<wire x1="59.055" y1="31.03" x2="64.945" y2="34.32" width="0" layer="19" extent="1-1"/>
-<wire x1="59.69" y1="26.145" x2="59.055" y2="31.03" width="0" layer="19" extent="1-1"/>
-<wire x1="55.054" y1="21.082" x2="59.69" y2="26.145" width="0" layer="19" extent="1-1"/>
-<wire x1="50.165" y1="20.955" x2="55.054" y2="21.082" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="28.975" x2="64.945" y2="34.32" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="26.145" x2="59.69" y2="28.975" width="0" layer="19" extent="1-1"/>
+<wire x1="54.102" y1="20.129" x2="59.69" y2="26.145" width="0" layer="19" extent="1-1"/>
+<wire x1="50.165" y1="20.955" x2="54.102" y2="20.129" width="0" layer="19" extent="1-1"/>
 <wire x1="28.575" y1="25.4" x2="28.575" y2="20.82" width="0" layer="19" extent="1-1"/>
-<wire x1="59.055" y1="17.145" x2="55.054" y2="21.082" width="0" layer="19" extent="1-1"/>
+<wire x1="59.055" y1="17.145" x2="54.102" y2="20.129" width="0" layer="19" extent="1-1"/>
 <wire x1="61.525" y1="17.145" x2="59.055" y2="17.145" width="0" layer="19" extent="1-1"/>
 <wire x1="64.05" y1="17.145" x2="61.525" y2="17.145" width="0" layer="19" extent="1-1"/>
 <wire x1="61.595" y1="13.335" x2="59.055" y2="13.335" width="0" layer="19" extent="1-1"/>
@@ -2482,23 +2481,14 @@ JarekParal (2020-03-14)
 <wire x1="73.025" y1="13.97" x2="72.475" y2="13.97" width="0.6096" layer="1"/>
 <wire x1="72.035" y1="30.835" x2="73.66" y2="29.21" width="0.6096" layer="1"/>
 <wire x1="73.66" y1="29.21" x2="73.66" y2="14.605" width="0.6096" layer="1"/>
-<wire x1="60.56" y1="31.115" x2="68.3" y2="31.115" width="0.6096" layer="1"/>
 <wire x1="68.3" y1="31.115" x2="68.58" y2="30.835" width="0.6096" layer="1"/>
-<wire x1="60.41" y1="29.295" x2="60.325" y2="29.21" width="0.6096" layer="1"/>
-<via x="60.325" y="29.21" extent="1-16" drill="0.35"/>
-<wire x1="60.325" y1="29.21" x2="54.61" y2="23.495" width="0.6096" layer="16"/>
-<wire x1="26.035" y1="25.4" x2="27.94" y2="23.495" width="0.6096" layer="16"/>
-<wire x1="54.61" y1="23.495" x2="27.94" y2="23.495" width="0.6096" layer="16"/>
 <contactref element="JP1" pad="3"/>
-<wire x1="60.325" y1="31.2" x2="60.325" y2="33.02" width="0.6096" layer="1"/>
-<via x="60.325" y="33.02" extent="1-16" drill="0.35"/>
-<wire x1="60.325" y1="33.02" x2="60.325" y2="40.64" width="0.6096" layer="16"/>
-<via x="60.325" y="40.64" extent="1-16" drill="0.35"/>
-<wire x1="60.325" y1="44.45" x2="60.325" y2="40.64" width="0.6096" layer="1"/>
-<wire x1="60.325" y1="44.45" x2="63.5" y2="47.625" width="0.6096" layer="1"/>
-<wire x1="60.325" y1="29.21" x2="60.325" y2="30.88" width="0.6096" layer="1"/>
-<wire x1="60.325" y1="30.88" x2="60.56" y2="31.115" width="0.6096" layer="1"/>
-<wire x1="60.56" y1="31.115" x2="60.325" y2="31.2" width="0" layer="19" extent="1-1"/>
+<wire x1="63.5" y1="47.625" x2="59.69" y2="43.815" width="1.27" layer="1"/>
+<wire x1="59.69" y1="43.815" x2="59.69" y2="30.715" width="1.27" layer="1"/>
+<wire x1="59.69" y1="30.715" x2="31.35" y2="30.715" width="1.27" layer="1"/>
+<wire x1="31.35" y1="30.715" x2="26.035" y2="25.4" width="1.27" layer="1"/>
+<wire x1="59.69" y1="30.715" x2="67.825" y2="30.715" width="1.27" layer="1"/>
+<wire x1="67.825" y1="30.715" x2="67.945" y2="30.835" width="1.27" layer="1"/>
 </signal>
 <signal name="TMP_SDA">
 <contactref element="U1" pad="1"/>
@@ -2648,12 +2638,15 @@ JarekParal (2020-03-14)
 <contactref element="U$1" pad="12"/>
 <wire x1="33.655" y1="48.26" x2="35.56" y2="50.165" width="0.2" layer="1"/>
 <wire x1="54.61" y1="50.165" x2="35.56" y2="50.165" width="0.2" layer="1"/>
-<wire x1="58.674" y1="39.116" x2="55.88" y2="41.91" width="0.2" layer="1"/>
+<wire x1="57.404" y1="39.116" x2="55.88" y2="40.64" width="0.2" layer="1"/>
 <wire x1="55.88" y1="48.895" x2="54.61" y2="50.165" width="0.2" layer="1"/>
-<wire x1="58.674" y1="39.116" x2="73.406" y2="39.116" width="0.2" layer="1"/>
-<wire x1="55.88" y1="41.91" x2="55.88" y2="48.895" width="0.2" layer="1"/>
-<wire x1="73.406" y1="39.116" x2="73.66" y2="38.862" width="0.2" layer="1"/>
+<wire x1="55.88" y1="40.64" x2="55.88" y2="48.895" width="0.2" layer="1"/>
+<wire x1="73.66" y1="38.862" x2="73.406" y2="39.116" width="0.2" layer="1"/>
 <wire x1="73.66" y1="38.862" x2="73.66" y2="37.55" width="0.2" layer="1"/>
+<via x="57.404" y="39.116" extent="1-16" drill="0.35"/>
+<wire x1="73.406" y1="39.116" x2="62.23" y2="39.116" width="0.2" layer="1"/>
+<wire x1="57.404" y1="39.116" x2="62.23" y2="39.116" width="0.2" layer="16"/>
+<via x="62.23" y="39.116" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$6">
 <contactref element="CON1" pad="1"/>
@@ -2762,14 +2755,17 @@ JarekParal (2020-03-14)
 <contactref element="C1" pad="1"/>
 <contactref element="U6" pad="2"/>
 <contactref element="R14" pad="2"/>
-<wire x1="52.155" y1="17.145" x2="52.07" y2="17.23" width="0.1524" layer="1"/>
-<wire x1="56.585" y1="17.145" x2="52.155" y2="17.145" width="0.6096" layer="1"/>
-<wire x1="50.8" y1="9.5504" x2="53.3654" y2="6.985" width="0.6096" layer="1"/>
-<wire x1="52.134" y1="21.082" x2="52.134" y2="17.294" width="0.6096" layer="1"/>
+<wire x1="52.155" y1="17.145" x2="52.1125" y2="17.1875" width="0.1524" layer="1"/>
+<wire x1="52.1125" y1="17.1875" x2="52.07" y2="17.23" width="0.1524" layer="1"/>
 <wire x1="52.134" y1="17.294" x2="52.07" y2="17.23" width="0.6096" layer="1"/>
-<wire x1="52.07" y1="17.23" x2="51.435" y2="17.23" width="0.6096" layer="1"/>
-<wire x1="51.435" y1="17.23" x2="50.8" y2="16.595" width="0.6096" layer="1"/>
-<wire x1="50.8" y1="16.595" x2="50.8" y2="9.5504" width="0.6096" layer="1"/>
+<wire x1="54.102" y1="17.209" x2="54.0805" y2="17.1875" width="0.8128" layer="1"/>
+<wire x1="54.0805" y1="17.1875" x2="52.1125" y2="17.1875" width="0.8128" layer="1"/>
+<wire x1="54.102" y1="17.209" x2="56.521" y2="17.209" width="0.8128" layer="1"/>
+<wire x1="56.521" y1="17.209" x2="56.585" y2="17.145" width="0.8128" layer="1"/>
+<wire x1="53.3654" y1="6.985" x2="50.8" y2="9.5504" width="0.8128" layer="1"/>
+<wire x1="51.4775" y1="17.1875" x2="52.1125" y2="17.1875" width="0.8128" layer="1"/>
+<wire x1="50.8" y1="9.5504" x2="50.8" y2="16.51" width="0.8128" layer="1"/>
+<wire x1="50.8" y1="16.51" x2="51.4775" y2="17.1875" width="0.8128" layer="1"/>
 </signal>
 <signal name="EN">
 <contactref element="R14" pad="1"/>
@@ -2808,13 +2804,12 @@ JarekParal (2020-03-14)
 <signal name="BOOT">
 <contactref element="C11" pad="1"/>
 <contactref element="U6" pad="1"/>
-<wire x1="56.55" y1="18.45" x2="56.585" y2="18.415" width="0.1524" layer="1"/>
 <via x="68.58" y="18.415" extent="1-16" drill="0.35"/>
-<via x="54.61" y="18.415" extent="1-16" drill="0.35"/>
-<wire x1="54.61" y1="18.415" x2="54.645" y2="18.45" width="0.4064" layer="1"/>
-<wire x1="54.645" y1="18.45" x2="56.55" y2="18.45" width="0.4064" layer="1"/>
-<wire x1="56.585" y1="18.415" x2="54.61" y2="18.415" width="0.6096" layer="1"/>
-<wire x1="54.61" y1="18.415" x2="68.58" y2="18.415" width="0.6096" layer="16"/>
+<via x="56.515" y="20.32" extent="1-16" drill="0.35"/>
+<wire x1="56.585" y1="18.415" x2="56.515" y2="18.485" width="0.6096" layer="1"/>
+<wire x1="56.515" y1="20.32" x2="56.515" y2="18.485" width="0.6096" layer="1"/>
+<wire x1="66.675" y1="20.32" x2="68.58" y2="18.415" width="0.6096" layer="16"/>
+<wire x1="66.675" y1="20.32" x2="56.515" y2="20.32" width="0.6096" layer="16"/>
 <wire x1="68.58" y1="18.415" x2="67.395" y2="18.415" width="0.6096" layer="1"/>
 </signal>
 <signal name="PH">

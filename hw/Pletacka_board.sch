@@ -7914,10 +7914,10 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <attribute name="LCSC_ID" value="C169399"/>
 </part>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="S1" library="switch-omron" deviceset="10-XX" device="_SMD" value="CHOOSE_ME">
+<part name="B0" library="switch-omron" deviceset="10-XX" device="_SMD" value="ENTER">
 <attribute name="LCSC_ID" value="C318888"/>
 </part>
-<part name="S2" library="switch-omron" deviceset="10-XX" device="_SMD" value="CHOOSE_ME">
+<part name="B1" library="switch-omron" deviceset="10-XX" device="_SMD" value="B1">
 <attribute name="LCSC_ID" value="C318888"/>
 </part>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8026,11 +8026,11 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="GND12" gate="1" x="218.44" y="76.2" smashed="yes">
 <attribute name="VALUE" x="215.9" y="73.66" size="1.778" layer="96"/>
 </instance>
-<instance part="S1" gate="1" x="208.28" y="91.44" smashed="yes" rot="MR270">
+<instance part="B0" gate="1" x="208.28" y="91.44" smashed="yes" rot="MR270">
 <attribute name="NAME" x="208.28" y="96.52" size="1.27" layer="95" rot="R180" align="top-center"/>
 <attribute name="LCSC_ID" x="208.28" y="91.44" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
-<instance part="S2" gate="1" x="208.28" y="60.96" smashed="yes" rot="MR270">
+<instance part="B1" gate="1" x="208.28" y="60.96" smashed="yes" rot="MR270">
 <attribute name="NAME" x="208.28" y="66.04" size="1.27" layer="95" rot="R180" align="top-center"/>
 <attribute name="LCSC_ID" x="208.28" y="60.96" size="1.778" layer="96" rot="MR270" display="off"/>
 </instance>
@@ -8094,8 +8094,8 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <wire x1="187.96" y1="53.34" x2="187.96" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="50.8" x2="218.44" y2="50.8" width="0.1524" layer="91"/>
 <junction x="218.44" y="50.8"/>
-<pinref part="S2" gate="1" pin="P"/>
-<pinref part="S2" gate="1" pin="P1"/>
+<pinref part="B1" gate="1" pin="P"/>
+<pinref part="B1" gate="1" pin="P1"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
@@ -8109,8 +8109,8 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <wire x1="218.44" y1="81.28" x2="218.44" y2="88.9" width="0.1524" layer="91"/>
 <junction x="218.44" y="81.28"/>
 <junction x="218.44" y="88.9"/>
-<pinref part="S1" gate="1" pin="P"/>
-<pinref part="S1" gate="1" pin="P1"/>
+<pinref part="B0" gate="1" pin="P"/>
+<pinref part="B0" gate="1" pin="P1"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="43.18" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
@@ -8256,8 +8256,8 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <junction x="200.66" y="91.44"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <junction x="187.96" y="91.44"/>
-<pinref part="S1" gate="1" pin="S"/>
-<pinref part="S1" gate="1" pin="S1"/>
+<pinref part="B0" gate="1" pin="S"/>
+<pinref part="B0" gate="1" pin="S1"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -8271,8 +8271,8 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <junction x="200.66" y="60.96"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <junction x="187.96" y="60.96"/>
-<pinref part="S2" gate="1" pin="S"/>
-<pinref part="S2" gate="1" pin="S1"/>
+<pinref part="B1" gate="1" pin="S"/>
+<pinref part="B1" gate="1" pin="S1"/>
 </segment>
 </net>
 <net name="BUTTON1" class="0">

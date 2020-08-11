@@ -3,7 +3,7 @@
 <eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -2348,15 +2348,15 @@ JarekParal (2020-03-14)
 <attribute name="POPULARITY" value="92" x="68.58" y="48.26" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="64.77" y="45.085" size="1.27" layer="27"/>
 </element>
-<element name="R20" library="rcl_upravena" package="R0603" value="1k2" x="40.64" y="33.02" smashed="yes">
-<attribute name="LCSC_ID" value="C22765" x="40.64" y="33.02" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="40.005" y="33.655" size="1.27" layer="25"/>
-<attribute name="VALUE" x="40.005" y="31.115" size="1.27" layer="27"/>
+<element name="R20" library="rcl_upravena" package="R0603" value="1k2" x="40.64" y="32.512" smashed="yes">
+<attribute name="LCSC_ID" value="C22765" x="40.64" y="32.512" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="40.005" y="33.147" size="1.27" layer="25"/>
+<attribute name="VALUE" x="40.005" y="30.607" size="1.27" layer="27"/>
 </element>
-<element name="R19" library="rcl_upravena" package="R0603" value="36k" x="45.72" y="33.02" smashed="yes">
-<attribute name="LCSC_ID" value="C23147" x="45.72" y="33.02" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="45.085" y="33.655" size="1.27" layer="25"/>
-<attribute name="VALUE" x="45.085" y="31.115" size="1.27" layer="27"/>
+<element name="R19" library="rcl_upravena" package="R0603" value="36k" x="46.355" y="32.512" smashed="yes">
+<attribute name="LCSC_ID" value="C23147" x="46.355" y="32.512" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="45.72" y="33.147" size="1.27" layer="25"/>
+<attribute name="VALUE" x="45.72" y="30.607" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -2905,9 +2905,9 @@ JarekParal (2020-03-14)
 <contactref element="U$1" pad="32"/>
 <contactref element="R20" pad="2"/>
 <contactref element="R19" pad="1"/>
-<wire x1="41.36" y1="33.02" x2="45" y2="33.02" width="0.2" layer="1"/>
-<wire x1="41.275" y1="30.4" x2="41.275" y2="32.935" width="0.2" layer="1"/>
-<wire x1="41.275" y1="32.935" x2="41.36" y2="33.02" width="0.2" layer="1"/>
+<wire x1="45.635" y1="32.512" x2="41.36" y2="32.512" width="0.2" layer="1"/>
+<wire x1="41.275" y1="30.4" x2="41.275" y2="32.427" width="0.2" layer="1"/>
+<wire x1="41.275" y1="32.427" x2="41.36" y2="32.512" width="0.2" layer="1"/>
 </signal>
 <signal name="+24V">
 <contactref element="C1" pad="1"/>
@@ -2933,8 +2933,8 @@ JarekParal (2020-03-14)
 <contactref element="R19" pad="2"/>
 <wire x1="55.118" y1="31.75" x2="55.118" y2="29.718" width="0.2" layer="1"/>
 <wire x1="55.118" y1="29.718" x2="50.927" y2="25.527" width="0.2" layer="1"/>
-<wire x1="53.848" y1="33.02" x2="55.118" y2="31.75" width="0.2" layer="1"/>
-<wire x1="46.44" y1="33.02" x2="53.848" y2="33.02" width="0.2" layer="1"/>
+<wire x1="54.356" y1="32.512" x2="55.118" y2="31.75" width="0.2" layer="1"/>
+<wire x1="47.075" y1="32.512" x2="54.356" y2="32.512" width="0.2" layer="1"/>
 <wire x1="50.927" y1="21.637" x2="50.673" y2="21.383" width="0.2" layer="1"/>
 <wire x1="50.927" y1="25.527" x2="50.927" y2="21.637" width="0.2" layer="1"/>
 </signal>

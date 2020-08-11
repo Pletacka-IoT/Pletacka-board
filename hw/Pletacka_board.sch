@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="17" fill="1" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="18" fill="1" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="19" fill="1" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="25" fill="1" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="26" fill="1" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="27" fill="1" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="28" fill="1" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="29" fill="1" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="30" fill="1" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="20" fill="1" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="21" fill="1" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="22" fill="1" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,22 +53,22 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="55" name="tPotisk" color="7" fill="1" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="58" name="bNC" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="61" name="stand" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="55" name="tPotisk" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bNC" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -7903,6 +7903,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <attribute name="LCSC_ID" value="C13585"/>
 </part>
 <part name="U6" library="TPS54231D" deviceset="TPS54231D" device="">
+<attribute name="DESCRIPTION" value=" 3.5 to 28V Input, 2A, 570kHz Step-Down Converter with Eco-mode&amp;trade, 8-SOIC -40 to 150 "/>
 <attribute name="LCSC_ID" value="C28023"/>
 </part>
 <part name="R14" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="160k">
@@ -8018,7 +8019,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <part name="D5" library="diode" deviceset="SHOTTKY" device="-SMA" value="SS34">
 <attribute name="LCSC_ID" value="C8678"/>
 </part>
-<part name="AD" library="rcl_upravena" deviceset="R-EU_" device="R1206">
+<part name="POLYFUSE" library="rcl_upravena" deviceset="R-EU_" device="R1206" value="24V 1A">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -8026,9 +8027,14 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 </pinmapping>
 </spice>
 <attribute name="LCSC_ID" value="C22813"/>
+<attribute name="MFR_ID" value="nSMD050-24V
+"/>
 </part>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="D7" library="1SMB5935BT3G" deviceset="1SMB5935BT3G" device=""/>
+<part name="D7" library="1SMB5935BT3G" deviceset="1SMB5935BT3G" device="" value="27V">
+<attribute name="LCSC_ID" value="C49827"/>
+</part>
+<part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8865,7 +8871,7 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <sheet>
 <description>Power</description>
 <plain>
-<text x="12.7" y="81.28" size="2.54" layer="94">Input - 24V</text>
+<text x="12.7" y="91.44" size="2.54" layer="94">Input - 24V</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
@@ -8873,17 +8879,17 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="CON5" gate="-1" x="20.32" y="96.52" smashed="yes">
-<attribute name="NAME" x="19.05" y="97.409" size="1.778" layer="95" rot="R180"/>
+<instance part="CON5" gate="-1" x="20.32" y="106.68" smashed="yes">
+<attribute name="NAME" x="19.05" y="107.569" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CON5" gate="-2" x="20.32" y="88.9" smashed="yes">
-<attribute name="NAME" x="19.05" y="89.789" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="16.51" y="85.217" size="1.778" layer="96"/>
+<instance part="CON5" gate="-2" x="20.32" y="99.06" smashed="yes">
+<attribute name="NAME" x="19.05" y="99.949" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="16.51" y="95.377" size="1.778" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="60.96" y="93.98" smashed="yes">
-<attribute name="NAME" x="62.484" y="94.361" size="1.778" layer="95"/>
-<attribute name="VALUE" x="62.484" y="89.281" size="1.778" layer="96"/>
-<attribute name="LCSC_ID" x="60.96" y="93.98" size="1.778" layer="96" display="off"/>
+<instance part="C1" gate="G$1" x="60.96" y="96.52" smashed="yes">
+<attribute name="NAME" x="62.484" y="96.901" size="1.778" layer="95"/>
+<attribute name="VALUE" x="62.484" y="91.821" size="1.778" layer="96"/>
+<attribute name="LCSC_ID" x="60.96" y="96.52" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U6" gate="G$1" x="149.86" y="88.9" smashed="yes">
 <attribute name="NAME" x="137.16" y="110.22" size="2.0828" layer="95" ratio="10" rot="SR0"/>
@@ -8957,22 +8963,27 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <attribute name="VALUE" x="188.341" y="98.806" size="1.27" layer="96" rot="MR270"/>
 <attribute name="LCSC_ID" x="190.5" y="96.52" size="1.27" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="D5" gate="G$1" x="30.48" y="96.52" smashed="yes">
-<attribute name="NAME" x="28.194" y="98.425" size="1.27" layer="95"/>
-<attribute name="VALUE" x="28.194" y="94.361" size="1.27" layer="96" rot="MR180"/>
-<attribute name="LCSC_ID" x="30.48" y="96.52" size="1.27" layer="96" display="off"/>
+<instance part="D5" gate="G$1" x="30.48" y="106.68" smashed="yes">
+<attribute name="NAME" x="28.194" y="108.585" size="1.27" layer="95"/>
+<attribute name="VALUE" x="28.194" y="104.521" size="1.27" layer="96" rot="MR180"/>
+<attribute name="LCSC_ID" x="30.48" y="106.68" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="AD" gate="G$1" x="43.18" y="96.52" smashed="yes" rot="R180">
-<attribute name="NAME" x="46.99" y="95.0214" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="46.99" y="99.822" size="1.778" layer="96" rot="R180"/>
-<attribute name="LCSC_ID" x="43.18" y="96.52" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="POLYFUSE" gate="G$1" x="43.18" y="106.68" smashed="yes" rot="MR0">
+<attribute name="NAME" x="49.53" y="108.1786" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="46.99" y="103.378" size="1.778" layer="96" rot="MR0"/>
+<attribute name="LCSC_ID" x="43.18" y="106.68" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MFR_ID" x="43.18" y="106.68" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="GND14" gate="1" x="53.34" y="121.92" smashed="yes" rot="R180">
-<attribute name="VALUE" x="55.88" y="124.46" size="1.778" layer="96" rot="R180"/>
+<instance part="GND14" gate="1" x="53.34" y="45.72" smashed="yes">
+<attribute name="VALUE" x="50.8" y="43.18" size="1.778" layer="96"/>
 </instance>
-<instance part="D7" gate="G$1" x="53.34" y="111.76" smashed="yes" rot="R270">
-<attribute name="NAME" x="55.88" y="116.84" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="49.53" y="116.84" size="1.778" layer="96" rot="R270"/>
+<instance part="D7" gate="G$1" x="53.34" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.8" y="91.44" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="57.15" y="91.44" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_ID" x="53.34" y="96.52" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="GND15" gate="1" x="38.1" y="86.36" smashed="yes">
+<attribute name="VALUE" x="35.56" y="83.82" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8981,20 +8992,20 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <net name="VIN" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="96.52" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
-<junction x="60.96" y="96.52"/>
 <pinref part="U6" gate="G$1" pin="VIN"/>
-<wire x1="60.96" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="106.68" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
 <junction x="73.66" y="106.68"/>
 <label x="106.68" y="106.68" size="1.778" layer="95"/>
-<wire x1="48.26" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="AD" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="96.52" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="96.52" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
-<junction x="53.34" y="96.52"/>
+<wire x1="48.26" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="POLYFUSE" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="106.68" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
+<junction x="53.34" y="106.68"/>
 <pinref part="D7" gate="G$1" pin="K"/>
+<wire x1="53.34" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="106.68" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
+<junction x="60.96" y="106.68"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -9026,10 +9037,14 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <wire x1="111.76" y1="58.42" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
 <junction x="111.76" y="50.8"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="50.8" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="CON5" gate="-2" pin="KL"/>
-<wire x1="60.96" y1="88.9" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
-<junction x="60.96" y="88.9"/>
+<wire x1="60.96" y1="50.8" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="D7" gate="G$1" pin="A"/>
+<wire x1="53.34" y1="91.44" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="50.8" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<junction x="60.96" y="50.8"/>
+<junction x="53.34" y="50.8"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="GND"/>
@@ -9041,9 +9056,10 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<pinref part="GND14" gate="1" pin="GND"/>
-<pinref part="D7" gate="G$1" pin="A"/>
-<wire x1="53.34" y1="116.84" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="CON5" gate="-2" pin="KL"/>
+<wire x1="25.4" y1="99.06" x2="38.1" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="99.06" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -9146,15 +9162,15 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <net name="N$3" class="0">
 <segment>
 <pinref part="CON5" gate="-1" pin="KL"/>
-<wire x1="25.4" y1="96.52" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="106.68" x2="27.94" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="33.02" y1="96.52" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="AD" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="POLYFUSE" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

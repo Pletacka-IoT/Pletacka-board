@@ -3,7 +3,7 @@
 <eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -2190,7 +2190,7 @@ JarekParal (2020-03-14)
 </element>
 <element name="U6" library="TPS54231D" package="SOIC127P599X175-8N" value="TPS54231D" x="59.055" y="21.51" smashed="yes">
 <attribute name="AVAILABILITY" value="Good" x="38.735" y="38.02" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" 3.5 to 28V Input, 2A, 570kHz Step-Down Converter with Eco-mode&amp;trade; 8-SOIC -40 to 150 " x="38.735" y="38.02" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" 3.5 to 28V Input, 2A, 570kHz Step-Down Converter with Eco-mode&amp;trade, 8-SOIC -40 to 150 " x="38.735" y="38.02" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY-PURCHASE-URL" value="https://snapeda.com/shop?store=DigiKey&amp;id=456068" x="38.735" y="38.02" size="1.778" layer="27" display="off"/>
 <attribute name="LCSC_ID" value="C28023" x="59.055" y="21.51" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="38.735" y="38.02" size="1.778" layer="27" display="off"/>
@@ -2362,16 +2362,19 @@ JarekParal (2020-03-14)
 <attribute name="NAME" x="54.832" y="9.1" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="49.332" y="9.1" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="AD" library="rcl_upravena" package="R1206" value="" x="52.88" y="12.54" smashed="yes" rot="R270">
+<element name="POLYFUSE" library="rcl_upravena" package="R1206" value="24V 1A" x="52.88" y="12.54" smashed="yes" rot="R270">
 <attribute name="LCSC_ID" value="C22813" x="52.88" y="12.54" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR_ID" value="nSMD050-24V
+" x="52.88" y="12.54" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="53.515" y="13.175" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="50.975" y="13.175" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="D7" library="1SMB5935BT3G" package="DIOM5436X247N" value="1SMB5935BT3G" x="59" y="14" smashed="yes">
+<element name="D7" library="1SMB5935BT3G" package="DIOM5436X247N" value="27V" x="59" y="14" smashed="yes">
 <attribute name="ARROW_ELECTRONICS-PURCHASE-URL" value="https://snapeda.com/shop?store=Arrow+Electronics&amp;id=285964" x="59" y="14" size="1.778" layer="27" display="off"/>
 <attribute name="AVAILABILITY" value="Good" x="59" y="14" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" Zener Diode 27V 550mW ±5% Surface Mount SMB " x="59" y="14" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY-PURCHASE-URL" value="https://snapeda.com/shop?store=DigiKey&amp;id=285964" x="59" y="14" size="1.778" layer="27" display="off"/>
+<attribute name="LCSC_ID" value="C49827" x="59" y="14" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="ON Semiconductor" x="59" y="14" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER-PURCHASE-URL" value="https://snapeda.com/shop?store=Mouser&amp;id=285964" x="59" y="14" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="1SMB5935BT3G" x="59" y="14" size="1.778" layer="27" display="off"/>
@@ -2481,38 +2484,8 @@ JarekParal (2020-03-14)
 <via x="61.595" y="18.335" extent="1-16" drill="0.65"/>
 <via x="56.515" y="18.335" extent="1-16" drill="0.65"/>
 <contactref element="C1" pad="2"/>
-<contactref element="CON5" pad="2"/>
-<wire x1="61.595" y1="18.335" x2="62.8396" y2="17.0904" width="1.27" layer="1"/>
-<wire x1="62.8396" y1="17.0904" x2="62.8396" y2="14" width="1.27" layer="1"/>
 <contactref element="D7" pad="A"/>
-<wire x1="62.8396" y1="14" x2="62.8396" y2="6.985" width="1.27" layer="1"/>
-<wire x1="61.185" y1="14" x2="62.8396" y2="14" width="1.27" layer="1"/>
-<wire x1="53.975" y1="53.26" x2="63.5" y2="57.705" width="0" layer="19" extent="1-1"/>
-<wire x1="51.435" y1="53.26" x2="53.975" y2="53.26" width="0" layer="19" extent="1-1"/>
-<wire x1="63.5" y1="45.64" x2="63.5" y2="57.705" width="0" layer="19" extent="1-1"/>
-<wire x1="66.04" y1="45.64" x2="63.5" y2="45.64" width="0" layer="19" extent="1-1"/>
-<wire x1="68.58" y1="45.64" x2="66.04" y2="45.64" width="0" layer="19" extent="1-1"/>
-<wire x1="71.12" y1="45.64" x2="68.58" y2="45.64" width="0" layer="19" extent="1-1"/>
-<wire x1="61.51" y1="43.1" x2="63.5" y2="45.64" width="0" layer="19" extent="1-1"/>
-<wire x1="64.945" y1="39.32" x2="61.51" y2="42.755" width="0" layer="19" extent="1-1"/>
-<wire x1="70.945" y1="39.32" x2="65.405" y2="39.32" width="0" layer="19" extent="1-1"/>
-<wire x1="59.69" y1="33.975" x2="64.945" y2="39.32" width="0" layer="19" extent="1-1"/>
-<wire x1="59.69" y1="31.145" x2="59.69" y2="33.975" width="0" layer="19" extent="1-1"/>
-<wire x1="54.102" y1="25.129" x2="59.69" y2="31.145" width="0" layer="19" extent="1-1"/>
-<wire x1="50.165" y1="25.955" x2="54.102" y2="25.129" width="0" layer="19" extent="1-1"/>
-<wire x1="28.575" y1="30.4" x2="28.575" y2="25.82" width="0" layer="19" extent="1-1"/>
-<wire x1="59.055" y1="22.145" x2="54.102" y2="25.129" width="0" layer="19" extent="1-1"/>
-<wire x1="61.525" y1="22.145" x2="59.055" y2="22.145" width="0" layer="19" extent="1-1"/>
-<wire x1="64.05" y1="22.145" x2="61.525" y2="22.145" width="0" layer="19" extent="1-1"/>
-<wire x1="56.515" y1="18.335" x2="59.055" y2="18.335" width="0" layer="19" extent="1-1"/>
-<wire x1="61.595" y1="18.335" x2="59.055" y2="18.335" width="0" layer="19" extent="1-1"/>
-<wire x1="2.032" y1="38.232" x2="2.08" y2="31.065" width="0" layer="19" extent="1-1"/>
-<wire x1="2.905" y1="47.103" x2="3.175" y2="39.925" width="0" layer="19" extent="1-1"/>
-<wire x1="2.905" y1="47.855" x2="2.905" y2="48.505" width="0" layer="19" extent="1-1"/>
-<wire x1="1.905" y1="50.1104" x2="2.905" y2="48.505" width="0" layer="19" extent="1-1"/>
-<wire x1="7.255" y1="49.257" x2="2.905" y2="48.505" width="0" layer="19" extent="1-1"/>
-<wire x1="31.115" y1="53.26" x2="51.435" y2="53.26" width="0" layer="19" extent="1-1"/>
-<wire x1="28.575" y1="53.26" x2="31.115" y2="53.26" width="0" layer="19" extent="1-1"/>
+<contactref element="CON5" pad="2"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U$1" pad="3V3"/>
@@ -2547,18 +2520,20 @@ JarekParal (2020-03-14)
 <contactref element="C10" pad="1"/>
 <contactref element="R23" pad="2"/>
 <contactref element="U$2" pad="P$2"/>
-<wire x1="67.945" y1="35.835" x2="68.58" y2="35.835" width="0.6096" layer="1"/>
-<wire x1="68.58" y1="35.835" x2="72.035" y2="35.835" width="0.6096" layer="1"/>
 <wire x1="73.66" y1="19.605" x2="73.025" y2="18.97" width="0.6096" layer="1"/>
 <wire x1="73.025" y1="18.97" x2="72.475" y2="18.97" width="0.6096" layer="1"/>
-<wire x1="72.035" y1="35.835" x2="73.66" y2="34.21" width="0.6096" layer="1"/>
+<wire x1="73.66" y1="34.21" x2="72.035" y2="35.835" width="0.6096" layer="1"/>
 <wire x1="73.66" y1="34.21" x2="73.66" y2="19.605" width="0.6096" layer="1"/>
-<wire x1="68.3" y1="36.115" x2="68.58" y2="35.835" width="0.6096" layer="1"/>
 <contactref element="JP1" pad="3"/>
 <wire x1="63.5" y1="52.625" x2="59.69" y2="48.815" width="1.27" layer="1"/>
 <wire x1="59.69" y1="48.815" x2="59.69" y2="35.715" width="1.27" layer="1"/>
 <wire x1="59.69" y1="35.715" x2="31.35" y2="35.715" width="1.27" layer="1"/>
 <wire x1="31.35" y1="35.715" x2="26.035" y2="30.4" width="1.27" layer="1"/>
+<wire x1="72.035" y1="35.835" x2="67.945" y2="35.835" width="0.6096" layer="1"/>
+<wire x1="67.945" y1="35.835" x2="67.835" y2="35.835" width="0.6096" layer="1"/>
+<wire x1="67.835" y1="35.835" x2="67" y2="35" width="0.6096" layer="1"/>
+<wire x1="67" y1="35" x2="67.11" y2="35" width="0.6096" layer="1"/>
+<wire x1="67.11" y1="35" x2="67.945" y2="35.835" width="0.6096" layer="1"/>
 <wire x1="59.69" y1="35.715" x2="67.825" y2="35.715" width="1.27" layer="1"/>
 <wire x1="67.825" y1="35.715" x2="67.945" y2="35.835" width="1.27" layer="1"/>
 </signal>
@@ -2705,12 +2680,13 @@ JarekParal (2020-03-14)
 <wire x1="57.404" y1="44.116" x2="55.88" y2="45.64" width="0.2" layer="1"/>
 <wire x1="55.88" y1="53.895" x2="54.61" y2="55.165" width="0.2" layer="1"/>
 <wire x1="55.88" y1="45.64" x2="55.88" y2="53.895" width="0.2" layer="1"/>
-<wire x1="73.66" y1="43.862" x2="73.406" y2="44.116" width="0.2" layer="1"/>
+<wire x1="73.66" y1="43.862" x2="73.533" y2="43.989" width="0.2" layer="1"/>
 <wire x1="73.66" y1="43.862" x2="73.66" y2="42.55" width="0.2" layer="1"/>
 <via x="57.404" y="44.116" extent="1-16" drill="0.35"/>
-<wire x1="73.406" y1="44.116" x2="62.23" y2="44.116" width="0.2" layer="1"/>
-<wire x1="57.404" y1="44.116" x2="62.23" y2="44.116" width="0.2" layer="16"/>
-<via x="62.23" y="44.116" extent="1-16" drill="0.35"/>
+<wire x1="73.533" y1="43.989" x2="64.77" y2="43.989" width="0.2" layer="1"/>
+<wire x1="57.404" y1="44.116" x2="57.531" y2="43.989" width="0.2" layer="16"/>
+<wire x1="64.77" y1="43.989" x2="57.531" y2="43.989" width="0.2" layer="16"/>
+<via x="64.77" y="43.989" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$6">
 <contactref element="CON1" pad="1"/>
@@ -2818,8 +2794,6 @@ JarekParal (2020-03-14)
 <contactref element="C1" pad="1"/>
 <contactref element="U6" pad="2"/>
 <contactref element="R14" pad="2"/>
-<wire x1="52.155" y1="22.145" x2="52.1125" y2="22.1875" width="0.1524" layer="1"/>
-<wire x1="52.134" y1="22.294" x2="52.07" y2="22.23" width="0.6096" layer="1"/>
 <wire x1="54.102" y1="22.209" x2="54.0805" y2="22.1875" width="0.8128" layer="1"/>
 <wire x1="54.0805" y1="22.1875" x2="52.1125" y2="22.1875" width="0.8128" layer="1"/>
 <wire x1="56.521" y1="22.209" x2="56.585" y2="22.145" width="0.8128" layer="1"/>
@@ -2831,7 +2805,7 @@ JarekParal (2020-03-14)
 <wire x1="52.07" y1="22.23" x2="54.038" y2="22.23" width="1.27" layer="1"/>
 <wire x1="54.038" y1="22.23" x2="54.0805" y2="22.1875" width="1.27" layer="1"/>
 <wire x1="54.102" y1="22.209" x2="56.521" y2="22.209" width="1.27" layer="1"/>
-<contactref element="AD" pad="1"/>
+<contactref element="POLYFUSE" pad="1"/>
 <contactref element="D7" pad="C"/>
 <wire x1="52.88" y1="14" x2="56.815" y2="14" width="1.27" layer="1"/>
 <wire x1="50.673" y1="21.383" x2="50.673" y2="15.327" width="1.27" layer="1"/>
@@ -2952,7 +2926,7 @@ JarekParal (2020-03-14)
 </signal>
 <signal name="N$4">
 <contactref element="D5" pad="C"/>
-<contactref element="AD" pad="2"/>
+<contactref element="POLYFUSE" pad="2"/>
 <wire x1="52.832" y1="8.365" x2="52.832" y2="11.032" width="1.27" layer="1"/>
 <wire x1="52.832" y1="11.032" x2="52.88" y2="11.08" width="1.27" layer="1"/>
 </signal>
@@ -2965,7 +2939,7 @@ JarekParal (2020-03-14)
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="21,19,b4fab706b77b4b7a"/>
+<approved hash="21,19,a53fa6c3a6a25abf"/>
 </errors>
 </board>
 </drawing>

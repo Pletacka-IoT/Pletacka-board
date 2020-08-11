@@ -223,6 +223,11 @@
 <circle x="70" y="55" radius="4" width="0" layer="42"/>
 <circle x="5" y="5" radius="4" width="0" layer="42"/>
 <circle x="70" y="5" radius="4" width="0" layer="42"/>
+<text x="27.19" y="41.6825" size="0.9" layer="21" font="vector" ratio="20">JLCJLCJLCJLC</text>
+<hole x="72.88875" y="50.27" drill="1.152"/>
+<circle x="72.88875" y="50.27" radius="1" width="0" layer="42"/>
+<hole x="1.88875" y="10.27" drill="1.152"/>
+<circle x="1.88875" y="10.27" radius="1" width="0" layer="42"/>
 </plain>
 <libraries>
 <library name="ESP32-T-Display">

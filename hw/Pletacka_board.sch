@@ -7292,82 +7292,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <rectangle x1="-0.381" y1="-2.921" x2="0.381" y2="-1.905" layer="21"/>
 <rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-1.905" layer="21"/>
 </package>
-<package name="1X04" urn="urn:adsk.eagle:footprint:22258/1" library_version="4">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.1562" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-</package>
-<package name="1X04/90" urn="urn:adsk.eagle:footprint:22259/1" library_version="4">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-5.08" y1="-1.905" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-1.905" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="6.985" x2="-3.81" y2="1.27" width="0.762" layer="21"/>
-<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
-<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="5.08" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-1.905" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="6.985" x2="3.81" y2="1.27" width="0.762" layer="21"/>
-<pad name="1" x="-3.81" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.715" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="6.985" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-4.191" y1="0.635" x2="-3.429" y2="1.143" layer="21"/>
-<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
-<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
-<rectangle x1="3.429" y1="0.635" x2="4.191" y2="1.143" layer="21"/>
-<rectangle x1="-4.191" y1="-2.921" x2="-3.429" y2="-1.905" layer="21"/>
-<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
-<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
-<rectangle x1="3.429" y1="-2.921" x2="4.191" y2="-1.905" layer="21"/>
-</package>
 </packages>
 <packages3d>
 <package3d name="1X03" urn="urn:adsk.eagle:package:22458/2" type="model" library_version="4">
@@ -7382,18 +7306,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <packageinstance name="1X03/90"/>
 </packageinstances>
 </package3d>
-<package3d name="1X04" urn="urn:adsk.eagle:package:22407/2" type="model" library_version="4">
-<description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="1X04"/>
-</packageinstances>
-</package3d>
-<package3d name="1X04/90" urn="urn:adsk.eagle:package:22404/2" type="model" library_version="4">
-<description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="1X04/90"/>
-</packageinstances>
-</package3d>
 </packages3d>
 <symbols>
 <symbol name="PINHD3" urn="urn:adsk.eagle:symbol:22339/1" library_version="4">
@@ -7406,18 +7318,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="3" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
-<symbol name="PINHD4" urn="urn:adsk.eagle:symbol:22257/1" library_version="4">
-<wire x1="-6.35" y1="-5.08" x2="1.27" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="7.62" x2="-6.35" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="7.62" x2="-6.35" y2="-5.08" width="0.4064" layer="94"/>
-<text x="-6.35" y="8.255" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7454,46 +7354,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="POPULARITY" value="17" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PINHD-1X4" urn="urn:adsk.eagle:component:22499/5" prefix="JP" uservalue="yes" library_version="4">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="PINHD4" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X04">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22407/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="91" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="/90" package="1X04/90">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22404/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="9" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7811,6 +7671,41 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2" urn="urn:adsk.eagle:library:372">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+24V" urn="urn:adsk.eagle:symbol:26982/1" library_version="2">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+24V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+24V" urn="urn:adsk.eagle:component:27040/1" prefix="SUPPLY" library_version="2">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="+24V" symbol="+24V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7998,8 +7893,6 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
-<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D3" library="diode" deviceset="SHOTTKY" device="-SMA" value="SS34">
 <attribute name="LCSC_ID" value="C8678"/>
@@ -8042,6 +7935,29 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 </part>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+24V" device=""/>
+<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+24V" device=""/>
+<part name="R20" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="1k2">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="LCSC_ID" value="C22765"/>
+</part>
+<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R19" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="36k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="LCSC_ID" value="C23147"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -8147,16 +8063,16 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <attribute name="NAME" x="110.49" y="46.355" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.49" y="33.02" size="1.778" layer="96"/>
 </instance>
-<instance part="JP2" gate="A" x="116.84" y="17.78" smashed="yes">
-<attribute name="NAME" x="110.49" y="26.035" size="1.778" layer="95"/>
-<attribute name="VALUE" x="110.49" y="10.16" size="1.778" layer="96"/>
-</instance>
-<instance part="JP3" gate="A" x="147.32" y="17.78" smashed="yes">
-<attribute name="NAME" x="140.97" y="26.035" size="1.778" layer="95"/>
-<attribute name="VALUE" x="140.97" y="10.16" size="1.778" layer="96"/>
-</instance>
 <instance part="GND11" gate="1" x="134.62" y="22.86" smashed="yes" rot="R270">
 <attribute name="VALUE" x="132.08" y="25.4" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="JP4" gate="A" x="147.32" y="20.32" smashed="yes">
+<attribute name="NAME" x="140.97" y="26.035" size="1.778" layer="95"/>
+<attribute name="VALUE" x="140.97" y="12.7" size="1.778" layer="96"/>
+</instance>
+<instance part="JP5" gate="A" x="116.84" y="17.78" smashed="yes">
+<attribute name="NAME" x="110.49" y="23.495" size="1.778" layer="95"/>
+<attribute name="VALUE" x="110.49" y="10.16" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8218,22 +8134,18 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <pinref part="JP1" gate="A" pin="1"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="4"/>
-<wire x1="144.78" y1="15.24" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="15.24" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="A" pin="3"/>
 <wire x1="139.7" y1="17.78" x2="144.78" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="A" pin="2"/>
 <wire x1="144.78" y1="20.32" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="20.32" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
-<junction x="139.7" y="17.78"/>
-<pinref part="JP3" gate="A" pin="1"/>
 <wire x1="144.78" y1="22.86" x2="139.7" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="22.86" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
 <junction x="139.7" y="20.32"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="137.16" y1="22.86" x2="139.7" y2="22.86" width="0.1524" layer="91"/>
 <junction x="139.7" y="22.86"/>
+<pinref part="JP4" gate="A" pin="1"/>
+<pinref part="JP4" gate="A" pin="2"/>
+<pinref part="JP4" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -8415,9 +8327,9 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <label x="43.18" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="4"/>
 <wire x1="114.3" y1="15.24" x2="106.68" y2="15.24" width="0.1524" layer="91"/>
 <label x="106.68" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP5" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="GPIO13" class="0">
@@ -8427,21 +8339,9 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <label x="43.18" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="3"/>
 <wire x1="114.3" y1="17.78" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
 <label x="106.68" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="GPIO32" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="32"/>
-<wire x1="86.36" y1="99.06" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
-<label x="88.9" y="99.06" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="JP2" gate="A" pin="1"/>
-<wire x1="114.3" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
-<label x="106.68" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP5" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="GPIO33" class="0">
@@ -8451,9 +8351,9 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <label x="88.9" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
 <wire x1="114.3" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
 <label x="106.68" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP5" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="LED_ON" class="0">
@@ -8466,6 +8366,13 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <pinref part="U$1" gate="G$1" pin="25"/>
 <wire x1="86.36" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
 <label x="88.9" y="93.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PWR_VOLTAGE" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="32"/>
+<wire x1="86.36" y1="99.06" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
+<label x="88.9" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -9025,29 +8932,29 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <instance part="GND15" gate="1" x="38.1" y="86.36" smashed="yes">
 <attribute name="VALUE" x="35.56" y="83.82" size="1.778" layer="96"/>
 </instance>
+<instance part="SUPPLY1" gate="+24V" x="53.34" y="114.3" smashed="yes">
+<attribute name="VALUE" x="50.8" y="117.475" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY2" gate="+24V" x="33.02" y="142.24" smashed="yes" rot="R90">
+<attribute name="VALUE" x="29.845" y="139.7" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R20" gate="G$1" x="71.12" y="142.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="74.93" y="140.7414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="74.93" y="145.542" size="1.778" layer="96" rot="R180"/>
+<attribute name="LCSC_ID" x="71.12" y="142.24" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="GND16" gate="1" x="86.36" y="142.24" smashed="yes" rot="R90">
+<attribute name="VALUE" x="88.9" y="139.7" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R19" gate="G$1" x="50.8" y="142.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="54.61" y="140.7414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="54.61" y="145.542" size="1.778" layer="96" rot="R180"/>
+<attribute name="LCSC_ID" x="50.8" y="142.24" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="VIN" class="0">
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="U6" gate="G$1" pin="VIN"/>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="106.68" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
-<junction x="73.66" y="106.68"/>
-<label x="106.68" y="106.68" size="1.778" layer="95"/>
-<wire x1="48.26" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="POLYFUSE" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="106.68" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
-<junction x="53.34" y="106.68"/>
-<pinref part="D7" gate="G$1" pin="K"/>
-<wire x1="53.34" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="106.68" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
-<junction x="60.96" y="106.68"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <wire x1="60.96" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
@@ -9100,6 +9007,11 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <wire x1="25.4" y1="99.06" x2="38.1" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="99.06" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="142.24" x2="83.82" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -9211,6 +9123,43 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <pinref part="D5" gate="G$1" pin="C"/>
 <wire x1="33.02" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="POLYFUSE" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="+24V" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="U6" gate="G$1" pin="VIN"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="106.68" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
+<junction x="73.66" y="106.68"/>
+<label x="106.68" y="106.68" size="1.778" layer="95"/>
+<wire x1="48.26" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="POLYFUSE" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="106.68" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
+<junction x="53.34" y="106.68"/>
+<pinref part="D7" gate="G$1" pin="K"/>
+<wire x1="53.34" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="106.68" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
+<junction x="60.96" y="106.68"/>
+<pinref part="SUPPLY1" gate="+24V" pin="+24V"/>
+<wire x1="53.34" y1="111.76" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY2" gate="+24V" pin="+24V"/>
+<wire x1="35.56" y1="142.24" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="PWR_VOLTAGE" class="0">
+<segment>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="142.24" x2="60.96" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="142.24" x2="66.04" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="142.24" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
+<junction x="60.96" y="142.24"/>
+<label x="60.96" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="R19" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

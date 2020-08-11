@@ -8034,6 +8034,14 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <attribute name="LCSC_ID" value="C49827"/>
 </part>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R17" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="4k7">
+<attribute name="LCSC_ID" value="C23162"/>
+</part>
+<part name="R18" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="4k7">
+<attribute name="LCSC_ID" value="C23162"/>
+</part>
+<part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8621,6 +8629,22 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <attribute name="VALUE" x="45.4914" y="25.4" size="1.778" layer="96" rot="R90"/>
 <attribute name="LCSC_ID" x="43.18" y="22.86" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
+<instance part="R17" gate="G$1" x="157.48" y="73.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="155.9814" y="69.85" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="160.782" y="69.85" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_ID" x="157.48" y="73.66" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R18" gate="G$1" x="220.98" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="219.4814" y="77.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="224.282" y="77.47" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_ID" x="220.98" y="81.28" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="+3V8" gate="G$1" x="157.48" y="83.82" smashed="yes">
+<attribute name="VALUE" x="160.02" y="86.36" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="+3V9" gate="G$1" x="220.98" y="91.44" smashed="yes">
+<attribute name="VALUE" x="223.52" y="93.98" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8673,14 +8697,21 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <segment>
 <pinref part="U1" gate="G$1" pin="SDA"/>
 <wire x1="215.9" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
-<label x="220.98" y="73.66" size="1.27" layer="95" xref="yes"/>
+<label x="228.6" y="73.66" size="1.27" layer="95" xref="yes"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="73.66" x2="228.6" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="76.2" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
+<junction x="220.98" y="73.66"/>
 </segment>
 </net>
 <net name="TMP_SCL" class="0">
 <segment>
+<label x="147.32" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="68.58" x2="147.32" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="SCL"/>
-<wire x1="180.34" y1="68.58" x2="175.26" y2="68.58" width="0.1524" layer="91"/>
-<label x="175.26" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="157.48" y1="68.58" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
+<junction x="157.48" y="68.58"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -8704,6 +8735,16 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="+3V8" gate="G$1" pin="+3V3"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="81.28" x2="157.48" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="88.9" x2="220.98" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -8861,8 +8902,8 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <net name="TMP_OS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="OS"/>
-<wire x1="215.9" y1="71.12" x2="220.98" y2="71.12" width="0.1524" layer="91"/>
-<label x="220.98" y="71.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="71.12" x2="228.6" y2="71.12" width="0.1524" layer="91"/>
+<label x="228.6" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

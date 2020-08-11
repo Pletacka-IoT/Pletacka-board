@@ -2387,6 +2387,16 @@ JarekParal (2020-03-14)
 <attribute name="PRICE" value="None" x="59" y="14" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="55.5" y="11.5" size="1.27" layer="27" align="top-left"/>
 </element>
+<element name="R17" library="rcl_upravena" package="R0603" value="4k7" x="4" y="42.73" smashed="yes" rot="R270">
+<attribute name="LCSC_ID" value="C23162" x="4" y="42.73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="4.635" y="43.365" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="2.095" y="43.365" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R18" library="rcl_upravena" package="R0603" value="4k7" x="6" y="42.746" smashed="yes" rot="R270">
+<attribute name="LCSC_ID" value="C23162" x="6" y="42.746" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="6.635" y="43.381" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="4.095" y="43.381" size="1.27" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2548,7 +2558,16 @@ JarekParal (2020-03-14)
 <wire x1="26.035" y1="53.26" x2="29.4948" y2="56.7198" width="0.8128" layer="1"/>
 <wire x1="29.4948" y1="56.7198" x2="61.9452" y2="56.7198" width="0.8128" layer="1"/>
 <wire x1="61.9452" y1="56.7198" x2="63.5" y2="55.165" width="0.8128" layer="1"/>
-<wire x1="53.975" y1="30.4" x2="63.5" y2="55.165" width="0" layer="19" extent="1-1"/>
+<contactref element="R17" pad="2"/>
+<contactref element="R18" pad="2"/>
+<wire x1="6" y1="42.026" x2="4.016" y2="42.026" width="0.2" layer="1"/>
+<wire x1="4.016" y1="42.026" x2="4" y2="42.01" width="0.2" layer="1"/>
+<wire x1="4" y1="42.01" x2="1.99" y2="42.01" width="0.2" layer="1"/>
+<wire x1="0.873" y1="43.127" x2="1.99" y2="42.01" width="0.2" layer="1"/>
+<wire x1="2.905" y1="49.257" x2="1.257" y2="49.257" width="0.2" layer="1"/>
+<wire x1="1.257" y1="49.257" x2="0.873" y2="48.873" width="0.2" layer="1"/>
+<wire x1="0.873" y1="48.873" x2="0.873" y2="43.127" width="0.2" layer="1"/>
+<wire x1="13.97" y1="18.695" x2="4.016" y2="42.026" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U$1" pad="5V"/>
@@ -2578,14 +2597,22 @@ JarekParal (2020-03-14)
 <wire x1="46.355" y1="49.45" x2="46.355" y2="53.26" width="0.2" layer="1"/>
 <wire x1="7.255" y1="47.103" x2="44.008" y2="47.103" width="0.2" layer="1"/>
 <wire x1="44.008" y1="47.103" x2="46.355" y2="49.45" width="0.2" layer="1"/>
+<contactref element="R18" pad="1"/>
+<wire x1="7.255" y1="47.103" x2="6.493" y2="47.103" width="0.2" layer="1"/>
+<wire x1="6.493" y1="47.103" x2="6" y2="46.61" width="0.2" layer="1"/>
+<wire x1="6" y1="46.61" x2="6" y2="43.466" width="0.2" layer="1"/>
 </signal>
 <signal name="TMP_SCL">
-<contactref element="U1" pad="2"/>
 <contactref element="U$1" pad="17"/>
 <wire x1="43.815" y1="53.26" x2="43.815" y2="49.45" width="0.2" layer="1"/>
 <wire x1="42.2148" y1="47.8498" x2="43.815" y2="49.45" width="0.2" layer="1"/>
-<wire x1="7.255" y1="47.855" x2="42.2096" y2="47.855" width="0.2" layer="1"/>
 <wire x1="42.2096" y1="47.855" x2="42.2148" y2="47.8498" width="0.2" layer="1"/>
+<contactref element="R17" pad="1"/>
+<contactref element="U1" pad="2"/>
+<wire x1="7.255" y1="47.855" x2="5.855" y2="47.855" width="0.2" layer="1"/>
+<wire x1="4" y1="46" x2="4" y2="43.45" width="0.2" layer="1"/>
+<wire x1="5.855" y1="47.855" x2="4" y2="46" width="0.2" layer="1"/>
+<wire x1="7.255" y1="47.855" x2="42.2096" y2="47.855" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TMP_OS">
 <contactref element="U1" pad="3"/>
@@ -2710,9 +2737,9 @@ JarekParal (2020-03-14)
 <wire x1="5.08" y1="38.105" x2="5" y2="38.185" width="0.2" layer="1"/>
 <wire x1="48.895" y1="53.26" x2="48.895" y2="49.895" width="0.2" layer="1"/>
 <wire x1="48.895" y1="49.895" x2="45" y2="46" width="0.2" layer="1"/>
-<wire x1="45" y1="46" x2="11" y2="46" width="0.2" layer="1"/>
-<wire x1="11" y1="46" x2="5.08" y2="40.08" width="0.2" layer="1"/>
-<wire x1="5.08" y1="40.08" x2="5.08" y2="38.105" width="0.2" layer="1"/>
+<wire x1="45" y1="46" x2="12" y2="46" width="0.2" layer="1"/>
+<wire x1="12" y1="46" x2="5.08" y2="39.08" width="0.2" layer="1"/>
+<wire x1="5.08" y1="39.08" x2="5.08" y2="38.105" width="0.2" layer="1"/>
 </signal>
 <signal name="BUTTON2">
 <contactref element="R5" pad="1"/>

@@ -116,23 +116,23 @@
 <smd name="8" x="2.2098" y="0.9652" dx="1.4224" dy="0.508" layer="1"/>
 </package>
 <package name="SOT505-1">
-<text x="-3.455" y="2.540440625" size="2.083159375" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-3.45816875" y="-4.44985" size="2.08506875" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-<smd name="1" x="-2.175" y="1.077" dx="1.15" dy="0.6" layer="1"/>
-<wire x1="-1.8" y1="1.8" x2="-0.4" y2="1.8" width="0" layer="51"/>
-<wire x1="-0.4" y1="1.8" x2="0.4" y2="1.8" width="0" layer="51"/>
-<wire x1="0.4" y1="1.8" x2="1.8" y2="1.8" width="0" layer="51"/>
+<text x="-3.455" y="3.810440625" size="2.083159375" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.45816875" y="-5.71985" size="2.08506875" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<smd name="1" x="-1.077" y="-2.175" dx="1.15" dy="0.6" layer="1" rot="R90"/>
+<wire x1="-1.8" y1="-1.8" x2="-1.8" y2="-0.4" width="0" layer="51"/>
+<wire x1="-1.8" y1="-0.4" x2="-1.8" y2="0.4" width="0" layer="51"/>
+<wire x1="-1.8" y1="0.4" x2="-1.8" y2="1.8" width="0" layer="51"/>
+<wire x1="-1.8" y1="1.8" x2="1.8" y2="1.8" width="0" layer="51"/>
 <wire x1="1.8" y1="1.8" x2="1.8" y2="-1.8" width="0" layer="51"/>
 <wire x1="1.8" y1="-1.8" x2="-1.8" y2="-1.8" width="0" layer="51"/>
-<wire x1="-1.8" y1="-1.8" x2="-1.8" y2="1.8" width="0" layer="51"/>
-<wire x1="0.4" y1="1.8" x2="-0.4" y2="1.8" width="0" layer="51" curve="-180"/>
-<smd name="2" x="-2.175" y="0.325" dx="1.15" dy="0.45" layer="1"/>
-<smd name="3" x="-2.175" y="-0.325" dx="1.15" dy="0.45" layer="1"/>
-<smd name="4" x="-2.175" y="-1.077" dx="1.15" dy="0.6" layer="1"/>
-<smd name="5" x="2.175" y="1.077" dx="1.15" dy="0.6" layer="1"/>
-<smd name="6" x="2.175" y="0.325" dx="1.15" dy="0.45" layer="1"/>
-<smd name="7" x="2.175" y="-0.325" dx="1.15" dy="0.45" layer="1"/>
-<smd name="8" x="2.175" y="-1.077" dx="1.15" dy="0.6" layer="1"/>
+<wire x1="-1.8" y1="0.4" x2="-1.8" y2="-0.4" width="0" layer="51" curve="-180"/>
+<smd name="2" x="-0.325" y="-2.175" dx="1.15" dy="0.45" layer="1" rot="R90"/>
+<smd name="3" x="0.325" y="-2.175" dx="1.15" dy="0.45" layer="1" rot="R90"/>
+<smd name="4" x="1.077" y="-2.175" dx="1.15" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="-1.077" y="2.175" dx="1.15" dy="0.6" layer="1" rot="R90"/>
+<smd name="7" x="-0.325" y="2.175" dx="1.15" dy="0.45" layer="1" rot="R90"/>
+<smd name="6" x="0.325" y="2.175" dx="1.15" dy="0.45" layer="1" rot="R90"/>
+<smd name="5" x="1.077" y="2.175" dx="1.15" dy="0.6" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -154,36 +154,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LM75BDP" prefix="U">
-<description>Digital temperature sensor and thermal watchdog</description>
-<gates>
-<gate name="A" symbol="LM75BDP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOP65P490X110-8N">
-<connects>
-<connect gate="A" pin="A0" pad="7"/>
-<connect gate="A" pin="A1" pad="6"/>
-<connect gate="A" pin="A2" pad="5"/>
-<connect gate="A" pin="GND" pad="4"/>
-<connect gate="A" pin="OS" pad="3"/>
-<connect gate="A" pin="SCL" pad="2"/>
-<connect gate="A" pin="SDA" pad="1"/>
-<connect gate="A" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Unavailable"/>
-<attribute name="DESCRIPTION" value=" Temperature Sensor Digital, Local -55°C ~ 125°C 11 b 8-TSSOP "/>
-<attribute name="MF" value="NXP Semiconductors"/>
-<attribute name="MP" value="LM75BDP"/>
-<attribute name="PACKAGE" value="TSSOP-8 NXP Semiconductors"/>
-<attribute name="PRICE" value="None"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LM75BDP-NEW">
 <gates>
 <gate name="G$1" symbol="LM75BDP" x="0" y="0"/>

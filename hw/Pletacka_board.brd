@@ -2308,7 +2308,7 @@ JarekParal (2020-03-14)
 <attribute name="VALUE" x="49.332" y="9.1" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="POLYFUSE" library="rcl_upravena" package="R1206" value="24V 1A" x="52.88" y="12.54" smashed="yes" rot="R270">
-<attribute name="LCSC_ID" value="C22813" x="52.88" y="12.54" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ID" value="C70076" x="52.88" y="12.54" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR_ID" value="nSMD050-24V " x="52.88" y="12.54" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="53.515" y="13.175" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="50.975" y="13.175" size="1.27" layer="27" rot="R270"/>

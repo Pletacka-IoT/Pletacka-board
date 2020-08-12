@@ -7919,7 +7919,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="LCSC_ID" value="C22813"/>
+<attribute name="LCSC_ID" value="C70076"/>
 <attribute name="MFR_ID" value="nSMD050-24V "/>
 </part>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>

@@ -7810,14 +7810,14 @@ In this library the device names are the same as the pin names of the symbols, t
 </spice>
 <attribute name="LCSC_ID" value="C22813"/>
 </part>
-<part name="R15" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="16k">
+<part name="R15" library="rcl_upravena" deviceset="R-EU_" device="R0603" value="33k">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="LCSC_ID" value="C22818"/>
+<attribute name="LCSC_ID" value="C4216"/>
 </part>
 <part name="C2" library="rcl_upravena" deviceset="C-EU" device="C0603" value="10p">
 <attribute name="LCSC_ID" value="C1634"/>

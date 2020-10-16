@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP ESP32-TTGO-T-Display
-D ESP32 with display
-F https://github.com/Xinyuan-LilyGO/TTGO-T-Display/blob/master/schematic/ESP32-TFT(6-26).pdf
-$ENDCMP
-#
-#End Doc Library

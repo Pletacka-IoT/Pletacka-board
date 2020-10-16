@@ -1,0 +1,46 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v2.x A1
+U 1 1 5F89F678
+P 4650 1950
+F 0 "A1" H 4650 861 50  0000 C CNN
+F 1 "Arduino_Nano_v2.x" H 4650 770 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 4650 1950 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf" H 4650 1950 50  0001 C CNN
+	1    4650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP32-TTGO-T-Display:ESP32-TTGO-T-Display E1
+U 1 1 5F8A9387
+P 1700 2100
+F 0 "E1" H 1795 2675 50  0000 C CNN
+F 1 "ESP32-TTGO-T-Display" H 1795 2584 50  0000 C CNN
+F 2 "ESP32-TTGO-T-Display:ESP32-TTGO-T-Display" H 700 2550 50  0001 C CNN
+F 3 "https://github.com/Xinyuan-LilyGO/TTGO-T-Display/blob/master/schematic/ESP32-TFT(6-26).pdf" H 700 2550 50  0001 C CNN
+	1    1700 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2150 1200 2150
+Wire Wire Line
+	1200 2150 1200 1400
+Wire Wire Line
+	1200 1400 4150 1400
+Wire Wire Line
+	4150 1400 4150 1450
+$EndSCHEMATC

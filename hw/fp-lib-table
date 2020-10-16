@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name ESP32-TTGO-T-Display)(type KiCad)(uri ${KIPRJMOD}/ESP32-TTGO-T-Display.pretty)(options "")(descr ""))
+  (lib (name EL357N_A__TA_-G)(type KiCad)(uri ${KIPRJMOD}/EL357N_A__TA_-G.pretty)(options "")(descr ""))
 )

@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ESP32-TTGO-T-Display)(type Legacy)(uri ${KIPRJMOD}/ESP32-TTGO-T-Display.lib)(options "")(descr ""))
+  (lib (name EL357N_A__TA_-G)(type Legacy)(uri ${KIPRJMOD}/Libraries/EL357N_A__TA_-G/EL357N_A__TA_-G.lib)(options "")(descr ""))
 )

@@ -1,4 +1,8 @@
 (fp_lib_table
-  (lib (name ESP32-TTGO-T-Display)(type KiCad)(uri ${KIPRJMOD}/ESP32-TTGO-T-Display.pretty)(options "")(descr ""))
-  (lib (name EL357N_A__TA_-G)(type KiCad)(uri ${KIPRJMOD}/EL357N_A__TA_-G.pretty)(options "")(descr ""))
+  (lib (name ESP32-TTGO-T-Display)(type KiCad)(uri ${KIPRJMOD}/Libraries/ESP32-TTGO-T-Display/ESP32-TTGO-T-Display.pretty)(options "")(descr ""))
+  (lib (name SS34)(type KiCad)(uri ${KIPRJMOD}/Libraries/SS34/SS34.pretty)(options "")(descr ""))
+  (lib (name 1SMB5935BT3G)(type KiCad)(uri ${KIPRJMOD}/Libraries/1SMB5935BT3G/1SMB5935BT3G.pretty)(options "")(descr ""))
+  (lib (name TPS54231D)(type KiCad)(uri ${KIPRJMOD}/Libraries/TPS54231D/TPS54231D.pretty)(options "")(descr ""))
+  (lib (name B5819W)(type KiCad)(uri ${KIPRJMOD}/Libraries/B5819W/B5819W.pretty)(options "")(descr ""))
+  (lib (name EL357N_A__TA_-G)(type KiCad)(uri ${KIPRJMOD}/Libraries/EL357N_A__TA_-G/EL357N_A__TA_-G.pretty)(options "")(descr ""))
 )

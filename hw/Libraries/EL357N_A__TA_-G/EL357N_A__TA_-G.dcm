@@ -1,7 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
 $CMP EL357N(A)(TA)-G
-F SOP-4 Everlight
+F https://www.snapeda.com/parts/EL357N(A)(TA)-G/Everlight%20Electronics/datasheet/
 $ENDCMP
 #
 #End Doc Library

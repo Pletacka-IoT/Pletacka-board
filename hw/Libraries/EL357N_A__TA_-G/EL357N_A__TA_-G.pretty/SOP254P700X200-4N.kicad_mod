@@ -1,4 +1,4 @@
-(module SOP254P700X200-4N (layer F.Cu) (tedit 5F8A13B6)
+(module SOP254P700X200-4N (layer F.Cu) (tedit 5F8B66AD)
   (fp_text reference REF** (at -0.82154 -3.64071) (layer F.SilkS)
     (effects (font (size 1.002756 1.002756) (thickness 0.015)))
   )
@@ -21,4 +21,9 @@
   (pad 3 smd rect (at 3.04 1.27) (size 1.93 0.59) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -3.04 1.27) (size 1.93 0.59) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at -3.04 -1.27) (size 1.93 0.59) (layers F.Cu F.Paste F.Mask))
+  (model ${KIPRJMOD}/Libraries/EL357N_A__TA_-G/EL357N_A__TA_-G.pretty/SO4.stp
+    (at (xyz 0 0 0))
+    (scale (xyz 1.8 1 1))
+    (rotate (xyz 0 0 90))
+  )
 )

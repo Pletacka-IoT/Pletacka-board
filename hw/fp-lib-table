@@ -6,4 +6,5 @@
   (lib (name B5819W)(type KiCad)(uri ${KIPRJMOD}/Libraries/B5819W/B5819W.pretty)(options "")(descr ""))
   (lib (name EL357N_A__TA_-G)(type KiCad)(uri ${KIPRJMOD}/Libraries/EL357N_A__TA_-G/EL357N_A__TA_-G.pretty)(options "")(descr ""))
   (lib (name Terminal_block)(type KiCad)(uri /media/kuba/Data/Github/Pletacka-IoT/Pletacka-board/hw/Libraries/Terminal_block/Terminal_block.pretty)(options "")(descr ""))
+  (lib (name Button_SMD)(type KiCad)(uri ${KIPRJMOD}/Libraries/Button_SMD/Button_SMD.pretty)(options "")(descr ""))
 )

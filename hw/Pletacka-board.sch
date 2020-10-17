@@ -168,4 +168,70 @@ U 5F8F7408
 F0 "Power" 50
 F1 "Power.sch" 50
 $EndSheet
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 5F9151EB
+P 2550 5600
+F 0 "J4" V 2488 5412 50  0000 R CNN
+F 1 "Conn_01x02_Female" V 2397 5412 50  0000 R CNN
+F 2 "Terminal_block:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 2550 5600 50  0001 C CNN
+F 3 "~" H 2550 5600 50  0001 C CNN
+	1    2550 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J5
+U 1 1 5F915FED
+P 3700 5600
+F 0 "J5" V 3638 5412 50  0000 R CNN
+F 1 "Conn_01x03_Female" V 3547 5412 50  0000 R CNN
+F 2 "Terminal_block:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 3700 5600 50  0001 C CNN
+F 3 "~" H 3700 5600 50  0001 C CNN
+	1    3700 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 5950 2550 5800
+Wire Wire Line
+	2650 5950 2650 5800
+Wire Wire Line
+	3600 5950 3600 5800
+Wire Wire Line
+	3700 5950 3700 5800
+Wire Wire Line
+	3800 5950 3800 5800
+Text GLabel 2550 5950 3    50   Input ~ 0
+OPTO_STOP_IN_PLUS
+Text GLabel 2650 5950 3    50   Input ~ 0
+OPTO_STOP_IN_MINUS
+Text GLabel 3600 5950 3    50   Input ~ 0
+OPTO_FINISHED_IN_MINUS
+Text GLabel 3700 5950 3    50   Input ~ 0
+OPTO_FINISHED_IN_PLUS
+Wire Wire Line
+	3800 5950 3900 5950
+Wire Wire Line
+	3600 5950 3500 5950
+$Comp
+L power:GND #PWR0116
+U 1 1 5F91B916
+P 3500 5950
+F 0 "#PWR0116" H 3500 5700 50  0001 C CNN
+F 1 "GND" V 3505 5822 50  0000 R CNN
+F 2 "" H 3500 5950 50  0001 C CNN
+F 3 "" H 3500 5950 50  0001 C CNN
+	1    3500 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0117
+U 1 1 5F91BD5C
+P 3900 5950
+F 0 "#PWR0117" H 3900 5800 50  0001 C CNN
+F 1 "VCC" V 3917 6078 50  0000 L CNN
+F 2 "" H 3900 5950 50  0001 C CNN
+F 3 "" H 3900 5950 50  0001 C CNN
+	1    3900 5950
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

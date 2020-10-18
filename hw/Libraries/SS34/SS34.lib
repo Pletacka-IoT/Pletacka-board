@@ -6,7 +6,7 @@ EESchema-LIBRARY Version 2.4
 DEF SS34 D 0 40 Y N 1 F N
 F0 "D" -200 100 50 H V L BNN
 F1 "SS34" -200 -150 50 H V L BNN
-F2 "DIOM7959X265N" -250 -250 50 H I L BNN
+F2 "SS34:SMA" -250 -250 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
 F4 "https://www.snapeda.com/parts/SS34/ON%20Semiconductor/view-part/?ref=search&t=SS34" -50 -350 50 H I C CNN "Source"
 DRAW

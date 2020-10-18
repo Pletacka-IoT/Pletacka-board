@@ -70,7 +70,6 @@ F0 "Buttons" 50
 F1 "Buttons.sch" 50
 F2 "BTN_RESET" O L 9450 1050 50 
 F3 "BTN_1" O L 9450 1200 50 
-F4 "BTN_2" O L 9450 1350 50 
 $EndSheet
 Text GLabel 9300 1050 0    50   Input ~ 0
 BTN_RESET
@@ -80,16 +79,10 @@ Wire Wire Line
 	9450 1050 9300 1050
 Text GLabel 9300 1200 0    50   Input ~ 0
 BTN_1
-Text GLabel 9300 1350 0    50   Input ~ 0
-BTN_2
 Wire Wire Line
 	9450 1200 9300 1200
-Wire Wire Line
-	9300 1350 9450 1350
 Text GLabel 5500 3550 0    50   Input ~ 0
 BTN_1
-Text GLabel 5500 4150 0    50   Input ~ 0
-BTN_2
 Text GLabel 5500 4050 0    50   Input ~ 0
 BTN_RESET
 Wire Wire Line
@@ -205,8 +198,6 @@ Text GLabel 1300 6000 3    50   Input ~ 0
 OPTO_STOP_IN_PLUS
 Text GLabel 1400 6000 3    50   Input ~ 0
 OPTO_STOP_IN_MINUS
-Text GLabel 2350 6000 3    50   Input ~ 0
-OPTO_FINISHED_IN_MINUS
 Text GLabel 2450 6000 3    50   Input ~ 0
 OPTO_FINISHED_IN_PLUS
 Wire Wire Line
@@ -247,8 +238,6 @@ Wire Wire Line
 	9350 4600 9500 4600
 Text GLabel 9350 4300 0    50   Input ~ 0
 OPTO_FINISHED_IN_PLUS
-Text GLabel 9350 4450 0    50   Input ~ 0
-OPTO_FINISHED_IN_MINUS
 Wire Wire Line
 	9350 4450 9500 4450
 Wire Wire Line
@@ -274,25 +263,36 @@ LED_SEND
 Text GLabel 7050 3950 2    50   Input ~ 0
 LED_SEND
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H2
 U 1 1 5F9A015D
 P 6350 7350
-F 0 "H?" H 6450 7396 50  0000 L CNN
+F 0 "H2" H 6450 7396 50  0000 L CNN
 F 1 "MountingHole" H 6450 7305 50  0000 L CNN
-F 2 "" H 6350 7350 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 6350 7350 50  0001 C CNN
 F 3 "~" H 6350 7350 50  0001 C CNN
 	1    6350 7350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H1
 U 1 1 5F9A042D
 P 5550 7350
-F 0 "H?" H 5650 7396 50  0000 L CNN
+F 0 "H1" H 5650 7396 50  0000 L CNN
 F 1 "MountingHole" H 5650 7305 50  0000 L CNN
-F 2 "" H 5550 7350 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 5550 7350 50  0001 C CNN
 F 3 "~" H 5550 7350 50  0001 C CNN
 	1    5550 7350
 	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5F9CF981
+P 9350 4450
+F 0 "#PWR0107" H 9350 4200 50  0001 C CNN
+F 1 "GND" V 9355 4322 50  0000 R CNN
+F 2 "" H 9350 4450 50  0001 C CNN
+F 3 "" H 9350 4450 50  0001 C CNN
+	1    9350 4450
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

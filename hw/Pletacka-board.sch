@@ -260,7 +260,7 @@ Wire Wire Line
 	9500 3150 9350 3150
 Text GLabel 9350 3150 0    50   Input ~ 0
 LED_SEND
-Text GLabel 7050 3950 2    50   Input ~ 0
+Text GLabel 6700 4050 2    50   Input ~ 0
 LED_SEND
 $Comp
 L Mechanical:MountingHole H2

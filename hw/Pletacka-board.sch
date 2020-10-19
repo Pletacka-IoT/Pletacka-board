@@ -16,7 +16,7 @@ $EndDescr
 Text GLabel 8750 1300 0    50   Input ~ 0
 BTN_RESET
 Text GLabel 8750 2250 0    50   Input ~ 0
-BTN_1
+BTN_USER
 Text GLabel 10500 4400 2    50   Input ~ 0
 OPTO_FINSIHED
 Text GLabel 10500 5750 2    50   Input ~ 0
@@ -131,7 +131,7 @@ AR Path="/5F8CAC4D" Ref="SW1"  Part="1"
 AR Path="/5F8BD394/5F8CAC4D" Ref="SW?"  Part="1" 
 F 0 "SW1" H 10300 1585 50  0000 C CNN
 F 1 "Reset_Button" H 10300 1494 50  0000 C CNN
-F 2 "Button_SMD:SW_SPST_SKQG_WithStem" H 10300 1500 50  0001 C CNN
+F 2 "Button_SMD:Button_SMD_10mm" H 10300 1500 50  0001 C CNN
 F 3 "~" H 10300 1500 50  0001 C CNN
 F 4 "C318887" H 10300 1300 50  0001 C CNN "LCSC_ID"
 	1    10300 1300
@@ -204,7 +204,7 @@ AR Path="/5F8CAC74" Ref="SW2"  Part="1"
 AR Path="/5F8BD394/5F8CAC74" Ref="SW?"  Part="1" 
 F 0 "SW2" H 10300 2535 50  0000 C CNN
 F 1 "User_Button" H 10300 2444 50  0000 C CNN
-F 2 "Button_SMD:SW_SPST_SKQG_WithStem" H 10300 2450 50  0001 C CNN
+F 2 "Button_SMD:Button_SMD_10mm" H 10300 2450 50  0001 C CNN
 F 3 "~" H 10300 2450 50  0001 C CNN
 F 4 "C318887" H 10300 2250 50  0001 C CNN "LCSC_ID"
 	1    10300 2250
@@ -928,7 +928,7 @@ Wire Notes Line
 	6250 7150 3800 7150
 Wire Notes Line
 	6250 5550 6250 7150
-Text GLabel 5550 6550 2    50   Input ~ 0
+Text GLabel 5550 6750 2    50   Input ~ 0
 LED_USER
 Text Notes 4500 5550 0    197  ~ 0
 ESP32
@@ -966,10 +966,10 @@ Wire Wire Line
 	4500 6250 4350 6250
 Wire Wire Line
 	4500 6150 4350 6150
-Text GLabel 4350 6550 0    50   Input ~ 0
+Text GLabel 5550 6650 2    50   Input ~ 0
 BTN_RESET
-Text GLabel 4350 6050 0    50   Input ~ 0
-BTN_1
+Text GLabel 5550 6550 2    50   Input ~ 0
+BTN_USER
 Wire Wire Line
 	4500 6050 4350 6050
 $Comp

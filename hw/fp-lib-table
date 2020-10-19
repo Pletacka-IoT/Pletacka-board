@@ -8,4 +8,5 @@
   (lib (name Terminal_block)(type KiCad)(uri /media/kuba/Data/Github/Pletacka-IoT/Pletacka-board/hw/Libraries/Terminal_block/Terminal_block.pretty)(options "")(descr ""))
   (lib (name Button_SMD)(type KiCad)(uri ${KIPRJMOD}/Libraries/Button_SMD/Button_SMD.pretty)(options "")(descr ""))
   (lib (name Logos)(type KiCad)(uri ${KIPRJMOD}/Extra/Logos.pretty)(options "")(descr ""))
+  (lib (name SLW6045S220MST)(type KiCad)(uri "${KIPRJMOD}/Libraries/ SLW6045S220MST/ SLW6045S220MST.pretty")(options "")(descr ""))
 )

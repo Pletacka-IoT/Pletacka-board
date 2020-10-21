@@ -22,10 +22,10 @@ OPTO_FINSIHED
 Text GLabel 10500 5750 2    50   Input ~ 0
 OPTO_STOP
 $Comp
-L Connector:Conn_01x02_Female J4
+L Connector:Conn_01x02_Female STOP_INPUT1
 U 1 1 5F9151EB
 P 1300 5650
-F 0 "J4" V 1238 5462 50  0000 R CNN
+F 0 "STOP_INPUT1" V 1238 5462 50  0000 R CNN
 F 1 "STOP_INPUT" V 1147 5462 50  0000 R CNN
 F 2 "Terminal_block:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 1300 5650 50  0001 C CNN
 F 3 "~" H 1300 5650 50  0001 C CNN
@@ -33,10 +33,10 @@ F 3 "~" H 1300 5650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Conn_01x03_Female J5
+L Connector:Conn_01x03_Female POWER_&_FINN_INPUT1
 U 1 1 5F915FED
 P 2450 5650
-F 0 "J5" V 2388 5462 50  0000 R CNN
+F 0 "POWER_&_FINN_INPUT1" V 2388 5462 50  0000 R CNN
 F 1 "POWER_&_FINN_INPUT" V 2297 5462 50  0000 R CNN
 F 2 "Terminal_block:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 2450 5650 50  0001 C CNN
 F 3 "~" H 2450 5650 50  0001 C CNN
@@ -102,10 +102,10 @@ Wire Notes Line
 Text Notes 1800 5550 0    197  ~ 0
 Input
 $Comp
-L Mechanical:MountingHole H1
+L Mechanical:MountingHole MHole1
 U 1 1 5F9A042D
 P 6200 7600
-F 0 "H1" H 6300 7646 50  0000 L CNN
+F 0 "MHole1" H 6300 7646 50  0000 L CNN
 F 1 "MountingHole" H 6300 7555 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 6200 7600 50  0001 C CNN
 F 3 "~" H 6200 7600 50  0001 C CNN
@@ -819,20 +819,17 @@ Wire Wire Line
 Wire Wire Line
 	6950 3150 6600 3150
 Connection ~ 6600 3150
-Wire Wire Line
-	6950 2100 7250 2100
-Connection ~ 6950 2100
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5F957882
-P 7250 2100
+P 7650 2100
 AR Path="/5F8F7408/5F957882" Ref="#PWR?"  Part="1" 
 AR Path="/5F957882" Ref="#PWR0114"  Part="1" 
-F 0 "#PWR0114" H 7250 1950 50  0001 C CNN
-F 1 "+3V3" V 7265 2228 50  0000 L CNN
-F 2 "" H 7250 2100 50  0001 C CNN
-F 3 "" H 7250 2100 50  0001 C CNN
-	1    7250 2100
+F 0 "#PWR0114" H 7650 1950 50  0001 C CNN
+F 1 "+3V3" V 7750 1950 50  0000 L CNN
+F 2 "" H 7650 2100 50  0001 C CNN
+F 3 "" H 7650 2100 50  0001 C CNN
+	1    7650 2100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -890,11 +887,11 @@ Connection ~ 2200 1200
 Wire Wire Line
 	3200 1600 3900 1600
 Wire Notes Line
-	650  750  7650 750 
+	650  750  7800 750 
 Wire Notes Line
-	7650 750  7650 3400
+	7800 750  7800 3400
 Wire Notes Line
-	7650 3400 650  3400
+	7800 3400 650  3400
 Wire Notes Line
 	650  3400 650  750 
 Text Notes 3600 750  0    197  ~ 0
@@ -967,7 +964,7 @@ Wire Wire Line
 	4500 6150 4350 6150
 Text GLabel 5550 6650 2    50   Input ~ 0
 BTN_RESET
-Text GLabel 5550 6550 2    50   Input ~ 0
+Text GLabel 5550 6350 2    50   Input ~ 0
 BTN_USER
 Wire Wire Line
 	4500 6050 4350 6050
@@ -1011,10 +1008,10 @@ F 3 "" H 4350 5950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ESP32-TTGO-T-Display:ESP32-TTGO-T-Display E1
+L ESP32-TTGO-T-Display:ESP32-TTGO-T-Display ESP1
 U 1 1 5F8A9387
 P 4850 6300
-F 0 "E1" H 4945 6875 50  0000 C CNN
+F 0 "ESP1" H 4945 6875 50  0000 C CNN
 F 1 "ESP32-TTGO-T-Display" H 4945 6784 50  0000 C CNN
 F 2 "ESP32-TTGO-T-Display:ESP32-TTGO-T-Display" H 3850 6750 50  0001 C CNN
 F 3 "https://github.com/Xinyuan-LilyGO/TTGO-T-Display/blob/master/schematic/ESP32-TFT(6-26).pdf" H 3850 6750 50  0001 C CNN
@@ -1148,4 +1145,120 @@ Text Notes 2450 4350 0    79   ~ 0
 Power LED
 Text Notes 2450 4950 0    79   ~ 0
 User LED
+Text GLabel 5550 6550 2    50   Input ~ 0
+USER_IO25
+Text GLabel 5550 6450 2    50   Input ~ 0
+USER_IO33
+$Comp
+L Connector:Conn_01x05_Female Pins1
+U 1 1 5F918B43
+P 4900 4000
+F 0 "Pins1" V 4838 3712 50  0000 R CNN
+F 1 "Pins" V 4747 3712 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4900 4000 50  0001 C CNN
+F 3 "~" H 4900 4000 50  0001 C CNN
+	1    4900 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 4200 5100 4400
+Wire Wire Line
+	5000 4200 5000 4400
+Wire Wire Line
+	4900 4200 4900 4400
+Wire Wire Line
+	4800 4200 4800 4400
+Wire Wire Line
+	4700 4200 4700 4400
+$Comp
+L power:GND #PWR0120
+U 1 1 5F9547E1
+P 4900 4400
+F 0 "#PWR0120" H 4900 4150 50  0001 C CNN
+F 1 "GND" V 4905 4272 50  0000 R CNN
+F 2 "" H 4900 4400 50  0001 C CNN
+F 3 "" H 4900 4400 50  0001 C CNN
+	1    4900 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0121
+U 1 1 5F955A16
+P 5100 4400
+F 0 "#PWR0121" H 5100 4250 50  0001 C CNN
+F 1 "+3V3" V 5115 4528 50  0000 L CNN
+F 2 "" H 5100 4400 50  0001 C CNN
+F 3 "" H 5100 4400 50  0001 C CNN
+	1    5100 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0122
+U 1 1 5F95698D
+P 4700 4400
+F 0 "#PWR0122" H 4700 4250 50  0001 C CNN
+F 1 "+5V" V 4715 4528 50  0000 L CNN
+F 2 "" H 4700 4400 50  0001 C CNN
+F 3 "" H 4700 4400 50  0001 C CNN
+	1    4700 4400
+	-1   0    0    1   
+$EndComp
+Text GLabel 4800 4400 3    50   Input ~ 0
+USER_IO25
+Text GLabel 5000 4400 3    50   Input ~ 0
+USER_IO33
+Wire Wire Line
+	6950 2100 7050 2100
+Connection ~ 6950 2100
+Wire Notes Line
+	4350 3900 5600 3900
+Wire Notes Line
+	5600 3900 5600 5050
+Wire Notes Line
+	5600 5050 4350 5050
+Wire Notes Line
+	4350 5050 4350 3900
+Text Notes 4700 3900 0    197  ~ 0
+Pins
+Wire Wire Line
+	2200 1200 2200 850 
+Wire Wire Line
+	2200 850  6600 850 
+Wire Wire Line
+	6600 850  6600 1300
+Wire Wire Line
+	6600 1300 6800 1300
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 5FAEDA72
+P 6900 1300
+F 0 "JP1" H 6900 1485 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 6900 1394 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6900 1300 50  0001 C CNN
+F 3 "~" H 6900 1300 50  0001 C CNN
+	1    6900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0123
+U 1 1 5FAEEF87
+P 7000 1300
+F 0 "#PWR0123" H 7000 1150 50  0001 C CNN
+F 1 "+5V" V 7015 1428 50  0000 L CNN
+F 2 "" H 7000 1300 50  0001 C CNN
+F 3 "" H 7000 1300 50  0001 C CNN
+	1    7000 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper JP2
+U 1 1 5FAF5BD0
+P 7350 2100
+F 0 "JP2" H 7350 2364 50  0000 C CNN
+F 1 "Jumper" H 7350 2273 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 7350 2100 50  0001 C CNN
+F 3 "~" H 7350 2100 50  0001 C CNN
+	1    7350 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

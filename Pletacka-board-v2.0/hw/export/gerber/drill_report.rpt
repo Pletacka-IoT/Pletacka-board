@@ -1,0 +1,26 @@
+Drill report for ./hw/Pletacka-board.kicad_pcb
+Created on Wed Oct 21 19:02:22 2020
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Pletacka-board.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.65mm  0.026"  (12 holes)
+    T2  0.76mm  0.030"  (24 holes)
+    T3  1.00mm  0.039"  (5 holes)
+    T4  1.30mm  0.051"  (5 holes)
+    T5  2.70mm  0.106"  (1 hole)
+
+    Total plated holes count 47
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

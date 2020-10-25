@@ -4,6 +4,8 @@
 #include "pletacka_config.hpp"
 #include <TFT_eSPI.h>
 #include "time.h"
+#include "WiFi.h"
+#include <WiFiClient.h>
 
 
 

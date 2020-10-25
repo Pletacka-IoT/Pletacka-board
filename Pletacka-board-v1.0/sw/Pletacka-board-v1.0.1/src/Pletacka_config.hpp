@@ -1,28 +1,26 @@
 #pragma once
 
-#include <Arduino.h>
+const int LED_SEND  = 27;
+const int LED_WIFI = 26;
+const int LED_ON = 25;
+const int OP_1_FINISH = 39;
+const int OP_2_STOP = 38;
+const int OP_3 = 37;
+const int OP_4 = 36;
+const int BTN_ENTER = 21;
+const int BTN_B1 = 12;
+const int BTN_UP = 0;
+const int BTN_DOWN = 35;
+const int TMP_SDA = 22;
+const int TMP_SCL = 17;
+const int TMP_OS = 2;
+const int PWR_VOLTAGE = 32;
+const int GPIO_13 = 13;
+const int GPIO_15 = 15;
+const int GPIO_33 = 33;
 
-#define LED_SEND 27
-#define LED_WIFI 26
-#define LED_ON 25
-#define OP_1_FINISH 39
-#define OP_2_STOP 38
-#define OP_3 37
-#define OP_4 36
-#define BTN_ENTER 21
-#define BTN_B1 12
-#define BTN_UP 0
-#define BTN_DOWN 35
-#define TMP_SDA 22
-#define TMP_SCL 17
-#define TMP_OS 2
-#define PWR_VOLTAGE 32
-#define GPIO_13 13
-#define GPIO_15 15
-#define GPIO_33 33
-
-#define EEPROM_SIZE 50
-#define EEPROM_SNUMBER_A 5
+const int EEPROM_SIZE = 50;
+const int EEPROM_SNUMBER_A = 5;
 
 struct PletackaConfig
 {
@@ -72,14 +70,4 @@ struct PletackaConfig
 	int udpPort;
 
 };
-
-
-
-enum eepromConfig
-{
-	WIFI_NAME,
-	WIFI_PWD,
-
-};
-
 

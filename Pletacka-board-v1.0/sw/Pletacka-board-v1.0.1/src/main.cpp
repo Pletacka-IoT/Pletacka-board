@@ -26,6 +26,10 @@ void mainPrograme()
 {
 	//Main setup
 
+
+	Board_tester tester;
+	tester.test();
+
 	// BasicOTA ota;
 	PletackaConfig config;
 	ArduinoMetronome statusMetronome(10);
@@ -71,8 +75,6 @@ void mainPrograme()
 	timeMetronome.startupDelayMs(1000);
 	wifiTester.startupDelayMs(3000);
 
-	// Board_tester tester;
-	// tester.test();
 
 	
 

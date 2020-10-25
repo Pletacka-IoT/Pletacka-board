@@ -1,7 +1,5 @@
 #include "Pletacka.hpp"
 
-
-
 Pletacka::Pletacka()
 {
 }

@@ -4,27 +4,12 @@
 #include "Pletacka_config.hpp"
 #include "Optocoupler.hpp"
 
-
-
-
 class Pletacka_status
 {
 private:
     
     Optocoupler optoStop; 
 	Optocoupler optoFinish; 
-
-
-    // struct pinConfig
-    // {
-    //     pinConfig()
-    //         : pinFinish(26)
-    //         , pinStop(27)
-    //         {
-    //     }
-    //     int pinFinish;
-    //     int pinStop;
-    // };
     
 
     struct Optocuplrs

@@ -1,6 +1,4 @@
 #include "Pletacka_debug.hpp"
-#include "WiFi.h"
-#include "WiFiClient.h"
 
 
 void Pletacka_debug::init(PletackaConfig config)

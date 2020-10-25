@@ -1,5 +1,4 @@
 #include "Pletacka_alive.hpp"
-#include "Pletacka.hpp"
 
 /**
  * @brief Construct a new Pletacka_alive::Pletacka_alive object

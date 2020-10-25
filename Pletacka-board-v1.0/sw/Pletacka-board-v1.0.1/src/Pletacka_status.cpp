@@ -1,5 +1,4 @@
 #include "Pletacka_status.hpp"
-#include "Pletacka.hpp"
 
 
 void Pletacka_status::init(PletackaConfig* config)

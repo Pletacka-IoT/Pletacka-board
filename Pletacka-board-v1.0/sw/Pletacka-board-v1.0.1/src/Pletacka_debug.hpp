@@ -3,8 +3,8 @@
 
 #include <Arduino.h>
 #include "Pletacka_config.hpp"
-#include <WiFi.h>
 #include <WiFiClient.h>
+#include <WiFi.h>
 
 
 class Pletacka_debug

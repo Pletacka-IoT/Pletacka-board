@@ -1,6 +1,4 @@
 #include "Pletacka_display.hpp"
-#include "Pletacka.hpp"
-#include "WiFi.h"
 
 String tim(int time)
 {

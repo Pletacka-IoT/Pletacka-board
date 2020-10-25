@@ -1,4 +1,4 @@
-hw/export
+
 
 
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
@@ -37,3 +37,18 @@ build
 
 # MS Excel lock files
 .~lock.*
+Pletacka-board-v2.0/hw/export/gerbers.zip
+Pletacka-board-v2.0/hw/export/gerber/drill_report.rpt
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board-CmtUser.gbr
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board-CuBottom.gbr
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board-CuTop.gbr
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board-drl_map.pdf
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board-EdgeCuts.gbr
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board-MaskBottom.gbr
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board-MaskTop.gbr
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board-PasteBottom.gbr
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board-PasteTop.gbr
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board-SilkBottom.gbr
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board-SilkTop.gbr
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board.drl
+Pletacka-board-v2.0/hw/export/gerber/Pletacka-board.gbrjob

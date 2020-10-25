@@ -11,6 +11,20 @@
 #include "Pletacka_alive.hpp"
 #include "EEPROM.h"
 
+#include "gridui.h"
+#include "rbprotocol.h"
+#include "rbwebserver.h"
+#include "rbwifi.h"
+
+using namespace rb;
+using namespace gridui;
+
+// You can include layout.hpp in many .cpp files,
+// but ONE of those must have this define before it.
+
+// #define GRIDUI_LAYOUT_DEFINITION
+// #include "layout.hpp"
+
 
 
 #define ADC_EN          14
@@ -33,13 +47,14 @@ private:
 
 
 	// Protocol* gProt = nullptr;
+	// Protocol* gProt = nullptr;
 
 
 
 public:
 	Pletacka();
 	~Pletacka();
-	void config(PletackaConfig* config);
+	void config(PletackaConfig* config, Protocol *gProt);
 
 	String isChange();
 	void sendState(String state);
@@ -52,9 +67,6 @@ public:
 	void println(String message, String prefix = "P:");
 	
 };
-
-extern Pletacka pletacka;
-
 
 
 

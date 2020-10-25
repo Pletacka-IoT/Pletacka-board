@@ -1,4 +1,10 @@
 #include "Pletacka.hpp"
+#include "gridui.h"
+#include "rbwebserver.h"
+#include "rbwifi.h"
+
+#define GRIDUI_LAYOUT_DEFINITION
+#include "layout.hpp"
 
 Pletacka::Pletacka()
 {
@@ -8,7 +14,7 @@ Pletacka::~Pletacka()
 {
 }
 
-void Pletacka::config(PletackaConfig* config)
+void Pletacka::config(PletackaConfig* config, Protocol* gProt)
 {
 	cfg = config;
 
@@ -48,8 +54,35 @@ void Pletacka::config(PletackaConfig* config)
 
 	pletacka_wifi.init(cfg, &pletacka_display);
 
+//////////////////////
+	    // Initialize RBProtocol
+    gProt = new Protocol("FrantaFlinta", "Robocop", "Compiled at " __DATE__ " " __TIME__, [](const std::string& cmd, rbjson::Object* pkt) {
+		if (UI.handleRbPacket(cmd, pkt))
+			return;
+	});
+    gProt->start();
 
+    // Start serving the web page
+    rb_web_start(80);
 
+    // Initialize the UI builder
+    UI.begin(gProt);
+
+		
+
+    // Build the UI widgets. Positions/props are set in the layout, so most of the time,
+    // you should only set the event handlers here.
+    auto builder = Layout.begin();
+
+	builder.rebootButton
+	.onPress([](Button&) {
+		printf("Reboot\n");
+		ESP_LOGE("", "Reboot2");
+	});
+
+	builder.commit();
+
+/////////////
 
 	if(cfg->remoteDataOn || cfg->remoteDebugOn || !digitalRead(BTN_DOWN))
 	{
@@ -235,6 +268,3 @@ void Pletacka::println(String message, String prefix)
 		Serial.println(prefix + message);
 	}
 }
-
-
-Pletacka pletacka;

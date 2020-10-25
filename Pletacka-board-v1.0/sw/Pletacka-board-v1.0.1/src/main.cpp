@@ -27,21 +27,13 @@
 using namespace rb;
 using namespace gridui;
 
-// You can include layout.hpp in many .cpp files,
-// but ONE of those must have this define before it.
+// // You can include layout.hpp in many .cpp files,
+// // but ONE of those must have this define before it.
 
-#define GRIDUI_LAYOUT_DEFINITION
-#include "layout.hpp"
 
-static Protocol* gProt = nullptr;
+// #include "layout.hpp"
 
-void onPacketReceived(const std::string& cmd, rbjson::Object* pkt) {
-    // Let GridUI handle its packets
-    if (UI.handleRbPacket(cmd, pkt))
-        return;
-
-    // ...any other non-GridUI packets
-}
+static rb::Protocol* gProt = nullptr;
 
 void mainPrograme()
 {
@@ -52,6 +44,7 @@ void mainPrograme()
 	// tester.test();
 
 	// BasicOTA ota;
+	Pletacka pletacka;
 	PletackaConfig config;
 	ArduinoMetronome statusMetronome(10);
 	ArduinoMetronome customMetronome(1000);
@@ -88,32 +81,10 @@ void mainPrograme()
 	config.udpPort = 2727;
 
 	
-	pletacka.config(&config);
+	pletacka.config(&config, gProt);
 
 
-	    // Initialize RBProtocol
-    gProt = new Protocol("FrantaFlinta", "Robocop", "Compiled at " __DATE__ " " __TIME__, onPacketReceived);
-    gProt->start();
 
-    // Start serving the web page
-    rb_web_start(80);
-
-    // Initialize the UI builder
-    UI.begin(gProt);
-
-		
-
-    // Build the UI widgets. Positions/props are set in the layout, so most of the time,
-    // you should only set the event handlers here.
-    auto builder = Layout.begin();
-
-	builder.rebootButton
-	.onPress([](Button&) {
-		printf("Reboot\n");
-		ESP_LOGE("", "Reboot2");
-	});
-
-	builder.commit();
 
 
 	statusMetronome.startupDelayMs(15000);

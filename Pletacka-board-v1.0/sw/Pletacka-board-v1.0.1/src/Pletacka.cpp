@@ -48,6 +48,9 @@ void Pletacka::config(PletackaConfig* config)
 
 	pletacka_wifi.init(cfg, &pletacka_display);
 
+
+
+
 	if(cfg->remoteDataOn || cfg->remoteDebugOn || !digitalRead(BTN_DOWN))
 	{
 			println("STARTING DEBUG MODE");
@@ -232,5 +235,6 @@ void Pletacka::println(String message, String prefix)
 		Serial.println(prefix + message);
 	}
 }
+
 
 Pletacka pletacka;

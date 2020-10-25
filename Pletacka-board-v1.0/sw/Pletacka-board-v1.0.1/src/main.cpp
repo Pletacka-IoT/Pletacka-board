@@ -19,16 +19,37 @@
 
 
 
+#include "gridui.h"
+#include "rbprotocol.h"
+#include "rbwebserver.h"
+#include "rbwifi.h"
 
+using namespace rb;
+using namespace gridui;
 
+// You can include layout.hpp in many .cpp files,
+// but ONE of those must have this define before it.
+
+#define GRIDUI_LAYOUT_DEFINITION
+#include "layout.hpp"
+
+static Protocol* gProt = nullptr;
+
+void onPacketReceived(const std::string& cmd, rbjson::Object* pkt) {
+    // Let GridUI handle its packets
+    if (UI.handleRbPacket(cmd, pkt))
+        return;
+
+    // ...any other non-GridUI packets
+}
 
 void mainPrograme()
 {
 	//Main setup
 
-
-	Board_tester tester;
-	tester.test();
+	// Uncoment for testing 
+	// Board_tester tester;
+	// tester.test();
 
 	// BasicOTA ota;
 	PletackaConfig config;
@@ -48,12 +69,12 @@ void mainPrograme()
 	// config.serverUrl = "http://192.168.0.113/Pletacka-website/api/v1/thisSensor/add-event";
 	config.serverUrl = "http://192.168.0.2/api/v1/thisSensor/add-event";
 	config.serverUrlBackup = "http://192.168.0.2/Backup/api/v1/thisSensor/add-event";
-	config.wifiName = "Pletacka-IoT";
-	config.wifiPassword = "PletackaPlete";
+	// config.wifiName = "Pletacka-IoT";
+	// config.wifiPassword = "PletackaPlete";
 	// config.wifiName = "WLOffice";
 	// config.wifiPassword = "$BlueC6r&R06D";	
-	// config.wifiName = "Technika";
-	// config.wifiPassword = "materidouska";
+	config.wifiName = "Suzand";
+	config.wifiPassword = "Pucini.13";
 	config.wifiDefaulAp = false;
 	config.apName = "AP-Pletacka-" + config.sensorNumber;
 	config.apPassword = "PletackaPlete";
@@ -68,7 +89,32 @@ void mainPrograme()
 
 	
 	pletacka.config(&config);
-	
+
+
+	    // Initialize RBProtocol
+    gProt = new Protocol("FrantaFlinta", "Robocop", "Compiled at " __DATE__ " " __TIME__, onPacketReceived);
+    gProt->start();
+
+    // Start serving the web page
+    rb_web_start(80);
+
+    // Initialize the UI builder
+    UI.begin(gProt);
+
+		
+
+    // Build the UI widgets. Positions/props are set in the layout, so most of the time,
+    // you should only set the event handlers here.
+    auto builder = Layout.begin();
+
+	builder.rebootButton
+	.onPress([](Button&) {
+		printf("Reboot\n");
+		ESP_LOGE("", "Reboot2");
+	});
+
+	builder.commit();
+
 
 	statusMetronome.startupDelayMs(15000);
 	aliveMetronome.startupDelayMs(1000);

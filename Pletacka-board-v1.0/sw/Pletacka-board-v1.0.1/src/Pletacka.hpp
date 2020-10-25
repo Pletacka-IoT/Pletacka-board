@@ -9,9 +9,8 @@
 #include "Pletacka_debug.hpp"
 #include "Pletacka_status.hpp"
 #include "Pletacka_alive.hpp"
-#include "ESPmDNS.h"
-
 #include "EEPROM.h"
+
 
 
 #define ADC_EN          14
@@ -33,6 +32,9 @@ private:
 	NetteApi apiStateBackup;
 
 
+	// Protocol* gProt = nullptr;
+
+
 
 public:
 	Pletacka();
@@ -48,7 +50,6 @@ public:
 	void debugln(String message, String prefix = "D:");
 	void print(String message, String prefix = "P:");
 	void println(String message, String prefix = "P:");
-	
 	
 };
 

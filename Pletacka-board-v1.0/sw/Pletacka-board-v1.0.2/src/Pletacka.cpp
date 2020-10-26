@@ -1,0 +1,303 @@
+#include "Pletacka.hpp"
+
+#define STOP_CODE ESP_LOGW("STOP_CODE", "STOP_CODE"); while(1){;}
+
+#define GRIDUI_LAYOUT_DEFINITION
+#include "layout.hpp"
+#include <string>
+
+Pletacka::Pletacka()
+{
+}
+
+Pletacka::~Pletacka()
+{
+}
+
+void Pletacka::config(PletackaConfig* config, Protocol* gPro )
+{
+	cfg = config;
+	gProt = gPro;
+
+	Serial.begin(115200);
+	
+
+	pletacka_eeprom.begin(50);
+	if(pletacka_eeprom.read(EEPROM_SNUMBER_A) == 255)
+	{
+		pletacka_eeprom.write(EEPROM_SNUMBER_A, 1);
+		pletacka_eeprom.commit();
+	}
+	cfg->sensorNumber = pletacka_eeprom.read(EEPROM_SNUMBER_A);	
+
+	// ui.init(cfg, &dp ,gPro);
+
+
+	// uix.displayInit(cfg);
+	pletacka_display.displayInit(cfg);
+	STOP_CODE;
+
+	pinMode(LED_SEND, OUTPUT);
+	pinMode(LED_WIFI, OUTPUT);
+	pinMode(LED_ON, OUTPUT);
+	
+	pinMode(BTN_ENTER, INPUT);
+	pinMode(BTN_B1, INPUT);
+	pinMode(BTN_UP, INPUT);
+	pinMode(BTN_DOWN, INPUT);
+
+	pinMode(PWR_VOLTAGE, INPUT);
+
+	digitalWrite(LED_ON, true);
+
+
+
+	if(!digitalRead(BTN_ENTER))
+	{
+		cfg->sensorNumber = editSensorNumber(cfg->sensorNumber);
+		// // pletacka_display.hideMsg();
+	}
+
+	pletacka_wifi.init(cfg);
+
+//////////////////////
+	    // Initialize RBProtocol
+    gProt = new Protocol("FrantaFlinta", "Robocop", "Compiled at " __DATE__ " " __TIME__, [](const std::string& cmd, rbjson::Object* pkt) {
+		if (UI.handleRbPacket(cmd, pkt))
+			return;
+	});
+    gProt->start();
+
+    // Start serving the web page
+    rb_web_start(80);
+
+    // Initialize the UI builder
+    UI.begin(gProt);
+
+		
+
+    // Build the UI widgets. Positions/props are set in the layout, so most of the time,
+    // you should only set the event handlers here.
+    auto builder = Layout.begin();
+
+	 
+
+
+	Layout.numberInfo.setText(String(cfg->sensorNumber).c_str());
+	Layout.numberText.setText(String(cfg->sensorNumber).c_str());
+
+	builder.rebootButton
+	.onPress([](Button&) {
+		printf("Reboot\n");
+		ESP_LOGE("", "Reboot2");
+	});
+
+    builder.numberPlus
+        .onPress([&](Button&) {
+			cfg->sensorNumber++;
+			Layout.numberInfo.setText(String(cfg->sensorNumber).c_str());
+			Layout.numberText.setText(String(cfg->sensorNumber).c_str());
+        });	
+
+    builder.numberMinus
+        .onPress([&](Button&) {
+			cfg->sensorNumber--;			
+			Layout.numberInfo.setText(String(cfg->sensorNumber).c_str());
+			Layout.numberText.setText(String(cfg->sensorNumber).c_str());
+        });		
+
+
+	builder.commit();
+
+	while(1)
+	{
+		gProt->send_log("Start");
+		delay(1000);
+	}
+
+/////////////
+
+	if(cfg->remoteDataOn || cfg->remoteDebugOn || !digitalRead(BTN_DOWN))
+	{
+			println("STARTING DEBUG MODE");
+			// pletacka_display.showError("DEBUG MODE", TFT_ORANGE);
+			pletacka_debug.init(*cfg);
+	}
+	
+
+
+	pletacka_status.init(cfg);
+	pletacka_alive.init(*cfg);
+
+
+	// MDNS.begin("pletac-" + cfg->sensorNumber);
+
+	apiState.setServerName(cfg->serverUrl + "/" + cfg->sensorNumber);
+	apiStateBackup.setServerName(cfg->serverUrlBackup + "/" + cfg->sensorNumber);
+	println("Server:" + apiState.getServerName());
+	// Serial.println();
+
+	delay(200); //required for succes behavour
+	// pletacka_display.timeInit();
+
+	println("Sensor number " + String(cfg->sensorNumber) + " is configured");
+	
+	
+}
+
+/**
+ * @brief Is pletacka status changed
+ * 
+ * @return String status or false
+ */
+String Pletacka::isChange()
+{
+	static String lastStatus = "";
+	String nowStatus = pletacka_status.getStatus();
+
+	// Serial.println("NowS:"+nowStatus);
+
+	if(nowStatus != lastStatus)
+	{
+		lastStatus = nowStatus;
+		return nowStatus;
+	}
+
+	return "";
+}
+
+void Pletacka::sendState(String state)
+{
+	static int counter = 0;
+	counter++;
+
+	auto request = apiState.GetReqest(state);
+
+	Serial.println("\nGET\n  Req:" + request.request + "\n  Code : "+String(request.code)+" ->\""+String(request.main) + "\"");
+
+	if(request.code == 200)
+	{
+		// pletacka_display.showMsg(String(counter) + " -> OK");
+		// pletacka_display.hideError();
+	}
+	else
+	{
+		auto requestBackup = apiStateBackup.GetReqest(state);
+
+		Serial.println("\nGET\n  Req:" + requestBackup.request + "\n  Code : "+String(requestBackup.code)+" ->\""+String(requestBackup.main) + "\"");
+
+		if(requestBackup.code == 200)
+		{
+			// pletacka_display.showMsg("Bac-"+String(counter) + " -> OK");
+			// pletacka_display.hideError();
+		}
+		else
+		{
+			// pletacka_display.showError(requestBackup.code + "->"+ requestBackup.main);
+			// pletacka_display.hideMsg();
+		}
+	}
+	
+}
+
+void Pletacka::sendAlive(int sensorNumber)
+{
+	pletacka_alive.sendAlive(sensorNumber);
+}
+
+
+
+int Pletacka::editSensorNumber(int actualNumber)
+{
+	int newNumber = actualNumber;
+	// pletacka_display.showMsg("Setup s. number");
+
+	while(!digitalRead(BTN_ENTER))
+	{
+
+		if(!digitalRead(BTN_UP))
+		{
+			newNumber++;
+			// pletacka_display.showId(newNumber);
+		}
+		else if (!digitalRead(BTN_DOWN))
+		{
+			newNumber--;
+			// pletacka_display.showId(newNumber);
+		}
+
+		
+		delay(300);
+		
+	}
+
+	if(actualNumber != newNumber)
+	{
+		pletacka_eeprom.write(EEPROM_SNUMBER_A, newNumber);
+		pletacka_eeprom.commit();
+		// pletacka_display.showError("OK", TFT_GREEN);
+	}
+	else
+	{
+		// pletacka_display.showError("Nothing to change", TFT_ORANGE);
+	}
+	
+
+	return newNumber;
+}
+
+
+
+
+
+void Pletacka::debug(String message, String prefix)
+{
+	if (cfg->remoteDebugOn)
+	{
+		pletacka_debug.Debug.print(prefix + message);
+	}
+
+	if (cfg->serialDebugOn)
+	{
+		Serial.print(prefix + message);
+	}
+}
+
+void Pletacka::debugln(String message, String prefix)
+{
+	if (cfg->remoteDebugOn)
+	{
+		pletacka_debug.Debug.println(prefix + message);
+	}
+
+	if (cfg->serialDebugOn)
+	{
+		Serial.println(prefix + message);
+	}
+}
+
+void Pletacka::print(String message, String prefix)
+{
+	if (cfg->remoteDataOn)
+	{
+		pletacka_debug.Data.print(prefix + message);
+	}
+
+	if (cfg->serialDebugOn)
+	{
+		Serial.print(prefix + message);
+	}
+}
+
+void Pletacka::println(String message, String prefix)
+{
+	if (cfg->remoteDataOn)
+	{
+		pletacka_debug.Data.println(prefix + message);
+	}
+
+	if (cfg->serialDataOn)
+	{
+		Serial.println(prefix + message);
+	}
+}

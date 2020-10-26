@@ -71,8 +71,8 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 	
 
 
-	pletacka_status.init(cfg);
-	pletacka_alive.init(*cfg);
+	pletacka_status.init(cfg, &UI);
+	pletacka_alive.init(*cfg, &UI);
 
 
 

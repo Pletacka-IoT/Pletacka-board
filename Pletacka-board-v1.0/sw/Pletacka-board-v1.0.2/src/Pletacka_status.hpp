@@ -3,6 +3,7 @@
 #include <Arduino.h>
 #include "Pletacka_config.hpp"
 #include "Optocoupler.hpp"
+#include "Pletacka_UI.hpp"
 
 class Pletacka_status
 {
@@ -34,12 +35,14 @@ private:
     };    
 
 
+
+	Pletacka_UI* UI = nullptr;
     
     
 
 public:
 
-    void init(PletackaConfig* config);
+    void init(PletackaConfig* config, Pletacka_UI* inUI);
     String getStatus();
     
 };

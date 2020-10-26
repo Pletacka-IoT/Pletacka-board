@@ -1,16 +1,20 @@
 #pragma once
 
 #include <Arduino.h>
+#include "rbprotocol.h"
+#include "Pletacka_UI.hpp"
 #include "pletacka_config.hpp"
-#include "Pletacka_display.hpp"
+
+using namespace rb;
 
 class Board_tester
 {
     private:
-		Pletacka_display pletacka_display;
+		Pletacka_UI UI;
+		// Protocol* pProt = nullptr;
 
     public:
-        void test();
+        void test(PletackaConfig* cfg, rb::Protocol *pPro);
    
 };
 

@@ -37,9 +37,7 @@ public:
     Pletacka_wifi();
     ~Pletacka_wifi();
     void init(PletackaConfig* config);
-    void configConnection();
     void connectWifi();
-    void startAP();
 };
 
 

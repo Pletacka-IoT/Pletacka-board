@@ -4,10 +4,8 @@
 
 #include "NetteApi.hpp"
 #include "Pletacka_config.hpp"
-// #include "Pletacka_display.hpp"
 #include "Pletacka_UI.hpp"
 #include "Pletacka_wifi.hpp"
-#include "Pletacka_debug.hpp"
 #include "Pletacka_status.hpp"
 #include "Pletacka_alive.hpp"
 
@@ -31,7 +29,6 @@ class Pletacka
 private:
 	Pletacka_UI UI;
 
-	// Pletacka_display pletacka_display;
 	PletackaConfig* cfg = NULL;
 	Pletacka_wifi pletacka_wifi;
 	Pletacka_status pletacka_status;

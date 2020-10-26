@@ -13,9 +13,11 @@ Pletacka_alive::~Pletacka_alive()
 {
 }
 
-void Pletacka_alive::init(PletackaConfig config)
+void Pletacka_alive::init(PletackaConfig config, Pletacka_UI* inUI)
 {
-    udpCfg.udpIP = config.udpIP;
+    
+	UI = inUI;
+	udpCfg.udpIP = config.udpIP;
     udpCfg.udpPort = config.udpPort;
 
     udpIP.fromString(udpCfg.udpIP);

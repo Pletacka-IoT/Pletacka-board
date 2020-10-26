@@ -1,8 +1,10 @@
 #include "Pletacka_status.hpp"
 
 
-void Pletacka_status::init(PletackaConfig* config)
+void Pletacka_status::init(PletackaConfig* config, Pletacka_UI* inUI)
 {
+	UI = inUI;
+
 	optoFinish.setPin(OP_1_FINISH);
 	optoStop.setPin(OP_2_STOP);
 
@@ -64,7 +66,7 @@ String Pletacka_status::getStatus()
 			}
 			break;
 	}
-	// Serial.println("INTER:" + output);
+	// UI->debugln("Status: " + output);
 
 	return output;    
 

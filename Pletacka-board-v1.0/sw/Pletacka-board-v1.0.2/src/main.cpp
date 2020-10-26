@@ -27,20 +27,7 @@ void mainProgram()
 {
 	//Main setup
 
-	// Uncoment for testing 
-	// Board_tester tester;
-	// tester.test();
-
-	// BasicOTA ota;
-	Pletacka pletacka;
 	PletackaConfig config;
-	WiFiClass pWiFi;
-	ArduinoMetronome statusMetronome(10);
-	ArduinoMetronome customMetronome(1000);
-	ArduinoMetronome wifiTester(500);
-	ArduinoMetronome aliveMetronome(10000);
-
-	
 	config.serverUrl = "http://192.168.0.2/api/v1/thisSensor/add-event";
 	config.serverUrlBackup = "http://192.168.0.2/Backup/api/v1/thisSensor/add-event";
 	// config.wifiName = "Pletacka-IoT";
@@ -51,18 +38,25 @@ void mainProgram()
 	config.wifiPassword = "Pucini.13";
 	// config.wifiName = "Technika";
 	// config.wifiPassword = "materidouska";
-	config.wifiDefaulAp = false;
-	config.apName = "AP-Pletacka-" + config.sensorNumber;
-	config.apPassword = "PletackaPlete";
 	config.udpIP = "192.168.0.2";
 	config.udpPort = 2727;
 	config.debugOn = true;
 
+
+	// Uncoment for testing 
+	// Board_tester tester;
+	// tester.test(&config, gProt);
+
+
+	// BasicOTA ota;
+	Pletacka pletacka;
+	WiFiClass pWiFi;
+	ArduinoMetronome statusMetronome(10);
+	ArduinoMetronome customMetronome(1000);
+	ArduinoMetronome wifiTester(500);
+	ArduinoMetronome aliveMetronome(10000);
 	
 	pletacka.config(&config, gProt);
-
-	pletacka.ui()->println("Funguje");
-
 
 
 

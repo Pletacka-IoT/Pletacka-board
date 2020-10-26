@@ -5,8 +5,6 @@
  */
 Pletacka_wifi::Pletacka_wifi()
 {
-
-	
 }
 
 Pletacka_wifi::~Pletacka_wifi()
@@ -24,23 +22,10 @@ void Pletacka_wifi::init(PletackaConfig* config)
 	wifiCfg.apPassword = config->apPassword;
 	sensorNumber = config->sensorNumber;
 
-	configConnection();
+	connectWifi();
 }
 
-void Pletacka_wifi::configConnection()
-{
-	if(wifiCfg.wifiDefaulAp)
-	{
-		startAP();
-			
-	}
-	else
-	{
-		connectWifi();
-			
-	}
-		
-}
+
 
 
 void Pletacka_wifi::connectWifi()
@@ -95,14 +80,5 @@ void Pletacka_wifi::connectWifi()
 	digitalWrite(LED_WIFI, true); 
 		
 }
-
-void Pletacka_wifi::startAP()
-{
-		// pletacka.showMsg("AP: "+wifiCfg.apName);
-		Serial.println("Starting **" + wifiCfg.apName + "** AP");
-		WiFi.softAP(wifiCfg.apName.c_str(), wifiCfg.apPassword.c_str(), wifiCfg.apChanel );
-
-}
-
 
 

@@ -10,21 +10,7 @@
 class Pletacka_alive
 {
 private:
-    struct udpConfig
-    {
-        udpConfig()
-            : udpIP("192.168.0.112")
-            , udpPort(2727)
- 
-            {
-        }
-        
-        String udpIP;    //
-        int udpPort;     //
-    };
-
-    udpConfig udpCfg;
-
+	PletackaConfig* cfg = nullptr;
     WiFiUDP udp;
     IPAddress udpIP;
 
@@ -33,7 +19,7 @@ private:
 public:
     Pletacka_alive();
     ~Pletacka_alive();
-    void init(PletackaConfig config, Pletacka_UI* inUI);
+    void init(PletackaConfig* config, Pletacka_UI* inUI);
     void sendAlive(int sensorNumber);
 
 };

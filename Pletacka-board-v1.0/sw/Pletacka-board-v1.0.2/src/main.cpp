@@ -56,6 +56,7 @@ void mainProgram()
 	ArduinoMetronome wifiTester(500);
 	ArduinoMetronome aliveMetronome(10000);
 	
+	
 	pletacka.config(&config, gProt);
 
 

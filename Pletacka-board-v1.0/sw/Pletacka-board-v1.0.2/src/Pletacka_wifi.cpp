@@ -11,16 +11,10 @@ Pletacka_wifi::~Pletacka_wifi()
 {
 }
 
-void Pletacka_wifi::init(PletackaConfig* config)
+void Pletacka_wifi::init(PletackaConfig* config, Pletacka_UI* inUI)
 {
-	
-	wifiCfg.wifiName = config->wifiName;
-	wifiCfg.wifiPassword = config->wifiPassword;
-	wifiCfg.wifiChanel = config->wifiChenel;
-	wifiCfg.wifiDefaulAp = config->wifiDefaulAp;
-	wifiCfg.apName = config->apName;
-	wifiCfg.apPassword = config->apPassword;
-	sensorNumber = config->sensorNumber;
+	UI = inUI;
+	cfg = config;
 
 	connectWifi();
 }
@@ -30,7 +24,7 @@ void Pletacka_wifi::init(PletackaConfig* config)
 
 void Pletacka_wifi::connectWifi()
 {
-	Serial.println("Connecting to " + wifiCfg.wifiName);
+	Serial.println("Connecting to " + cfg->wifiName);
 
 	#ifdef STATIC_IP
 		// From : https://randomnerdtutorials.com/esp32-static-fixed-ip-address-arduino-ide/
@@ -44,39 +38,39 @@ void Pletacka_wifi::connectWifi()
 			IPAddress secondaryDNS(8, 8, 4, 4); //optional
 
 			// Configures static IP address
-			if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
-				// pletacka.showError("STA Failed to configure");
+			if (!pWiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
+				UI->showError("STA Failed to configure", TFT_RED, false);
 			}		
 	#endif
 
-	WiFi.begin(wifiCfg.wifiName.c_str(), wifiCfg.wifiPassword.c_str());
+	pWiFi.begin(cfg->wifiName.c_str(), cfg->wifiPassword.c_str());
 
 	int counter = 0;
 	bool ledWifiState = true;
 
-	while (WiFi.status() != WL_CONNECTED) {
+	while (pWiFi.status() != WL_CONNECTED) {
 			counter++;
 			delay(500);
 			Serial.print(".");
-			// pletacka.showMsg("Connecting " + wifiCfg.wifiName); 
+			UI->showMsg("Connecting " + cfg->wifiName, false); 
 			digitalWrite(LED_WIFI, ledWifiState);
 			ledWifiState = !ledWifiState;
 
 			if(counter> 10)
 			{
-					// pletacka_display->showError("Not connected to WiFi");            
+					UI->showError("Not connected to pWiFi", TFT_RED, false);            
 			}
 	}
 
 	
-	// pletacka.showMsg("WiFi " + wifiCfg.wifiName);
-	// pletacka.hideError();
+	UI->showMsg("WiFi " + cfg->wifiName, false);
+	UI->hideError();
 
 	Serial.println("\nWiFi connected");
 	Serial.print("IP address: ");
-	Serial.print(WiFi.localIP().toString());
+	Serial.print(pWiFi.localIP().toString());
 	Serial.print("    MAC address: ");
-	Serial.println(String(WiFi.macAddress()));   
+	Serial.println(String(pWiFi.macAddress()));   
 	digitalWrite(LED_WIFI, true); 
 		
 }

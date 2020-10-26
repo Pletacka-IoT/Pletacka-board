@@ -3,6 +3,7 @@
 
 void Pletacka_status::init(PletackaConfig* config, Pletacka_UI* inUI)
 {
+	// cfg = config;
 	UI = inUI;
 
 	optoFinish.setPin(OP_1_FINISH);

@@ -5,14 +5,20 @@
 #include <string>
 
 
-void Pletacka_UI::init(PletackaConfig* inCfg, rb::Protocol* inProt)
+void Pletacka_UI::init(PletackaConfig* inCfg)
 {
     pCfg = inCfg;
-	pProt = inProt;
 
 	displayInit();
 	showId(pCfg->sensorNumber);
 
+
+
+}
+
+void Pletacka_UI::initUIGrid(rb::Protocol* inProt)
+{
+	pProt = inProt;
 
     pProt = new Protocol("Pletacka-IoT", "Pletacka" , "Compiled at " __DATE__ " " __TIME__, [](const std::string& cmd, rbjson::Object* pkt) {
 		if (UI.handleRbPacket(cmd, pkt))
@@ -33,32 +39,45 @@ void Pletacka_UI::init(PletackaConfig* inCfg, rb::Protocol* inProt)
 
 	builder.rebootButton
 	.onPress([](Button&) {
-		printf("Reboot\n");
-		ESP_LOGE("", "Reboot2");
+		static int num = 3;
+		if(num<=0)
+		{
+			Layout.rebootButton.setText("Rebooting now");
+			Layout.stateText.setText("Rebooting now");
+			delay(500);
+			ESP.restart();
+		}
+		else
+		{
+			Layout.rebootButton.setText(String("Reboot - "+String(num)).c_str());
+			num--;
+		}
+		
+		// printf("Reboot\n");
 	});
 
     builder.numberPlus
         .onPress([&](Button&) {
 			pCfg->sensorNumber++;
+			Layout.numberSave.setText("Save");
 			Layout.numberInfo.setText(String(pCfg->sensorNumber).c_str());
 			Layout.numberText.setText(String(pCfg->sensorNumber).c_str());
-			Serial.printf("PLus - %d\n", pCfg->sensorNumber);
+			sendLog("Snum ++", "Num: " + String(pCfg->sensorNumber));
         });	
 
     builder.numberMinus
         .onPress([&](Button&) {
-			pCfg->sensorNumber--;			
+			pCfg->sensorNumber--;	
+			Layout.numberSave.setText("Save");		
 			Layout.numberInfo.setText(String(pCfg->sensorNumber).c_str());
 			Layout.numberText.setText(String(pCfg->sensorNumber).c_str());
-			Serial.printf("Minus - %d\n", pCfg->sensorNumber);
+			sendLog("Snum --", "Num: " + String(pCfg->sensorNumber));
         });	
 
     builder.numberSave
         .onPress([&](Button&) {
-			// pCfg->sensorNumber;			
-			// Layout.numberInfo.setText(String(pCfg->sensorNumber).c_str());
-			// Layout.numberText.setText(String(pCfg->sensorNumber).c_str());
-			Serial.printf("Save - %d\n", pCfg->sensorNumber);
+			Layout.numberSave.setText("SAVED");
+			sendLog("Snum SAVE", "Num: " + String(pCfg->sensorNumber));
         });		
 
 	builder.commit();
@@ -66,56 +85,58 @@ void Pletacka_UI::init(PletackaConfig* inCfg, rb::Protocol* inProt)
 
 ///////////////////////////LOG/////////////////////////
 
-void Pletacka_UI::sendLog(String text, String logLevel)
-{
-	String msg = "["+logLevel+"] " +text;
-
-	Serial.println(msg);
-	
-	if(pCfg->debugOn)
-	{
-		pProt->send_log(msg.c_str());
-	}
-}
-
-void Pletacka_UI::sendLogNoLn(String text, String logLevel)
+void Pletacka_UI::sendLogNoLn(String text, String logLevel, bool sendToApp)
 {
 	String msg = "["+logLevel+"] " +text;
 
 	Serial.print(msg);
-	
-	if(pCfg->debugOn)
+
+	if(sendToApp && pCfg->debugOn)
 	{
-		pProt->send_log(msg.c_str());
+		if(pProt == nullptr)
+		{
+			ESP_LOGE(TAG, "Protocol not initialized!");
+			return;
+		}
+		else
+		{
+			pProt->send_log(msg.c_str());
+		}
 	}
+}
+
+void Pletacka_UI::sendLog(String text, String logLevel, bool sendToApp)
+{
+	sendLogNoLn(text, logLevel, sendToApp);
+	Serial.println();
 }
 
 ///////////////////////////SERIAL/////////////////////////
 
-void Pletacka_UI::print(String text)
+void Pletacka_UI::print(String text, bool sendToApp)
 {
-	sendLogNoLn(text, "SERIAL");
+	sendLogNoLn(text, "SERIAL", sendToApp);
 }
 
-void Pletacka_UI::println(String text)
+void Pletacka_UI::println(String text, bool sendToApp)
 {
-	print(text);
+	print(text, sendToApp);
 	Serial.println();
 }
 
-void Pletacka_UI::debug(String text)
+void Pletacka_UI::debug(String text, bool sendToApp)
 {
 	if(pCfg->debugOn)
 	{	
-		sendLogNoLn(text, "DEBUG");
+		sendLogNoLn(text, "DEBUG", sendToApp);
 	}
 }
 
-void Pletacka_UI::debugln(String text)
+void Pletacka_UI::debugln(String text, bool sendToApp)
 {
 	if(pCfg->debugOn)
 	{	
-		debug(text);
+		debug(text, sendToApp);
 		Serial.println();
 	}
 }
@@ -138,11 +159,11 @@ void Pletacka_UI::showId(int number)
 }
 
 
-void Pletacka_UI::showError(String msg, int colour )
+void Pletacka_UI::showError(String msg, int colour, bool sendToApp)
 {
     tft.fillRoundRect(0, tft.height()- 20,  tft.width(), 20, radius, colour);
     tft.drawString(msg, 5,tft.height()-17, 2);  //string,start x,start y, font weight {1;2;4;6;7;8}
-	sendLog(msg, "D: showError");
+	sendLog(msg, "DISP: showError", sendToApp);
 	
 }
 
@@ -152,11 +173,12 @@ void Pletacka_UI::hideError()
 }
 
 
-void Pletacka_UI::showMsg(String msg)
+void Pletacka_UI::showMsg(String msg, bool sendToApp)
 {
-    tft.fillRoundRect(105, 0,  135, 24, radius, blockColour);
+    
+	tft.fillRoundRect(105, 0,  135, 24, radius, blockColour);
     tft.drawString(msg, 110, 5, 2);  //string,start x,start y, font weight {1;2;4;6;7;8}
-	sendLog(msg, "D: showMsg");
+	sendLog(msg, "DISP: showMsg", sendToApp);
 }
 
 void Pletacka_UI::hideMsg()
@@ -164,7 +186,7 @@ void Pletacka_UI::hideMsg()
     tft.fillRoundRect(105, 0,  135, 24, radius, blockColour);
 }
 
-void Pletacka_UI::showStatus(String status)
+void Pletacka_UI::showStatus(String status, bool sendToApp)
 {
     int bcgCol;
 
@@ -191,7 +213,7 @@ void Pletacka_UI::showStatus(String status)
     tft.setTextColor(TFT_WHITE);
     tft.drawCentreString(status, 120, 62, 4);  //string,start x,start y, font weight {1;2;4;6;7;8}
 
-
+	sendLog(status, "DISP: showStatus", sendToApp);
 }
 
 void Pletacka_UI::hideStatus()

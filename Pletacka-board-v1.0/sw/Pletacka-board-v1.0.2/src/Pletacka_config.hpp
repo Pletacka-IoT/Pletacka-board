@@ -31,14 +31,9 @@ struct PletackaConfig
 		, wifiName("")
 		, wifiPassword("")
 		, wifiChenel(1)
-		, wifiDefaulAp(false)
-		, apName("")
-		, apPassword("")
-		, apChanel(1) 
 		, debugOn(false)
 		, udpIP("192.168.0.112")
 		, udpPort(2727)
-
 		{
 
 	}
@@ -49,10 +44,6 @@ struct PletackaConfig
 	String wifiName;    //WiFi name
 	String wifiPassword;//WiFi password
 	int wifiChenel;     //WiFi chanel
-	bool wifiDefaulAp;  //Run AP on startup
-	String apName;      //AP name
-	String apPassword;  //AP password
-	int apChanel;       //AP chanel
 	bool debugOn;	//Startup into debug mode - Serial Debug
 	String udpIP;
 	int udpPort;

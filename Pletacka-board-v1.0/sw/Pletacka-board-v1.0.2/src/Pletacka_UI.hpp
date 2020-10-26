@@ -23,7 +23,7 @@ using namespace gridui;
 class Pletacka_UI
 {
     private:
-		void sendLogNoLn(String text, String logLevel);
+		void sendLogNoLn(String text, String logLevel, bool sendToApp = true);
 
         int bcgColour = TFT_BLACK;
         int blockColour = TFT_BLUE;
@@ -42,22 +42,23 @@ class Pletacka_UI
     public:
 		TFT_eSPI tft = TFT_eSPI(135, 240);
 
-		void init(PletackaConfig* inCfg, rb::Protocol* inProt);
+		void init(PletackaConfig* inCfg);
+		void initUIGrid(rb::Protocol* inProt);
 
-		void sendLog(String text, String logLevel);
+		void sendLog(String text, String logLevel, bool sendToApp = true);
         
-		void print(String text);
-		void println(String text);
-		void debug(String text);
-		void debugln(String text);
+		void print(String text, bool sendToApp = true);
+		void println(String text, bool sendToApp = true);
+		void debug(String text, bool sendToApp = true);
+		void debugln(String text, bool sendToApp = true);
 
 		void displayInit();
         void showId(int number);
-        void showError(String msg, int colour = TFT_RED);
+        void showError(String msg, int colour = TFT_RED, bool sendToApp = true);
         void hideError();
-        void showMsg(String msg);
+        void showMsg(String msg, bool sendToApp = true);
         void hideMsg();
-        void showStatus(String status);
+        void showStatus(String status, bool sendToApp = true);
         void hideStatus();
 
 		// gridui::_Layout* layout(){return &Layout;}

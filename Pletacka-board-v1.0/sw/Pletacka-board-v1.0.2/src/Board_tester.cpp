@@ -10,7 +10,7 @@ void Board_tester::test(PletackaConfig* cfg, rb::Protocol *pPro)
 
 	WiFi::connect(cfg->wifiName.c_str(), cfg->wifiPassword.c_str());
 	
-	UI.init(cfg, pPro);
+	UI.init(cfg);
 	
 	UI.showMsg("Start testing");
 

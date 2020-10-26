@@ -27,10 +27,6 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 	}
 	cfg->sensorNumber = pletacka_eeprom.read(EEPROM_SNUMBER_A);	
 
-
-
-	// pletacka_display.displayInit(cfg);
-
 	pinMode(LED_SEND, OUTPUT);
 	pinMode(LED_WIFI, OUTPUT);
 	pinMode(LED_ON, OUTPUT);
@@ -49,12 +45,13 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 	if(!digitalRead(BTN_ENTER))
 	{
 		cfg->sensorNumber = editSensorNumber(cfg->sensorNumber);
-		// // pletacka_display.hideMsg();
+		// UI.hideMsg();
 	}
+	UI.init(cfg);
 
-	pletacka_wifi.init(cfg);
+	pletacka_wifi.init(cfg, &UI);
 
-	UI.init(cfg,gProt);
+	UI.initUIGrid(gProt);
 
 	
 
@@ -69,10 +66,10 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 	UI.debugln("Debaguju");
 	UI.println("Seriuju");
 	
-
+	
 
 	pletacka_status.init(cfg, &UI);
-	pletacka_alive.init(*cfg, &UI);
+	pletacka_alive.init(cfg, &UI);
 
 
 
@@ -120,8 +117,8 @@ void Pletacka::sendState(String state)
 
 	if(request.code == 200)
 	{
-		// pletacka_display.showMsg(String(counter) + " -> OK");
-		// pletacka_display.hideError();
+		UI.showMsg(String(counter) + " -> OK");
+		UI.hideError();
 	}
 	else
 	{
@@ -131,13 +128,13 @@ void Pletacka::sendState(String state)
 
 		if(requestBackup.code == 200)
 		{
-			// pletacka_display.showMsg("Bac-"+String(counter) + " -> OK");
-			// pletacka_display.hideError();
+			UI.showMsg("Bac-"+String(counter) + " -> OK");
+			UI.hideError();
 		}
 		else
 		{
-			// pletacka_display.showError(requestBackup.code + "->"+ requestBackup.main);
-			// pletacka_display.hideMsg();
+			UI.showError(requestBackup.code + "->"+ requestBackup.main);
+			UI.hideMsg();
 		}
 	}
 	
@@ -153,7 +150,7 @@ void Pletacka::sendAlive(int sensorNumber)
 int Pletacka::editSensorNumber(int actualNumber)
 {
 	int newNumber = actualNumber;
-	// pletacka_display.showMsg("Setup s. number");
+	UI.showMsg("Setup s. number");
 
 	while(!digitalRead(BTN_ENTER))
 	{
@@ -161,12 +158,12 @@ int Pletacka::editSensorNumber(int actualNumber)
 		if(!digitalRead(BTN_UP))
 		{
 			newNumber++;
-			// pletacka_display.showId(newNumber);
+			UI.showId(newNumber);
 		}
 		else if (!digitalRead(BTN_DOWN))
 		{
 			newNumber--;
-			// pletacka_display.showId(newNumber);
+			UI.showId(newNumber);
 		}
 
 		delay(300);
@@ -176,11 +173,11 @@ int Pletacka::editSensorNumber(int actualNumber)
 	{
 		pletacka_eeprom.write(EEPROM_SNUMBER_A, newNumber);
 		pletacka_eeprom.commit();
-		// pletacka_display.showError("OK", TFT_GREEN);
+		UI.showError("OK", TFT_GREEN);
 	}
 	else
 	{
-		// pletacka_display.showError("Nothing to change", TFT_ORANGE);
+		UI.showError("Nothing to change", TFT_ORANGE);
 	}
 
 	return newNumber;

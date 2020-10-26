@@ -13,22 +13,20 @@ Pletacka_alive::~Pletacka_alive()
 {
 }
 
-void Pletacka_alive::init(PletackaConfig config, Pletacka_UI* inUI)
+void Pletacka_alive::init(PletackaConfig* config, Pletacka_UI* inUI)
 {
-    
-	UI = inUI;
-	udpCfg.udpIP = config.udpIP;
-    udpCfg.udpPort = config.udpPort;
+    UI = inUI;
+	cfg = config;
 
-    udpIP.fromString(udpCfg.udpIP);
-    udp.begin(udpCfg.udpPort);
+    udpIP.fromString(cfg->udpIP);
+    udp.begin(cfg->udpPort);
 }
 
 void Pletacka_alive::sendAlive(int sensorNumber)
 {
-    udpIP.fromString(udpCfg.udpIP);
+    udpIP.fromString(cfg->udpIP);
     
-    udp.beginPacket(udpIP, udpCfg.udpPort);
+    udp.beginPacket(udpIP, cfg->udpPort);
     udp.println(String(sensorNumber));
     udp.endPacket();
 }

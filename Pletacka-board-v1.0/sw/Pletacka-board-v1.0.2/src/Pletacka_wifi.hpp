@@ -2,41 +2,21 @@
 
 #include <Arduino.h>
 #include "pletacka_config.hpp"
+#include "Pletacka_UI.hpp"
 #include <WiFi.h>
 
 class Pletacka_wifi
 {
 private:
-    struct wifiConfig
-    {
-        wifiConfig()
-            : wifiName("")
-            , wifiPassword("")
-            , wifiChanel(1)
-            , wifiDefaulAp(false)
-            , apName("")
-            , apPassword("")
-            , apChanel(1) {
-        }
-        
-        String wifiName;    //WiFi name
-        String wifiPassword;//WiFi password
-        int wifiChanel;     //WiFi chanel
-        bool wifiDefaulAp;  //Run AP on startup
-        String apName;      //AP name
-        String apPassword;  //AP password
-        int apChanel;       //AP chanel
-    };
-
-    wifiConfig wifiCfg;
-
 	int sensorNumber = 1;
-
+	PletackaConfig* cfg = nullptr;
+	Pletacka_UI* UI = nullptr;
+	WiFiClass pWiFi;
     
 public:
     Pletacka_wifi();
     ~Pletacka_wifi();
-    void init(PletackaConfig* config);
+    void init(PletackaConfig* config, Pletacka_UI* inUI);
     void connectWifi();
 };
 

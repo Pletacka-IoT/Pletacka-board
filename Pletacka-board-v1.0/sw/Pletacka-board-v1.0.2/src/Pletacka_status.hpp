@@ -37,6 +37,7 @@ private:
 
 
 	Pletacka_UI* UI = nullptr;
+	PletackaConfig cfg;
     
     
 

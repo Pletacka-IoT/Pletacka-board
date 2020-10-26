@@ -9,6 +9,7 @@
  * 
  * @link https://kubaandrysek.cz
  */
+
 #include <Arduino.h>
 #include "Pletacka.hpp"
 #include "BasicOTA.hpp"
@@ -19,12 +20,10 @@
 
 #define STATIC_IP true
 
-#define STOP while(1){;}
-
 
 static rb::Protocol* gProt = nullptr;
 
-void mainPrograme()
+void mainProgram()
 {
 	//Main setup
 
@@ -35,20 +34,13 @@ void mainPrograme()
 	// BasicOTA ota;
 	Pletacka pletacka;
 	PletackaConfig config;
+	WiFiClass pWiFi;
 	ArduinoMetronome statusMetronome(10);
 	ArduinoMetronome customMetronome(1000);
-	ArduinoMetronome timeMetronome(1000);
 	ArduinoMetronome wifiTester(500);
 	ArduinoMetronome aliveMetronome(10000);
 
 	
-	
-	// delay(2000);
-
-	Serial.println("Start");
-	// config.sensorNumber = 14; //Number from 1 to 254
-	// config.serverUrl = "http://192.168.0.172/api/v1/thisSensor/add-event";
-	// config.serverUrl = "http://192.168.0.113/Pletacka-website/api/v1/thisSensor/add-event";
 	config.serverUrl = "http://192.168.0.2/api/v1/thisSensor/add-event";
 	config.serverUrlBackup = "http://192.168.0.2/Backup/api/v1/thisSensor/add-event";
 	// config.wifiName = "Pletacka-IoT";
@@ -62,17 +54,14 @@ void mainPrograme()
 	config.wifiDefaulAp = false;
 	config.apName = "AP-Pletacka-" + config.sensorNumber;
 	config.apPassword = "PletackaPlete";
-	config.remoteDataOn = false;
-	config.remoteDebugOn = false;
-	config.serialDebugOn = true;
-	config.debugIP = "192.168.0.113";
-	config.debugPort = 12346;
-	config.dataPort = 12345;
 	config.udpIP = "192.168.0.2";
 	config.udpPort = 2727;
+	config.debugOn = true;
 
 	
 	pletacka.config(&config, gProt);
+
+	pletacka.ui()->println("Funguje");
 
 
 
@@ -80,104 +69,90 @@ void mainPrograme()
 
 	statusMetronome.startupDelayMs(15000);
 	aliveMetronome.startupDelayMs(1000);
-	timeMetronome.startupDelayMs(1000);
 	wifiTester.startupDelayMs(3000);
 
-
-	
 
 	
 	// ota.begin();
 	
 	
-	pletacka.println("println");
-	pletacka.debugln("debugln");
+	pletacka.ui()->println("println");
+	pletacka.ui()->debugln("debugln");
 
 
 	int ledSend = 0;
 	bool ledWifiState = false;
 	int startAlive = 0;
 
-	// while(1)
-	// {
-	// 	gProt->send_log("Start");
-	// 	delay(1000);
-	// }
 
-	// //Main loop
-	// while (true)
-	// {
-	// 	// ota.handle();
+	//Main loop
+	while (true)
+	{
+		// ota.handle();
 
 		
-	// 	//	Status loop
-	// 	if(statusMetronome.loopMs())
-	// 	{
+		//	Status loop
+		if(statusMetronome.loopMs())
+		{
 			
-	// 		String status = "";
-	// 		if((status = pletacka.isChange())!= "")
-	// 		{
-	// 			ledSend = millis();
-	// 			digitalWrite(LED_SEND, true);
-	// 			pletacka.println("Status: " + status);
-	// 			pletacka.showStatus(status);
-	// 			pletacka.sendState(status);
+			String status = "";
+			if((status = pletacka.isChange())!= "")
+			{
+				ledSend = millis();
+				digitalWrite(LED_SEND, true);
+				pletacka.ui()->println("Status: " + status);
+				pletacka.ui()->showStatus(status);
+				pletacka.sendState(status);
 				
-	// 		}
+			}
 
-	// 		if(millis()-ledSend > 700)
-	// 		{
-	// 			digitalWrite(LED_SEND, false);
-	// 		}
+			if(millis()-ledSend > 700)
+			{
+				digitalWrite(LED_SEND, false);
+			}
 
 			
-	// 	}
+		}
 
-	// 	//	Show time loop
-	// 	if(timeMetronome.loopMs())
-	// 	{			
-	// 		pletacka.showTime();
-	// 	}
-
-	// 	//	Send alive loop
-	// 	if(aliveMetronome.loopMs())
-	// 	{			
-	// 		startAlive = millis();
-	// 		pletacka.sendAlive(config.sensorNumber);
-	// 		digitalWrite(LED_ON, true);
-	// 	}
+		//	Send alive loop
+		if(aliveMetronome.loopMs())
+		{			
+			startAlive = millis();
+			pletacka.sendAlive(config.sensorNumber);
+			digitalWrite(LED_ON, true);
+		}
 
 
-	// 	if(millis()-startAlive > 800)
-	// 	{
-	// 		digitalWrite(LED_ON, false);
-	// 	}
+		if(millis()-startAlive > 800)
+		{
+			digitalWrite(LED_ON, false);
+		}
 		
-	// 	//	WiFi connection test loop
-	// 	if(wifiTester.loopMs())
-	// 	{			
-	// 		if(WiFi.status() != WL_CONNECTED)
-	// 		{
-	// 			digitalWrite(LED_WIFI, ledWifiState);
-	// 			ledWifiState = !ledWifiState;
-	// 			pletacka.showError("Not connected to WiFi"); 
-	// 			pletacka.showMsg("WiFi ERROR");
-	// 			delay(2000);
-	// 			pletacka.showStatus("RESTART...");
-	// 			delay(3000);
-	// 			ESP.restart(); 
-	// 		}
-	// 	}
+		//	WiFi connection test loop
+		if(wifiTester.loopMs())
+		{			
+			if(pWiFi.status() != WL_CONNECTED)
+			{
+				digitalWrite(LED_WIFI, ledWifiState);
+				ledWifiState = !ledWifiState;
+				pletacka.ui()->showError("Not connected to WiFi"); 
+				pletacka.ui()->showMsg("WiFi ERROR");
+				delay(2000);
+				pletacka.ui()->showStatus("RESTART...");
+				delay(3000);
+				ESP.restart(); 
+			}
+		}
 
 
 
-	// 	//	 Custom loop
-	// 	if(customMetronome.loopMs())
-	// 	{			
-	// 		// Serial.println("START: " + String(start));
-	// 	}		
+		//	 Custom loop
+		if(customMetronome.loopMs())
+		{			
+			// Serial.println("START: " + String(start));
+		}		
 		
-	// }
+	}
 	
 	
 	
@@ -186,14 +161,8 @@ void mainPrograme()
 
 
 void setup() {
-	mainPrograme();
+	mainProgram();
 }
-
-
-
-
-
-
 
 
 

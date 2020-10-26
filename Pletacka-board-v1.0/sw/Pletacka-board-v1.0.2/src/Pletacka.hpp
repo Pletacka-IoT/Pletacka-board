@@ -13,13 +13,13 @@
 
 #include "EEPROM.h"
 
-#include "gridui.h"
-#include "rbprotocol.h"
-#include "rbwebserver.h"
-#include "rbwifi.h"
+// #include "gridui.h"
+// #include "rbprotocol.h"
+// #include "rbwebserver.h"
+// #include "rbwifi.h"
 
-using namespace rb;
-using namespace gridui;
+// using namespace rb;
+// using namespace gridui;
 
 #define ADC_EN          14
 #define ADC_PIN         34
@@ -29,12 +29,11 @@ using namespace gridui;
 class Pletacka
 {
 private:
-	Pletacka_UI ui;
+	Pletacka_UI UI;
 
 	// Pletacka_display pletacka_display;
 	PletackaConfig* cfg = NULL;
 	Pletacka_wifi pletacka_wifi;
-	Pletacka_debug pletacka_debug;
 	Pletacka_status pletacka_status;
 	Pletacka_alive pletacka_alive;
 	EEPROMClass pletacka_eeprom;
@@ -54,13 +53,8 @@ public:
 	String isChange();
 	void sendState(String state);
 	void sendAlive(int sensorNumber);
-	int editSensorNumber(int actualNumber);
-
-	void debug(String message, String prefix = "D:");
-	void debugln(String message, String prefix = "D:");
-	void print(String message, String prefix = "P:");
-	void println(String message, String prefix = "P:");
-	
+	int editSensorNumber(int actualNumber);	
+	Pletacka_UI* ui() {return &UI;}
 };
 
 

@@ -2,17 +2,19 @@
 
 #include <Arduino.h>
 
-// #include "gridui.h"
+#include "gridui.h"
 #include "rbprotocol.h"
-// #include "rbwebserver.h"
-// #include "rbwifi.h"
+#include "rbwebserver.h"
+#include "rbwifi.h"
 
 #include <TFT_eSPI.h>
 #include "WiFi.h"
 #include <WiFiClient.h>
 #include "pletacka_config.hpp"
 
+
 using namespace rb;
+using namespace gridui;
 
 
 
@@ -21,6 +23,8 @@ using namespace rb;
 class Pletacka_UI
 {
     private:
+		void sendLogNoLn(String text, String logLevel);
+
         int bcgColour = TFT_BLACK;
         int blockColour = TFT_BLUE;
         int textColour = TFT_WHITE;
@@ -30,6 +34,8 @@ class Pletacka_UI
         PletackaConfig* pCfg = nullptr;
 		Protocol* pProt = nullptr;
         
+		// gridui::builder::_LayoutBuilder* Lay = nullptr;
+		
         // TFT_eSPI tft = TFT_eSPI();
         
 
@@ -38,7 +44,14 @@ class Pletacka_UI
 
 		void init(PletackaConfig* inCfg, rb::Protocol* inProt);
 
-        void displayInit();
+		void sendLog(String text, String logLevel);
+        
+		void print(String text);
+		void println(String text);
+		void debug(String text);
+		void debugln(String text);
+
+		void displayInit();
         void showId(int number);
         void showError(String msg, int colour = TFT_RED);
         void hideError();
@@ -46,11 +59,11 @@ class Pletacka_UI
         void hideMsg();
         void showStatus(String status);
         void hideStatus();
-        // void showSend();
-        // void hideSend();
-        void showStatusX(String status, int x);
-		void sendLog(String text);
-		void test();
+
+		// gridui::_Layout* layout(){return &Layout;}
+		
+
+		
         
 };
 

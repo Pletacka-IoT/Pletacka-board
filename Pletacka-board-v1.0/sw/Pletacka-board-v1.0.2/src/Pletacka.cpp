@@ -2,9 +2,7 @@
 
 #define STOP_CODE ESP_LOGW("STOP_CODE", "STOP_CODE"); while(1){;}
 
-#define GRIDUI_LAYOUT_DEFINITION
-#include "layout.hpp"
-#include <string>
+
 
 Pletacka::Pletacka()
 {
@@ -19,10 +17,7 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 	cfg = config;
 	gProt = gPro;
 
-	Serial.begin(115200);
-
-	Serial.printf("gPro1 - %d", gProt);
-	
+	Serial.begin(115200);	
 
 	pletacka_eeprom.begin(50);
 	if(pletacka_eeprom.read(EEPROM_SNUMBER_A) == 255)
@@ -35,7 +30,6 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 
 
 	// pletacka_display.displayInit(cfg);
-	
 
 	pinMode(LED_SEND, OUTPUT);
 	pinMode(LED_WIFI, OUTPUT);
@@ -60,78 +54,20 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 
 	pletacka_wifi.init(cfg);
 
-//////////////////////
-	    // Initialize RBProtocol
-    gProt = new Protocol("FrantaFlinta", "Robocop", "Compiled at " __DATE__ " " __TIME__, [](const std::string& cmd, rbjson::Object* pkt) {
-		if (UI.handleRbPacket(cmd, pkt))
-			return;
-	});
+	UI.init(cfg,gProt);
+
 	
-	ui.init(cfg,gProt);
-    
-	gProt->start();
-
-    // Start serving the web page
-    rb_web_start(80);
-
-    // Initialize the UI builder
-    UI.begin(gProt);
-
-	Serial.printf("gPro2 - %d", gProt);
-
-		
-    auto builder = Layout.begin();
-
-	 
 
 
-	Layout.numberInfo.setText(String(cfg->sensorNumber).c_str());
-	Layout.numberText.setText(String(cfg->sensorNumber).c_str());
-
-	builder.rebootButton
-	.onPress([](Button&) {
-		printf("Reboot\n");
-		ESP_LOGE("", "Reboot2");
-	});
-
-    builder.numberPlus
-        .onPress([&](Button&) {
-			cfg->sensorNumber++;
-			Layout.numberInfo.setText(String(cfg->sensorNumber).c_str());
-			Layout.numberText.setText(String(cfg->sensorNumber).c_str());
-			Serial.printf("PLus - %d\n", cfg->sensorNumber);
-        });	
-
-    builder.numberMinus
-        .onPress([&](Button&) {
-			cfg->sensorNumber--;			
-			Layout.numberInfo.setText(String(cfg->sensorNumber).c_str());
-			Layout.numberText.setText(String(cfg->sensorNumber).c_str());
-			Serial.printf("Minus - %d\n", cfg->sensorNumber);
-        });		
-
-
-	builder.commit();
-
-
-	while(1)
+	if(cfg->debugOn || !digitalRead(BTN_DOWN))
 	{
-		// ESP_LOGE("Test", "Test2"); 
-		ui.test();
-		// gProt->send_log("LOGPlet");
-		delay(1000);
+		Serial.println("Debug");
+		cfg->debugOn = true;
+		UI.showError("DEBUG MODE", TFT_ORANGE);
 	}
 
-	STOP_CODE
-
-/////////////
-
-	if(cfg->remoteDataOn || cfg->remoteDebugOn || !digitalRead(BTN_DOWN))
-	{
-			println("STARTING DEBUG MODE");
-			// pletacka_display.showError("DEBUG MODE", TFT_ORANGE);
-			pletacka_debug.init(*cfg);
-	}
+	UI.debugln("Debaguju");
+	UI.println("Seriuju");
 	
 
 
@@ -139,17 +75,15 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 	pletacka_alive.init(*cfg);
 
 
-	// MDNS.begin("pletac-" + cfg->sensorNumber);
 
 	apiState.setServerName(cfg->serverUrl + "/" + cfg->sensorNumber);
 	apiStateBackup.setServerName(cfg->serverUrlBackup + "/" + cfg->sensorNumber);
-	println("Server:" + apiState.getServerName());
-	// Serial.println();
+	UI.println("Server:" + apiState.getServerName());
 
-	delay(200); //required for succes behavour
-	// pletacka_display.timeInit();
 
-	println("Sensor number " + String(cfg->sensorNumber) + " is configured");
+
+
+	UI.println("Sensor number " + String(cfg->sensorNumber) + " is configured");
 	
 	
 }
@@ -235,9 +169,7 @@ int Pletacka::editSensorNumber(int actualNumber)
 			// pletacka_display.showId(newNumber);
 		}
 
-		
 		delay(300);
-		
 	}
 
 	if(actualNumber != newNumber)
@@ -250,63 +182,6 @@ int Pletacka::editSensorNumber(int actualNumber)
 	{
 		// pletacka_display.showError("Nothing to change", TFT_ORANGE);
 	}
-	
 
 	return newNumber;
-}
-
-
-
-
-
-void Pletacka::debug(String message, String prefix)
-{
-	if (cfg->remoteDebugOn)
-	{
-		pletacka_debug.Debug.print(prefix + message);
-	}
-
-	if (cfg->serialDebugOn)
-	{
-		Serial.print(prefix + message);
-	}
-}
-
-void Pletacka::debugln(String message, String prefix)
-{
-	if (cfg->remoteDebugOn)
-	{
-		pletacka_debug.Debug.println(prefix + message);
-	}
-
-	if (cfg->serialDebugOn)
-	{
-		Serial.println(prefix + message);
-	}
-}
-
-void Pletacka::print(String message, String prefix)
-{
-	if (cfg->remoteDataOn)
-	{
-		pletacka_debug.Data.print(prefix + message);
-	}
-
-	if (cfg->serialDebugOn)
-	{
-		Serial.print(prefix + message);
-	}
-}
-
-void Pletacka::println(String message, String prefix)
-{
-	if (cfg->remoteDataOn)
-	{
-		pletacka_debug.Data.println(prefix + message);
-	}
-
-	if (cfg->serialDataOn)
-	{
-		Serial.println(prefix + message);
-	}
 }

@@ -35,13 +35,7 @@ struct PletackaConfig
 		, apName("")
 		, apPassword("")
 		, apChanel(1) 
-		, serialDataOn(true)
-		, serialDebugOn(false)
-		, remoteDataOn(false)
-		, remoteDebugOn(false)
-		, debugIP("192.168.0.111")
-		, debugPort(12345)
-		, dataPort(12346)
+		, debugOn(false)
 		, udpIP("192.168.0.112")
 		, udpPort(2727)
 
@@ -59,13 +53,7 @@ struct PletackaConfig
 	String apName;      //AP name
 	String apPassword;  //AP password
 	int apChanel;       //AP chanel
-	bool serialDataOn; 	//Enable serial comunication - default on
-	bool serialDebugOn;	//Startup into debug mode - Serial Debug
-	bool remoteDataOn;	//Enable remote "serial" comunicaton - proxy
-	bool remoteDebugOn; //Startup into debug mode - Proxy Debug
-	String debugIP;		//IP adress of your PC with Lorris
-	int debugPort;		//Proxy debug port
-	int dataPort;		//Proxy data port
+	bool debugOn;	//Startup into debug mode - Serial Debug
 	String udpIP;
 	int udpPort;
 

@@ -2,73 +2,57 @@
 
 
 
-void Pletacka_UI::init(PletackaConfig* config, TFT_eSPI* inDp, Protocol* gProtocol)
+void Pletacka_UI::init(PletackaConfig* inCfg, rb::Protocol* inProt)
 {
-    cfg = config;
-	gProt = gProtocol;
-    dp = inDp;
+    pCfg = inCfg;
+	pProt = inProt;
+
 
 	displayInit();
+	showId(pCfg->sensorNumber);
 
-	// gProt->send_log("Ahoj");
-	ESP_LOGE("E");
-
-
-	showId(cfg->sensorNumber);
-	ESP_LOGE("E");
-
-	dp->fillRoundRect(0, dp->height()- 15,  dp->width(), 15, radius, TFT_BLUE);
-	ESP_LOGE("E");
-	// dp->drawString("ASD", 5,dp->height()-12, 1);  //string,start x,start y, font weight {1;2;4;6;7;8}
-	dp->print("ASD");
-	ESP_LOGE("E");
-
-	delay(3000);
 	
-	showError("Error");
-	ESP_LOGE("E");
 
-	delay(100000);
 }
 
 void Pletacka_UI::displayInit()
 {  
-    dp->init();
-    dp->fontHeight(2);
-    dp->setRotation(3);
-    dp->fillScreen(TFT_BLACK);
-    dp->setTextColor(textColour);
+    tft.init();
+    tft.fontHeight(2);
+    tft.setRotation(3);
+    tft.fillScreen(TFT_BLACK);
+    tft.setTextColor(textColour);
 }
 
 
 void Pletacka_UI::showId(int number)
 {
-    dp->fillCircle(12, 12,  12, TFT_DARKGREEN);
-    dp->drawCentreString(String(number), 12, 5 , 2);  //string,start x,start y, font weight {1;2;4;6;7;8}
+    tft.fillCircle(12, 12,  12, TFT_DARKGREEN);
+    tft.drawCentreString(String(number), 12, 5 , 2);  //string,start x,start y, font weight {1;2;4;6;7;8}
 }
 
 
 void Pletacka_UI::showError(String msg, int colour )
 {
-    dp->fillRoundRect(0, dp->height()- 15,  dp->width(), 15, radius, colour);
-    dp->drawString(msg, 5,dp->height()-12, 1);  //string,start x,start y, font weight {1;2;4;6;7;8}
+    tft.fillRoundRect(0, tft.height()- 15,  tft.width(), 15, radius, colour);
+    tft.drawString(msg, 5,tft.height()-12, 2);  //string,start x,start y, font weight {1;2;4;6;7;8}
 }
 
 void Pletacka_UI::hideError()
 {
-    dp->fillRoundRect(0, dp->height()- 15,  dp->width(), 15, radius, bcgColour);
+    tft.fillRoundRect(0, tft.height()- 15,  tft.width(), 15, radius, bcgColour);
 }
 
 
 void Pletacka_UI::showMsg(String msg)
 {
-    dp->fillRoundRect(105, 0,  135, 24, radius, blockColour);
-    dp->drawString(msg, 110, 5, 2);  //string,start x,start y, font weight {1;2;4;6;7;8}
+    tft.fillRoundRect(105, 0,  135, 24, radius, blockColour);
+    tft.drawString(msg, 110, 5, 2);  //string,start x,start y, font weight {1;2;4;6;7;8}
 }
 
 void Pletacka_UI::hideMsg()
 {
-    dp->fillRoundRect(105, 0,  135, 24, radius, blockColour);
+    tft.fillRoundRect(105, 0,  135, 24, radius, blockColour);
 }
 
 void Pletacka_UI::showStatus(String status)
@@ -93,20 +77,25 @@ void Pletacka_UI::showStatus(String status)
     }
 
 
-    dp->fillRoundRect(40, 50,  160, 45, radius, bcgCol);
+    tft.fillRoundRect(40, 50,  160, 45, radius, bcgCol);
 
-    dp->setTextColor(TFT_WHITE);
-    dp->drawCentreString(status, 120, 62, 4);  //string,start x,start y, font weight {1;2;4;6;7;8}
+    tft.setTextColor(TFT_WHITE);
+    tft.drawCentreString(status, 120, 62, 4);  //string,start x,start y, font weight {1;2;4;6;7;8}
 
 
 }
 
 void Pletacka_UI::hideStatus()
 {
-    dp->fillRoundRect(40, 50,  160, 45, radius, TFT_BLACK);
+    tft.fillRoundRect(40, 50,  160, 45, radius, TFT_BLACK);
 }
 
 void Pletacka_UI::sendLog(String text)
 {
 
+}
+
+void Pletacka_UI::test()
+{
+	pProt->send_log("LOG");
 }

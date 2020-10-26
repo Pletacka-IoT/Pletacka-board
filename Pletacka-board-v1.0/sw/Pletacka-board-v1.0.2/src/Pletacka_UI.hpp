@@ -13,7 +13,7 @@
 #include "pletacka_config.hpp"
 
 using namespace rb;
-// using namespace gridui;
+
 
 
 
@@ -27,16 +27,16 @@ class Pletacka_UI
         int errorColour = TFT_RED;
         int radius = 4;
 
-        PletackaConfig* cfg = nullptr;
-		Protocol* gProt = nullptr;
+        PletackaConfig* pCfg = nullptr;
+		Protocol* pProt = nullptr;
         
-        TFT_eSPI* dp;
+        // TFT_eSPI tft = TFT_eSPI();
         
 
     public:
+		TFT_eSPI tft = TFT_eSPI(135, 240);
 
-
-		void init(PletackaConfig* config,  TFT_eSPI* inDp, Protocol* gProtocol);
+		void init(PletackaConfig* inCfg, rb::Protocol* inProt);
 
         void displayInit();
         void showId(int number);
@@ -50,6 +50,7 @@ class Pletacka_UI
         // void hideSend();
         void showStatusX(String status, int x);
 		void sendLog(String text);
+		void test();
         
 };
 

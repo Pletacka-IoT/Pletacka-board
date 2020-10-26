@@ -23,6 +23,20 @@ void Pletacka_display::displayInit(PletackaConfig* config)
 	ESP_LOGE("E");
 
 	showMsg("X");
+	delay(1000);
+	ESP_LOGE("ESP");
+	tft.fillRoundRect(105, 0,  135, 24, 5, TFT_BLUE);
+	ESP_LOGE("E");
+    tft.drawString("XXX", 110, 5, 2);  //string,start x,start y, font weight {1;2;4;6;7;8}
+
+
+
+	ESP_LOGE("E");
+    tft.fillRoundRect(0, tft.height()- 15,  tft.width(), 15, 5, TFT_BLUE);
+	ESP_LOGE("E");
+    tft.drawString("ERR", 5,tft.height()-12, 2);  //string,start x,start y, font weight {1;2;4;6;7;8}
+	ESP_LOGE("E");
+	showError("X");
 	ESP_LOGE("E");
 }
 
@@ -75,7 +89,7 @@ void Pletacka_display::showTime()
 void Pletacka_display::showError(String msg, int colour )
 {
     tft.fillRoundRect(0, tft.height()- 15,  tft.width(), 15, radius, colour);
-    tft.drawString(msg, 5,tft.height()-12, 1);  //string,start x,start y, font weight {1;2;4;6;7;8}
+    tft.drawString(msg, 5,tft.height()-12, 2);  //string,start x,start y, font weight {1;2;4;6;7;8}
     // int x = TFT_RED
 }
 

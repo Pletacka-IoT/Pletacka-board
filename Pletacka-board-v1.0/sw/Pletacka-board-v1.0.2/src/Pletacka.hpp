@@ -4,8 +4,7 @@
 
 #include "NetteApi.hpp"
 #include "Pletacka_config.hpp"
-#include "Pletacka_display.hpp"
-#include "Pletacka_UIx.hpp"
+// #include "Pletacka_display.hpp"
 #include "Pletacka_UI.hpp"
 #include "Pletacka_wifi.hpp"
 #include "Pletacka_debug.hpp"
@@ -30,10 +29,9 @@ using namespace gridui;
 class Pletacka
 {
 private:
-	// Pletacka_UI ui;
-	// Pletacka_UIx uix;
+	Pletacka_UI ui;
 
-	Pletacka_display pletacka_display;
+	// Pletacka_display pletacka_display;
 	PletackaConfig* cfg = NULL;
 	Pletacka_wifi pletacka_wifi;
 	Pletacka_debug pletacka_debug;
@@ -45,7 +43,6 @@ private:
 
 
 	Protocol* gProt = nullptr;
-	TFT_eSPI dp;
 
 
 

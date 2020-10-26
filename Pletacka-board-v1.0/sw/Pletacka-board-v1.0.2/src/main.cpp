@@ -17,7 +17,7 @@
 #include "ArduinoMetronome.hpp"
 #include "Board_tester.hpp"
 
-#define STATIC_IP flase
+#define STATIC_IP true
 
 #define STOP while(1){;}
 
@@ -55,10 +55,10 @@ void mainPrograme()
 	// config.wifiPassword = "PletackaPlete";
 	// config.wifiName = "WLOffice";
 	// config.wifiPassword = "$BlueC6r&R06D";	
-	// config.wifiName = "Suzand";
-	// config.wifiPassword = "Pucini.13";
-	config.wifiName = "Technika";
-	config.wifiPassword = "materidouska";
+	config.wifiName = "Suzand";
+	config.wifiPassword = "Pucini.13";
+	// config.wifiName = "Technika";
+	// config.wifiPassword = "materidouska";
 	config.wifiDefaulAp = false;
 	config.apName = "AP-Pletacka-" + config.sensorNumber;
 	config.apPassword = "PletackaPlete";

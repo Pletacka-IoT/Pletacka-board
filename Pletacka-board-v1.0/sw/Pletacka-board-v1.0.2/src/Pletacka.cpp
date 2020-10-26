@@ -20,6 +20,8 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 	gProt = gPro;
 
 	Serial.begin(115200);
+
+	Serial.printf("gPro1 - %d", gProt);
 	
 
 	pletacka_eeprom.begin(50);
@@ -30,12 +32,10 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 	}
 	cfg->sensorNumber = pletacka_eeprom.read(EEPROM_SNUMBER_A);	
 
-	// ui.init(cfg, &dp ,gPro);
 
 
-	// uix.displayInit(cfg);
-	pletacka_display.displayInit(cfg);
-	STOP_CODE;
+	// pletacka_display.displayInit(cfg);
+	
 
 	pinMode(LED_SEND, OUTPUT);
 	pinMode(LED_WIFI, OUTPUT);
@@ -66,7 +66,10 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 		if (UI.handleRbPacket(cmd, pkt))
 			return;
 	});
-    gProt->start();
+	
+	ui.init(cfg,gProt);
+    
+	gProt->start();
 
     // Start serving the web page
     rb_web_start(80);
@@ -74,10 +77,9 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
     // Initialize the UI builder
     UI.begin(gProt);
 
-		
+	Serial.printf("gPro2 - %d", gProt);
 
-    // Build the UI widgets. Positions/props are set in the layout, so most of the time,
-    // you should only set the event handlers here.
+		
     auto builder = Layout.begin();
 
 	 
@@ -97,6 +99,7 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 			cfg->sensorNumber++;
 			Layout.numberInfo.setText(String(cfg->sensorNumber).c_str());
 			Layout.numberText.setText(String(cfg->sensorNumber).c_str());
+			Serial.printf("PLus - %d\n", cfg->sensorNumber);
         });	
 
     builder.numberMinus
@@ -104,16 +107,22 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 			cfg->sensorNumber--;			
 			Layout.numberInfo.setText(String(cfg->sensorNumber).c_str());
 			Layout.numberText.setText(String(cfg->sensorNumber).c_str());
+			Serial.printf("Minus - %d\n", cfg->sensorNumber);
         });		
 
 
 	builder.commit();
 
+
 	while(1)
 	{
-		gProt->send_log("Start");
+		// ESP_LOGE("Test", "Test2"); 
+		ui.test();
+		// gProt->send_log("LOGPlet");
 		delay(1000);
 	}
+
+	STOP_CODE
 
 /////////////
 

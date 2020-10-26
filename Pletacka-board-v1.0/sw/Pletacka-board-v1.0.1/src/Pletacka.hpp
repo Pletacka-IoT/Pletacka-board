@@ -19,14 +19,6 @@
 using namespace rb;
 using namespace gridui;
 
-// You can include layout.hpp in many .cpp files,
-// but ONE of those must have this define before it.
-
-// #define GRIDUI_LAYOUT_DEFINITION
-// #include "layout.hpp"
-
-
-
 #define ADC_EN          14
 #define ADC_PIN         34
 #define BUTTON_1        35

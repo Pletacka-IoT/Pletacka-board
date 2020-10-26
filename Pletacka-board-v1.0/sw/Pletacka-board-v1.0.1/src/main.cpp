@@ -17,21 +17,8 @@
 #include "ArduinoMetronome.hpp"
 #include "Board_tester.hpp"
 
+#define STATIC_IP flase
 
-
-#include "gridui.h"
-#include "rbprotocol.h"
-#include "rbwebserver.h"
-#include "rbwifi.h"
-
-using namespace rb;
-using namespace gridui;
-
-// // You can include layout.hpp in many .cpp files,
-// // but ONE of those must have this define before it.
-
-
-// #include "layout.hpp"
 
 static rb::Protocol* gProt = nullptr;
 
@@ -66,8 +53,10 @@ void mainPrograme()
 	// config.wifiPassword = "PletackaPlete";
 	// config.wifiName = "WLOffice";
 	// config.wifiPassword = "$BlueC6r&R06D";	
-	config.wifiName = "Suzand";
-	config.wifiPassword = "Pucini.13";
+	// config.wifiName = "Suzand";
+	// config.wifiPassword = "Pucini.13";
+	config.wifiName = "Technika";
+	config.wifiPassword = "materidouska";
 	config.wifiDefaulAp = false;
 	config.apName = "AP-Pletacka-" + config.sensorNumber;
 	config.apPassword = "PletackaPlete";

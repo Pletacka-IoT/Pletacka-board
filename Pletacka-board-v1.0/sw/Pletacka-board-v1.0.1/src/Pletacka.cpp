@@ -1,10 +1,8 @@
 #include "Pletacka.hpp"
-#include "gridui.h"
-#include "rbwebserver.h"
-#include "rbwifi.h"
 
 #define GRIDUI_LAYOUT_DEFINITION
 #include "layout.hpp"
+#include <string>
 
 Pletacka::Pletacka()
 {
@@ -74,11 +72,32 @@ void Pletacka::config(PletackaConfig* config, Protocol* gProt)
     // you should only set the event handlers here.
     auto builder = Layout.begin();
 
+	 
+
+
+	Layout.numberInfo.setText(String(cfg->sensorNumber).c_str());
+	Layout.numberText.setText(String(cfg->sensorNumber).c_str());
+
 	builder.rebootButton
 	.onPress([](Button&) {
 		printf("Reboot\n");
 		ESP_LOGE("", "Reboot2");
 	});
+
+    builder.numberPlus
+        .onPress([&](Button&) {
+			cfg->sensorNumber++;
+			Layout.numberInfo.setText(String(cfg->sensorNumber).c_str());
+			Layout.numberText.setText(String(cfg->sensorNumber).c_str());
+        });	
+
+    builder.numberMinus
+        .onPress([&](Button&) {
+			cfg->sensorNumber--;			
+			Layout.numberInfo.setText(String(cfg->sensorNumber).c_str());
+			Layout.numberText.setText(String(cfg->sensorNumber).c_str());
+        });		
+
 
 	builder.commit();
 

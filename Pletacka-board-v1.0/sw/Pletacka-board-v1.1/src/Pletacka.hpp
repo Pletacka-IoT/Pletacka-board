@@ -13,6 +13,18 @@
 
 #include "EEPROM.h"
 
+
+#include "gridui.h"
+#include "rbprotocol.h"
+#include "rbwebserver.h"
+#include "rbwifi.h"
+
+
+
+using namespace rb;
+using namespace gridui;
+
+
 #define ADC_EN          14
 #define ADC_PIN         34
 #define BUTTON_1        35
@@ -35,6 +47,9 @@ private:
 public:
 	Pletacka();
 	~Pletacka();
+	
+	// static Pletacka_display& get();
+	
 	void config(PletackaConfig* config);
 
 	String isChange();
@@ -46,11 +61,15 @@ public:
 	void debugln(String message, String prefix = "D:");
 	void print(String message, String prefix = "P:");
 	void println(String message, String prefix = "P:");
-	
+
+	Protocol* gProt = nullptr;
+	static void onPacketReceived(const std::string& cmd, rbjson::Object* pkt);
+
+
 	
 };
 
-extern Pletacka pletacka;
+// extern Pletacka pletacka;
 
 
 

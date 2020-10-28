@@ -3,9 +3,16 @@
 #include "Optocoupler.hpp"
 
 
-void Board_tester::test()
+void Board_tester::test(PletackaConfig* cfg, rb::Protocol *pPro)
 {
-    Pletacka::get().showMsg("Start testing");
+    
+	
+
+	WiFi::connect(cfg->wifiName.c_str(), cfg->wifiPassword.c_str());
+	
+	UI.init(cfg);
+	
+	UI.showMsg("Start testing");
 
     pinMode(LED_SEND, OUTPUT);
     pinMode(LED_WIFI, OUTPUT);
@@ -28,23 +35,7 @@ void Board_tester::test()
     delay(1500);  
 
 
-    // Pletacka::get().showMsg("In voltage:");
-
-    
-    // int start = millis();
-
-    // do{
-    //     float x = analogRead(PWR_VOLTAGE)/0.77/1024;
-    //     Pletacka::get().showStatus(String(x*43) + "V");
-    //     delay(300);
-    // }while(millis()-start<5000);
-
-    // Pletacka::get().hideStatus();
-    // delay(500);    
-
-
-
-    Pletacka::get().showMsg("LEDS");
+    UI.showMsg("LEDS");
 
     digitalWrite(LED_SEND, true);
     delay(300);
@@ -62,52 +53,52 @@ void Board_tester::test()
     delay(300);
 
 
-    Pletacka::get().showMsg("Press button:");
+    UI.showMsg("Press button:");
 
-    Pletacka::get().showStatus("ENTER");
+    UI.showStatus("ENTER");
     while(digitalRead(BTN_ENTER)){}
     delay(500);
     
-    Pletacka::get().showStatus("UP");
+    UI.showStatus("UP");
     while(digitalRead(BTN_UP)){}
     delay(500);
     
-    Pletacka::get().showStatus("DOWN");
+    UI.showStatus("DOWN");
     while(digitalRead(BTN_DOWN)){}
     delay(500);
 
-    Pletacka::get().showStatus("OK");
+    UI.showStatus("OK");
     delay(500);
 
 
 
 
 
-    Pletacka::get().showMsg("Optocoupler:");
+    UI.showMsg("Optocoupler:");
 
     
-    Pletacka::get().showStatus("OP-1 FINISH");
+    UI.showStatus("OP-1 FINISH");
     while(!opt_F.state()){}
     delay(500);
 
-    Pletacka::get().showStatus("OP-2 STOP");
+    UI.showStatus("OP-2 STOP");
     while(!opt_S.state()){}
     delay(500);
 
-    Pletacka::get().showStatus("OP-3");
+    UI.showStatus("OP-3");
     while(!opt_3.state()){}
     delay(500);
 
-    Pletacka::get().showStatus("OP-4 STOP");
+    UI.showStatus("OP-4 STOP");
     while(!opt_4.state()){}
     delay(500);
 
-    Pletacka::get().showStatus("OK");
+    UI.showStatus("OK");
     delay(500);
 
     
 
-    // Pletacka::get().showStatus("B1");
+    // UI.showStatus("B1");
     // while(digitalRead(BTN_B1)){} //ERROR
     // delay(200);
 
@@ -118,7 +109,11 @@ void Board_tester::test()
 
 
 
+	UI.showStatus("Test end");
 
-
-    delay(500000);
+    while (1)
+	{
+		;
+	}
+	
 }

@@ -45,7 +45,8 @@ void Pletacka_wifi::configConnection()
 
 void Pletacka_wifi::connectWifi()
 {
-	pletacka.println("Connecting to " + wifiCfg.wifiName);
+	Serial.println("Connecting to " + wifiCfg.wifiName);
+
 
 	// From : https://randomnerdtutorials.com/esp32-static-fixed-ip-address-arduino-ide/
 		// Set your Static IP address
@@ -58,49 +59,50 @@ void Pletacka_wifi::connectWifi()
 		IPAddress secondaryDNS(8, 8, 4, 4); //optional
 
 		// Configures static IP address
-		if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
-			pletacka.showError("STA Failed to configure");
+		if (!plWiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
+			// Serial.showError("STA Failed to configure");
 		}		
 
 	//End from
 
-	WiFi.begin(wifiCfg.wifiName.c_str(), wifiCfg.wifiPassword.c_str());
+	plWiFi.begin(wifiCfg.wifiName.c_str(), wifiCfg.wifiPassword.c_str());
 
 	int counter = 0;
 	bool ledWifiState = true;
 
-	while (WiFi.status() != WL_CONNECTED) {
+	while (plWiFi.status() != WL_CONNECTED) {
 			counter++;
 			delay(500);
-			pletacka.print(".");
-			pletacka.showMsg("Connecting " + wifiCfg.wifiName); 
+			Serial.print(".");
+			// Serial.showMsg("Connecting " + wifiCfg.wifiName); 
 			digitalWrite(LED_WIFI, ledWifiState);
 			ledWifiState = !ledWifiState;
 
 			if(counter> 10)
 			{
-					pletacka.showError("Not connected to WiFi");            
+					// Serial.showError("Not connected to WiFi");            
 			}
 	}
 
 	
-	pletacka.showMsg("WiFi " + wifiCfg.wifiName);
-	pletacka.hideError();
+	// Serial.showMsg("WiFi " + wifiCfg.wifiName);
+	// Serial.hideError();
 
-	pletacka.println("\nWiFi connected");
-	pletacka.print("IP address: ");
-	pletacka.print(WiFi.localIP().toString());
-	pletacka.print("    MAC address: ");
-	pletacka.println(String(WiFi.macAddress()));   
+	Serial.println("\nWiFi connected");
+	Serial.print("IP address: ");
+	Serial.print(plWiFi.localIP().toString());
+	Serial.print("    MAC address: ");
+	Serial.println(String(plWiFi.macAddress()));   
 	digitalWrite(LED_WIFI, true); 
+	
 		
 }
 
 void Pletacka_wifi::startAP()
 {
-		pletacka.showMsg("AP: "+wifiCfg.apName);
-		pletacka.println("Starting **" + wifiCfg.apName + "** AP");
-		WiFi.softAP(wifiCfg.apName.c_str(), wifiCfg.apPassword.c_str(), wifiCfg.apChanel );
+		// Serial.showMsg("AP: "+wifiCfg.apName);
+		Serial.println("Starting **" + wifiCfg.apName + "** AP");
+		plWiFi.softAP(wifiCfg.apName.c_str(), wifiCfg.apPassword.c_str(), wifiCfg.apChanel );
 
 }
 

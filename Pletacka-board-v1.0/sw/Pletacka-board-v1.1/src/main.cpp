@@ -17,22 +17,29 @@
 #include "ArduinoMetronome.hpp"
 #include "Board_tester.hpp"
 
+// You can include layout.hpp in many .cpp files,
+// but ONE of those must have this define before it.
+#define GRIDUI_LAYOUT_DEFINITION
+// #include "GridUI-layout.hpp"
 
 
 
-
-
-void mainPrograme()
+void mainProgram()
 {
 	//Main setup
 
 	// BasicOTA ota;
+
+	
+
+	Pletacka pletacka;
 	PletackaConfig config;
 	ArduinoMetronome statusMetronome(10);
 	ArduinoMetronome customMetronome(1000);
 	ArduinoMetronome timeMetronome(1000);
 	ArduinoMetronome wifiTester(500);
 	ArduinoMetronome aliveMetronome(10000);
+	WiFiClass plWiFi;
 
 	
 	
@@ -42,14 +49,16 @@ void mainPrograme()
 	// config.sensorNumber = 14; //Number from 1 to 254
 	// config.serverUrl = "http://192.168.0.172/api/v1/thisSensor/add-event";
 	// config.serverUrl = "http://192.168.0.113/Pletacka-website/api/v1/thisSensor/add-event";
-	config.serverUrl = "http://192.168.0.2/api/v1/thisSensor/add-event";
-	config.serverUrlBackup = "http://192.168.0.2/Backup/api/v1/thisSensor/add-event";
-	config.wifiName = "Pletacka-IoT";
-	config.wifiPassword = "PletackaPlete";
+	config.serverUrl = "http://192.168.0.3/api/v1/thisSensor/add-event";
+	config.serverUrlBackup = "http://192.168.0.3/Backup/api/v1/thisSensor/add-event";
+	// config.wifiName = "Pletacka-IoT";
+	// config.wifiPassword = "PletackaPlete";
 	// config.wifiName = "WLOffice";
 	// config.wifiPassword = "$BlueC6r&R06D";	
 	// config.wifiName = "Technika";
 	// config.wifiPassword = "materidouska";
+	config.wifiName = "Suzand";
+	config.wifiPassword = "Pucini.13";
 	config.wifiDefaulAp = false;
 	config.apName = "AP-Pletacka-" + config.sensorNumber;
 	config.apPassword = "PletackaPlete";
@@ -65,7 +74,7 @@ void mainPrograme()
 	
 	pletacka.config(&config);
 	
-
+	// delay(1000000);
 	statusMetronome.startupDelayMs(15000);
 	aliveMetronome.startupDelayMs(1000);
 	timeMetronome.startupDelayMs(1000);
@@ -140,7 +149,7 @@ void mainPrograme()
 		//	WiFi connection test loop
 		if(wifiTester.loopMs())
 		{			
-			if(WiFi.status() != WL_CONNECTED)
+			if(plWiFi.status() != WL_CONNECTED)
 			{
 				digitalWrite(LED_WIFI, ledWifiState);
 				ledWifiState = !ledWifiState;
@@ -170,17 +179,7 @@ void mainPrograme()
 
 
 void setup() {
-	mainPrograme();
+	mainProgram();
 }
-
-
-
-
-
-
-
-
-
-
 
 void loop() {}

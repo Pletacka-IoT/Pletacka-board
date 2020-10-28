@@ -7,6 +7,10 @@
 class Pletacka_wifi
 {
 private:
+
+	WiFiClass wifi;
+	
+
     struct wifiConfig
     {
         wifiConfig()
@@ -30,7 +34,9 @@ private:
 
     wifiConfig wifiCfg;
 
-		int sensorNumber = 1;
+	int sensorNumber = 1;
+
+	WiFiClass plWiFi;
     
 public:
     Pletacka_wifi();

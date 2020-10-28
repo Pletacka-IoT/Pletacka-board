@@ -1,13 +1,22 @@
 #include "Pletacka.hpp"
 
+#include "GridUI-layout.hpp"
+
 Pletacka::Pletacka()
 {
-	Serial.begin(115200);
+	
 }
 
 Pletacka::~Pletacka()
 {
 }
+
+Pletacka_display& Pletacka::get()
+{
+	static Pletacka_display instance;
+	return instance;
+}
+
 
 void Pletacka::config(PletackaConfig* config)
 {
@@ -25,6 +34,7 @@ void Pletacka::config(PletackaConfig* config)
 	cfg->sensorNumber = pletacka_eeprom.read(EEPROM_SNUMBER_A);	
 
 	displayInit(cfg);
+
 
 	pinMode(LED_SEND, OUTPUT);
 	pinMode(LED_WIFI, OUTPUT);
@@ -44,10 +54,28 @@ void Pletacka::config(PletackaConfig* config)
 	if(!digitalRead(BTN_ENTER))
 	{
 		cfg->sensorNumber = editSensorNumber(cfg->sensorNumber);
-		pletacka.hideMsg();
+		hideMsg();
 	}
 
 	pletacka_wifi.init(cfg);
+
+	
+    // // Initialize RBProtocol
+    // gProt = new Protocol("FrantaFlinta", "Robocop", "Compiled at " __DATE__ " " __TIME__, onPacketReceived);
+    // gProt->start();
+
+    // // Start serving the web page
+    // rb_web_start(80);
+
+    // // Initialize the UI builder
+    // UI.begin(gProt);
+
+
+	
+    // // Build the UI widgets. Positions/props are set in the layout, so most of the time,
+    // // you should only set the event handlers here.
+    // auto builder = Layout.begin();	
+	// builder.commit();
 
 	if(cfg->remoteDataOn || cfg->remoteDebugOn || !digitalRead(BTN_DOWN))
 	{
@@ -125,8 +153,11 @@ void Pletacka::sendState(String state)
 		}
 		else
 		{
+			ESP_LOGE("request", "Code %d", requestBackup.code);
 			showError(requestBackup.code + "->"+ requestBackup.main);
+			ESP_LOGE("request", "Show error");
 			hideMsg();
+			ESP_LOGE("request", "Hide msg");
 		}
 	}
 	
@@ -142,7 +173,7 @@ void Pletacka::sendAlive(int sensorNumber)
 int Pletacka::editSensorNumber(int actualNumber)
 {
 	int newNumber = actualNumber;
-	pletacka.showMsg("Setup s. number");
+	showMsg("Setup s. number");
 
 	while(!digitalRead(BTN_ENTER))
 	{
@@ -150,12 +181,12 @@ int Pletacka::editSensorNumber(int actualNumber)
 		if(!digitalRead(BTN_UP))
 		{
 			newNumber++;
-			pletacka.showId(newNumber);
+			showId(newNumber);
 		}
 		else if (!digitalRead(BTN_DOWN))
 		{
 			newNumber--;
-			pletacka.showId(newNumber);
+			showId(newNumber);
 		}
 
 		
@@ -167,14 +198,14 @@ int Pletacka::editSensorNumber(int actualNumber)
 	{
 		pletacka_eeprom.write(EEPROM_SNUMBER_A, newNumber);
 		pletacka_eeprom.commit();
-		pletacka.showError("OK", TFT_GREEN);
+		showError("OK", TFT_GREEN);
 	}
 	else
 	{
-		pletacka.showError("Nothing to change", TFT_ORANGE);
+		showError("Nothing to change", TFT_ORANGE);
 	}
 	
-
+	
 	return newNumber;
 }
 
@@ -234,4 +265,12 @@ void Pletacka::println(String message, String prefix)
 	}
 }
 
-Pletacka pletacka;
+void Pletacka::onPacketReceived(const std::string& cmd, rbjson::Object* pkt) {
+    // Let GridUI handle its packets
+    if (UI.handleRbPacket(cmd, pkt))
+        return;
+
+    // ...any other non-GridUI packets
+}
+
+// Pletacka pletacka;

@@ -4,7 +4,7 @@
 #include "pletacka_config.hpp"
 #include <TFT_eSPI.h>
 #include "time.h"
-
+#include "WiFi.h"
 
 
 class Pletacka_display
@@ -19,6 +19,8 @@ class Pletacka_display
         int *pletackaNumber = 0;
 
         struct tm tm;
+
+		WiFiClass plWiFi;
         
         
         

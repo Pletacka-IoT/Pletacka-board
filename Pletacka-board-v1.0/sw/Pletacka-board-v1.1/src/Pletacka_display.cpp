@@ -1,6 +1,6 @@
 #include "Pletacka_display.hpp"
 #include "Pletacka.hpp"
-#include "WiFi.h"
+
 
 String tim(int time)
 {
@@ -26,7 +26,7 @@ void Pletacka_display::displayInit(PletackaConfig* config)
 
 void Pletacka_display::timeInit()
 {
-    if(WiFi.status() == WL_CONNECTED)
+    if(plWiFi.status() == WL_CONNECTED)
     {
         const char* ntpServer = "pool.ntp.org";
         const long  gmtOffset_sec = 3600;
@@ -53,7 +53,7 @@ void Pletacka_display::showTime()
 {
     tft.fillRoundRect(30, 0,  70, 24, radius, blockColour);
 
-    if(WiFi.status() == WL_CONNECTED)
+    if(plWiFi.status() == WL_CONNECTED)
     {
         getLocalTime(&tm);
         

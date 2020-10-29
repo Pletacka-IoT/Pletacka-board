@@ -26,7 +26,7 @@ void Pletacka_wifi::connectWifi()
 {
 	Serial.println("Connecting to " + cfg->wifiName);
 
-	#ifdef STATIC_IP
+	#if false
 		// From : https://randomnerdtutorials.com/esp32-static-fixed-ip-address-arduino-ide/
 			// Set your Static IP address
 			IPAddress local_IP(192, 168, 0, 150+sensorNumber);

@@ -18,10 +18,9 @@
 #include "ArduinoMetronome.hpp"
 #include "Board_tester.hpp"
 
-#define STATIC_IP true
 
 
-static rb::Protocol* gProt = nullptr;
+static rb::Protocol* pProt = nullptr;
 
 void mainProgram()
 {
@@ -48,27 +47,29 @@ void mainProgram()
 	// tester.test(&config, gProt);
 
 
-	// BasicOTA ota;
+	BasicOTA ota;
 	Pletacka pletacka;
 	WiFiClass pWiFi;
 	ArduinoMetronome statusMetronome(10);
 	ArduinoMetronome customMetronome(1000);
+	ArduinoMetronome displayMetronome(1000);
 	ArduinoMetronome wifiTester(500);
 	ArduinoMetronome aliveMetronome(10000);
 	
-	
-	pletacka.config(&config, gProt);
+	// Serial.printf("main pPro %d", pProt);
+	pletacka.config(&config, pProt);
 
 
 
 
-	statusMetronome.startupDelayMs(15000);
+	statusMetronome.startupDelayMs(3000);
+	displayMetronome.startupDelayMs(3100);
 	aliveMetronome.startupDelayMs(1000);
 	wifiTester.startupDelayMs(3000);
 
 
 	
-	// ota.begin();
+	ota.begin();
 	
 	
 	pletacka.ui()->println("println");
@@ -83,7 +84,7 @@ void mainProgram()
 	//Main loop
 	while (true)
 	{
-		// ota.handle();
+		ota.handle();
 
 		
 		//	Status loop
@@ -97,13 +98,17 @@ void mainProgram()
 				digitalWrite(LED_SEND, true);
 				pletacka.ui()->println("Status: " + status);
 				pletacka.ui()->showStatus(status);
+				pletacka.ui()->updateInfo(status);
+				pletacka.ui()->showInfo();
 				pletacka.sendState(status);
 				
 			}
 
-			if(millis()-ledSend > 700)
+			if(millis()-ledSend > 2000)
 			{
 				digitalWrite(LED_SEND, false);
+				pletacka.ui()->hideStatus();
+				pletacka.ui()->UIoffLeds();
 			}
 
 			
@@ -114,7 +119,7 @@ void mainProgram()
 		{			
 			startAlive = millis();
 			pletacka.sendAlive(config.sensorNumber);
-			digitalWrite(LED_ON, true);
+			// digitalWrite(LED_ON, true);
 		}
 
 
@@ -139,6 +144,13 @@ void mainProgram()
 			}
 		}
 
+
+
+		//	 Custom loop
+		if(displayMetronome.loopMs())
+		{			
+			pletacka.ui()->showInfo();
+		}	
 
 
 		//	 Custom loop

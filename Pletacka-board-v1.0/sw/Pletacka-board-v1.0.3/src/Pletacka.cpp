@@ -12,20 +12,12 @@ Pletacka::~Pletacka()
 {
 }
 
-void Pletacka::config(PletackaConfig* config, Protocol* gPro )
+void Pletacka::config(PletackaConfig* config, Protocol* inProt )
 {
-	cfg = config;
-	gProt = gPro;
+	pCfg = config;
+	pProt = inProt;
 
-	Serial.begin(115200);	
-
-	pletacka_eeprom.begin(50);
-	if(pletacka_eeprom.read(EEPROM_SNUMBER_A) == 255)
-	{
-		pletacka_eeprom.write(EEPROM_SNUMBER_A, 1);
-		pletacka_eeprom.commit();
-	}
-	cfg->sensorNumber = pletacka_eeprom.read(EEPROM_SNUMBER_A);	
+	Serial.begin(115200);		
 
 	pinMode(LED_SEND, OUTPUT);
 	pinMode(LED_WIFI, OUTPUT);
@@ -41,47 +33,44 @@ void Pletacka::config(PletackaConfig* config, Protocol* gPro )
 	digitalWrite(LED_ON, true);
 
 
+	UI.init(pCfg);
 
-	if(!digitalRead(BTN_ENTER))
+	if(!digitalRead(BTN_DOWN))
 	{
-		editSensorNumber();
-		UI.hideMsg();
+		UI.changeID();
 	}
 
-	UI.init(cfg);
 
-	pletacka_wifi.init(cfg, &UI);
+	pletacka_wifi.init(pCfg, &UI);
 
-	UI.initUIGrid(gProt);
-
-	
+	UI.initUIGrid(pProt);
 
 
-	if(cfg->debugOn || !digitalRead(BTN_DOWN))
+	if(pCfg->debugOn || !digitalRead(BTN_DOWN))
 	{
 		Serial.println("Debug");
-		cfg->debugOn = true;
+		pCfg->debugOn = true;
 		UI.showError("DEBUG MODE", TFT_ORANGE);
 	}
 
-	UI.debugln("Debaguju");
-	UI.println("Seriuju");
+	// UI.debug("Debaguju");
+	// UI.println("Seriuju");
 	
 	
 
-	pletacka_status.init(cfg, &UI);
-	pletacka_alive.init(cfg, &UI);
+	pletacka_status.init(pCfg, &UI);
+	pletacka_alive.init(pCfg, &UI);
 
 
 
-	apiState.setServerName(cfg->serverUrl + "/" + cfg->sensorNumber);
-	apiStateBackup.setServerName(cfg->serverUrlBackup + "/" + cfg->sensorNumber);
+	apiState.setServerName(pCfg->serverUrl + "/" + pCfg->sensorNumber);
+	apiStateBackup.setServerName(pCfg->serverUrlBackup + "/" + pCfg->sensorNumber);
 	UI.println("Server:" + apiState.getServerName());
 
 
 
 
-	UI.println("Sensor number " + String(cfg->sensorNumber) + " is configured");
+	UI.println("Sensor number " + String(pCfg->sensorNumber) + " is configured");
 	
 	
 }
@@ -148,37 +137,37 @@ void Pletacka::sendAlive(int sensorNumber)
 
 
 
-void Pletacka::editSensorNumber()
-{
-	int actualNumber = cfg->sensorNumber;
+// void Pletacka::editSensorNumber()
+// {
+// 	int actualNumber = pCfg->sensorNumber;
 	
-	UI.showMsg("Setup s. number", false);
+// 	UI.showMsg("Setup s. number", false);
 
-	while(!digitalRead(BTN_ENTER))
-	{
+// 	while(!digitalRead(BTN_ENTER))
+// 	{
 
-		if(!digitalRead(BTN_UP))
-		{
-			cfg->sensorNumber++;
-			UI.showId(cfg->sensorNumber);
-		}
-		else if (!digitalRead(BTN_DOWN))
-		{
-			cfg->sensorNumber--;
-			UI.showId(cfg->sensorNumber);
-		}
+// 		if(!digitalRead(BTN_UP))
+// 		{
+// 			pCfg->sensorNumber++;
+// 			UI.showId(pCfg->sensorNumber);
+// 		}
+// 		else if (!digitalRead(BTN_DOWN))
+// 		{
+// 			pCfg->sensorNumber--;
+// 			UI.showId(pCfg->sensorNumber);
+// 		}
 
-		delay(300);
-	}
+// 		delay(300);
+// 	}
 
-	if(actualNumber != cfg->sensorNumber)
-	{
-		pletacka_eeprom.write(EEPROM_SNUMBER_A, cfg->sensorNumber);
-		pletacka_eeprom.commit();
-		UI.showError("OK", TFT_GREEN);
-	}
-	else
-	{
-		UI.showError("Nothing to change", TFT_ORANGE);
-	}
-}
+// 	if(actualNumber != pCfg->sensorNumber)
+// 	{
+// 		pletacka_eeprom.write(EEPROM_SNUMBER_A, pCfg->sensorNumber);
+// 		pletacka_eeprom.commit();
+// 		UI.showError("OK", TFT_GREEN);
+// 	}
+// 	else
+// 	{
+// 		UI.showError("Nothing to change", TFT_ORANGE);
+// 	}
+// }

@@ -9,8 +9,6 @@
 #include "Pletacka_status.hpp"
 #include "Pletacka_alive.hpp"
 
-#include "EEPROM.h"
-
 // #include "gridui.h"
 // #include "rbprotocol.h"
 // #include "rbwebserver.h"
@@ -29,23 +27,22 @@ class Pletacka
 private:
 	Pletacka_UI UI;
 
-	PletackaConfig* cfg = NULL;
+	PletackaConfig* pCfg = NULL;
 	Pletacka_wifi pletacka_wifi;
 	Pletacka_status pletacka_status;
 	Pletacka_alive pletacka_alive;
-	EEPROMClass pletacka_eeprom;
 	NetteApi apiState;
 	NetteApi apiStateBackup;
 
 
-	Protocol* gProt = nullptr;
+	Protocol* pProt = nullptr;
 
 
 
 public:
 	Pletacka();
 	~Pletacka();
-	void config(PletackaConfig* config, Protocol *gPro);
+	void config(PletackaConfig* config, Protocol *inProt);
 
 	String isChange();
 	void sendState(String state);

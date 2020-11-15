@@ -10,7 +10,7 @@
 #include <TFT_eSPI.h>
 #include "WiFi.h"
 #include <WiFiClient.h>
-#include "pletacka_config.hpp"
+#include "Pletacka_config.hpp"
 #include "EEPROM.h"
 
 using namespace rb;

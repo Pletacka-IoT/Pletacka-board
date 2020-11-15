@@ -1,7 +1,7 @@
 #pragma once
 
 #include <Arduino.h>
-#include "pletacka_config.hpp"
+#include "Pletacka_config.hpp"
 #include <WiFi.h>
 #include <WiFiUdp.h>
 #include "Pletacka_UI.hpp"

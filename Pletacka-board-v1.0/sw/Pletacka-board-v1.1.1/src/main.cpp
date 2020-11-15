@@ -49,7 +49,7 @@ void mainProgram()
 	// tester.test(&config, gProt);
 
 
-	// BasicOTA ota;
+	BasicOTA ota;
 	Pletacka pletacka;
 	WiFiClass pWiFi;
 	ArduinoMetronome statusMetronome(10);
@@ -71,7 +71,7 @@ void mainProgram()
 	resetMetronome.startupDelayMs(15000);
 
 	
-	// // ota.begin();
+	ota.begin();
 	
 	
 	pletacka.ui()->println("println");
@@ -86,7 +86,7 @@ void mainProgram()
 	//Main loop
 	while (true)
 	{
-	// 	// ota.handle();
+		ota.handle();
 
 		
 		//	Status loop

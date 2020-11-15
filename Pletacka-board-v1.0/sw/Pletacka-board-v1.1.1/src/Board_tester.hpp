@@ -3,7 +3,7 @@
 #include <Arduino.h>
 #include "rbprotocol.h"
 #include "Pletacka_UI.hpp"
-#include "pletacka_config.hpp"
+#include "Pletacka_config.hpp"
 
 using namespace rb;
 

@@ -30,11 +30,11 @@ void mainProgram()
 	PletackaConfig config;
 	config.serverUrl = "http://192.168.0.2/api/v1/thisSensor/add-event";
 	config.serverUrlBackup = "http://192.168.0.2/Backup/api/v1/thisSensor/add-event";
-	// config.wifiName = "Pletacka-IoT";
-	// config.wifiPassword = "PletackaPlete";
+	config.wifiName = "Pletacka-IoT";
+	config.wifiPassword = "PletackaPlete";
 	// config.wifiName = "WLRotex";
-	config.wifiName = "WLOffice";
-	config.wifiPassword = "$BlueC6r&R06D";
+	// config.wifiName = "WLOffice";
+	// config.wifiPassword = "$BlueC6r&R06D";
 	// config.wifiName = "Suzand";
 	// config.wifiPassword = "Pucini.13";
 	// config.wifiName = "Technika";
@@ -46,7 +46,7 @@ void mainProgram()
 
 	// Uncoment for testing 
 	// Board_tester tester;
-	// tester.test(&config, gProt);
+	// tester.test(&config, pProt);
 
 
 	BasicOTA ota;
@@ -65,10 +65,12 @@ void mainProgram()
 
 
 	statusMetronome.startupDelayMs(14000);
-	displayMetronome.startupDelayMs(15000);
+	// displayMetronome.startupDelayMs(15000);
+	displayMetronome.startupDelayMs(5000);
 	aliveMetronome.startupDelayMs(1000);
 	wifiTester.startupDelayMs(3000);
-	resetMetronome.startupDelayMs(15000);
+	// resetMetronome.startupDelayMs(15000);
+	resetMetronome.startupDelayMs(5000);
 
 	
 	ota.begin();
@@ -110,7 +112,7 @@ void mainProgram()
 				
 			}
 
-			if(millis()-ledSend > 2000 && offLedState)
+			if(millis()-ledSend > 4000 && offLedState)
 			{
 				offLedState = false;
 				digitalWrite(LED_SEND, false);
@@ -127,13 +129,12 @@ void mainProgram()
 		{			
 			startAlive = millis();
 			pletacka.sendAlive(config.sensorNumber);
-			// digitalWrite(LED_ON, true);
 		}
 
 
 		if(millis()-startAlive > 800)
 		{
-			digitalWrite(LED_ON, false);
+			digitalWrite(LED_SEND, false);
 		}
 		
 		//	WiFi connection test loop
@@ -141,7 +142,6 @@ void mainProgram()
 		{			
 			if(pWiFi.status() != WL_CONNECTED)
 			{
-				digitalWrite(LED_WIFI, ledWifiState);
 				ledWifiState = !ledWifiState;
 				pletacka.ui()->showError("Not connected to WiFi"); 
 				pletacka.ui()->showMsg("WiFi ERROR");

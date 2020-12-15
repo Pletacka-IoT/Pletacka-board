@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="4" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2810,8 +2810,7 @@ JarekParal (2020-03-14)
 <wire x1="68.58" y1="18.97" x2="71.035" y2="18.97" width="0.6096" layer="1"/>
 <wire x1="71.12" y1="20.79" x2="71.12" y2="19.055" width="0.6096" layer="1"/>
 <wire x1="71.12" y1="19.055" x2="71.035" y2="18.97" width="0.6096" layer="1"/>
-<wire x1="62.08" y1="19.558" x2="63.8048" y2="19.558" width="0.6096" layer="1"/>
-<wire x1="63.8048" y1="19.558" x2="67.898" y2="19.558" width="0.6096" layer="1"/>
+<wire x1="62.08" y1="19.558" x2="67.898" y2="19.558" width="0.6096" layer="1"/>
 <wire x1="67.898" y1="19.558" x2="67.945" y2="19.605" width="0.6096" layer="1"/>
 </signal>
 <signal name="BOOT">
